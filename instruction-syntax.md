@@ -26,6 +26,7 @@ All instructions take the form of a verb followed by zero or more arguments and 
 - forward
 - reload
 - set
+- [assert](/verification-syntax.md)
 
 ### open
 
