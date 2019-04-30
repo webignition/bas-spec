@@ -16,27 +16,6 @@ All instructions take the form of a verb followed by zero or more arguments and 
 
 `verb [arguments]?`
 
-## {selector}
-
-A `selector` is a string identifying one or more page elements and is used in conjunction with the 
-`assert`, `click`,  `set`, `submit` and `wait-for` actions.
-
-A `selector` takes the form:
-
-`"{css-selector-or-xpath-query}"[:{position}]?`
-
-- `css-selector-or-xpath-query`: any valid CSS selector or XPath query
-- `position`: optional, the position with a set of elements if the selector matches more than one element
-
-### {selector} examples
-
-- `"#element-id"`: a CSS selector matching against the element `id` attribute
-- `"//*[@id="element-id"]`: an XPath query matching against the element `id` attribute
-- `".listed-item":1`: a CSS selector matching all elements with the `listed-item` class name, fetching the first item in the list
-- `".listed-item":3`: a CSS selector matching all elements with the `listed-item` class name, fetching the third item in the list
-- `".listed-item":first`: special position keyword `first` is equivalent to `:1`
-- `".listed-item":last`: special position keyword `last` fetches the last matching item
-
 ## Action Verbs
 - open
 - click
@@ -87,7 +66,7 @@ Perform a click action upon an element.
 #### Arguments
 **`selector`**
 
-Any valid `selector`.
+Any valid [`selector`](/selector-syntax.md).
 
 #### Examples
 - `click ".btn.btn-sign-in"`
@@ -119,7 +98,7 @@ Wait for an element to be rendered. Waits for up to 30 seconds.
 #### Arguments
 **`selector`**
 
-Any valid `selector`.
+Any valid [`selector`](/selector-syntax.md).
 
 #### Examples
 - `wait-for "#asychronously-loaded-content"`
@@ -133,7 +112,7 @@ Performs a submit action on a form.
 #### Arguments
 **`selector`**
 
-Any valid `selector`.
+Any valid [`selector`](/selector-syntax.md).
 
 #### Examples
 - `submit "#sign-in-form"`
@@ -169,7 +148,7 @@ Anything following the `to` keyword (except the space after the keyword) is the 
 #### Arguments
 **`selector`**
 
-Any valid `selector`.
+Any valid [`selector`](/selector-syntax.md).
 
 **`value`**
 
