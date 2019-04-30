@@ -1,0 +1,22 @@
+- open "https://simplytestable.com"
+- assert "title" contains "homepage"
+- assert "body.not-logged-in" exists
+- click ".btn.btn-sign-in"
+- assert "title" is "Sign in"
+- assert "body.sign-in" exists
+- set "#email" to "user@example.com"
+- set "#password" to "password1"
+- click ".btn.btn-sign-in"
+- assert "title" contains "dashboard"
+- assert "body.dashboard" exsits
+- assert "body.logged-in" exists
+- assert "a[href='/account/']" exists
+- click "a[href='/account/']"
+- assert "title" is "Your account"
+- click ".navbar .sign-out"
+- assert "title" contains "dashboard"
+- assert "body.not-logged-in" exists
+- open "https://gears.simplytestable.com/account"
+- assert "title" is "Sign in"
+- assert ".alert" exists
+- assert ".alert" contains "You need to sign in to access your account."
