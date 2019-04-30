@@ -5,7 +5,7 @@ A `selector` is a string identifying one or more page elements and is used in co
 
 ## Syntax
 
-`"{css-selector-or-xpath-query}"[:{position}]?`
+`"{css-selector-or-xpath-query}"[:{position}]`
 
 - `css-selector-or-xpath-query`: any valid CSS selector or XPath query
 - `position`: optional, the position with a set of elements if the selector matches more than one element

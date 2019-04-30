@@ -8,13 +8,13 @@ This document defines the syntax of a single instruction.
 Examples use special tokens to denote non-literal text. 
 
 - `{variable-placeholder}`: indicates where a variable value is to be used
-- `[...]?`: square brackets with a trailing question mark denote optional syntax that can be omitted
+- `[...]`: square brackets denote optional syntax that can be omitted
 
 ## Instruction syntax
 
 All instructions take the form of a verb followed by zero or more arguments and keywords.
 
-`verb [arguments]?`
+`verb [arguments]`
 
 ## Action Verbs
 - open
@@ -32,7 +32,7 @@ All instructions take the form of a verb followed by zero or more arguments and 
 Visit a URL in the browser.
 
 #### Syntax
-`open {url} [in {browser}]?`
+`open {url} [in {browser}]`
 
 #### Arguments
 **`url`**

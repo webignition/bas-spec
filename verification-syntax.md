@@ -6,14 +6,14 @@ A verification instruction checks whether a given assertion is correct.
 Examples use special tokens to denote non-literal text. 
 
 - `{variable-placeholder}`: indicates where a variable value is to be used
-- `[...]?`: square brackets with a trailing question mark denote optional syntax that can be omitted
+- `[...]`: square brackets denote optional syntax that can be omitted
 
 ## Instruction syntax
 
 Verification instructions take the form of the `assert` action followed by a `selector`, a `comparison` and an
  optional `value`.
 
-`assert {selector} {comparison} [{value}]?`
+`assert {selector} {comparison} [{value}]`
 
 ## Arguments
 
