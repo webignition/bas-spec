@@ -1,0 +1,5 @@
+- open "https://www.google.com"
+- assert "title" is "Google"
+- set ".gLFyf.gsfi" to "example"
+- click ".FPdoLc.VlcLAe input[name=btnK]"
+- assert "title" is "example - Google Search"
