@@ -1,0 +1,60 @@
+imports:
+  tests:
+    open_url: ../test/open-url-parameterised.yaml
+
+"open https://simplytestable.com":
+  open_url:
+    url: "https://simplytestable.com"
+    title_selector: "title"
+    expected_title: "homepage"
+
+  assertions:
+    - "body.not-logged-in" exists
+
+"navigate to sign in page":
+  actions:
+    - click ".btn.btn-sign-in"
+
+  assertions:
+    - url is "https://gears.simplytestable.com/signin/"
+    - "title" is "Sign in"
+    - "body.sign-in" exists
+
+"sign in":
+  actions:
+    - set "#email" to "user@example.com"
+    - set "#password" to "password1"
+    - click ".btn.btn-sign-in"
+
+  assertions:
+    - url is "https://gears.simplytestable.com/"
+    - "title" contains "dashboard"
+    - "body.dashboard" exists
+    - "body.logged-in" exists
+    - "a[href='/account/']" exists
+
+"navigate to account page":
+  actions:
+    - click "a[href='/account/']"
+
+  assertions:
+    - "title" is "Your account"
+
+"sign out":
+  actions:
+    - click ".navbar .sign-out"
+
+  assertions:
+    - url is "https://gears.simplytestable.com/"
+    - "title" contains "dashboard"
+    - "body.not-logged-in" exists
+
+"navigate to account page when not signed in":
+  open_url:
+    url: "https://gears.simplytestable.com/account"
+    title_selector: "title"
+    expected_title: "Sign in"
+
+  assertions:
+    - ".alert" exists
+    - ".alert" contains "You need to sign in to access your account."

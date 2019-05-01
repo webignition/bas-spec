@@ -1,0 +1,17 @@
+imports:
+  tests:
+    open_url: ../test/open-url-parameterised.yaml
+
+"open https://www.google.com":
+  open_url:
+    url: "https://www.google.com"
+    title_selector: "title"
+    expected_title: "Google"
+
+"query 'example'":
+  actions:
+    - set ".gLFyf.gsfi" to "example"
+    - click ".FPdoLc.VlcLAe input[name=btnK]"
+
+  assertions:
+    - "title" is "example - Google Search"

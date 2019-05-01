@@ -1,0 +1,19 @@
+imports:
+  pages:
+    google_com: ../page-model/google.com.yml
+  tests:
+    open_url: ../test/open-url-parameterised.yaml
+
+"open https://www.google.com":
+  open_url:
+    url: google_com
+    title_selector: google_com.elements.title
+    expected_title: "Google"
+
+"query 'example'":
+  actions:
+    - set google_com.elements.search_input to "example"
+    - click google_com.elements.search_button
+
+  assertions:
+    - google_com.elements.title is "example - Google Search"

@@ -1,0 +1,66 @@
+imports:
+  pages:
+    simplytestable_com: ../page-model/simplytestable.com.yml
+    gears_simplytestable_com_sign_in: ../page-model/gears.simplytestable.com.sign-in.yml
+    gears_simplytestable_com_dashboard: ../page-model/gears.simplytestable.com.dashboard.yml
+    gears_simplytestable_com_account: ../page-model/gears.simplytestable.com.account.yml
+  tests:
+    open_url: ../test/open-url-parameterised.yaml
+
+"open https://simplytestable.com":
+  open_url:
+    url: simplytestable_com
+    title_selector: simplytestable_com.elements.title
+    expected_title: "homepage"
+
+  assertions:
+    - simplytestable_com.elements.body_not_logged_in exists
+
+"navigate to sign in page":
+  actions:
+    - click simplytestable_com.elements.sign_in_button
+
+  assertions:
+    - url is gears_simplytestable_com_sign_in
+    - gears_simplytestable_com_sign_in.elements.title is "Sign in"
+    - gears_simplytestable_com_sign_in.elements.body exists
+
+"sign in":
+  actions:
+    - set gears_simplytestable_com_sign_in.elements.email_input to "user@example.com"
+    - set gears_simplytestable_com_sign_in.elements.password_input to "password1"
+    - click gears_simplytestable_com_sign_in.elements.sign_in_button
+
+  assertions:
+    - url is gears_simplytestable_com_dashboard
+    - gears_simplytestable_com_dashboard.elements.title contains "dashboard"
+    - gears_simplytestable_com_dashboard.elements.body_dashboard exists
+    - gears_simplytestable_com_dashboard.elements.logged_in exists
+    - gears_simplytestable_com_dashboard.elements.account_link exists
+
+"navigate to account page":
+  actions:
+    - click gears_simplytestable_com_dashboard.elements.account_link
+
+  assertions:
+    - url is gears_simplytestable_com_account
+    - gears_simplytestable_com_account.elements.title is "Your account"
+
+"sign out":
+  actions:
+    - click gears_simplytestable_com_account.elements.sign_out_link
+
+  assertions:
+    - url is gears_simplytestable_com_dashboard
+    - gears_simplytestable_com_dashboard.elements.title contains "dashboard"
+    - gears_simplytestable_com_dashboard.elements.not_logged_in exists
+
+"navigate to account page when not signed in":
+  open_url:
+    url: gears_simplytestable_com_account
+    title_selector: gears_simplytestable_com_sign_in.elements.title
+    expected_title: "Sign in"
+
+  assertions:
+    - gears_simplytestable_com_sign_in.elements.alert_notification exists
+    - gears_simplytestable_com_sign_in.elements.alert_notification contains "You need to sign in to access your account."
