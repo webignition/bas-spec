@@ -19,6 +19,8 @@ The `assertions` property is a list of [assertions](/assertion-syntax.md).
 
 All actions take the form of a verb followed by zero or more arguments and keywords.
 
+Action arguments can be represented by placeholders. The passing of values to replace placeholders is yet to be documented.
+
 ```yaml
 actions:
   - ...
@@ -31,12 +33,24 @@ assertions:
   - ...
 ```
 
-## Example
+## Examples
+
+### Without placeholders
+
 ```yaml
 actions:
   - open "https://example.com"
 
 assertions:
   - "title" is "Example Domain"
-  - "h1" is "Example Domain"
+```
+
+### With placeholders
+
+```yaml
+actions:
+  - open {{ url }}
+
+assertions:
+  - {{ title_selector }} is {{ expected_title }}
 ```
