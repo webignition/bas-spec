@@ -1,0 +1,8 @@
+url: https://gears.simplytestable.com/signin/
+elements:
+  title: "title"
+  body: "body.sign-in"
+  email_input: "#email"
+  password_input: "#password"
+  sign_in_button: ".btn.btn-sign-in"
+
