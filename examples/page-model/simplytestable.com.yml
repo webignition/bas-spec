@@ -1,0 +1,5 @@
+url: https://simplytestable.com/
+elements:
+  title: "title"
+  body_not_logged_in: "body.not-logged-in"
+  sign_in_button: ".btn.btn-sign-in"
