@@ -1,5 +1,5 @@
 "open https://simplytestable.com":
-  steps:
+  actions:
     - open "https://simplytestable.com"
 
   assertions:
@@ -7,7 +7,7 @@
     - "body.not-logged-in" exists
 
 "navigate to sign in page":
-  steps:
+  actions:
     - click ".btn.btn-sign-in"
 
   assertions:
@@ -16,7 +16,7 @@
     - "body.sign-in" exists
 
 "sign in":
-  steps:
+  actions:
     - set "#email" to "user@example.com"
     - set "#password" to "password1"
     - click ".btn.btn-sign-in"
@@ -29,14 +29,14 @@
     - "a[href='/account/']" exists
 
 "navigate to account page":
-  steps:
+  actions:
     - click "a[href='/account/']"
 
   assertions:
     - "title" is "Your account"
 
 "sign out":
-  steps:
+  actions:
     - click ".navbar .sign-out"
 
   assertions:
@@ -45,7 +45,7 @@
     - "body.not-logged-in" exists
 
 "navigate to account page when not signed in":
-  steps:
+  actions:
     - open "https://gears.simplytestable.com/account"
 
   assertions:

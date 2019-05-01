@@ -5,7 +5,7 @@ imports:
   gears_simplytestable_com_account: ../page-model/gears.simplytestable.com.account.yml
 
 "open https://simplytestable.com":
-  steps:
+  actions:
     - open simplytestable_com
 
   assertions:
@@ -13,7 +13,7 @@ imports:
     - simplytestable_com.elements.body_not_logged_in exists
 
 "navigate to sign in page":
-  steps:
+  actions:
     - click simplytestable_com.elements.sign_in_button
 
   assertions:
@@ -22,7 +22,7 @@ imports:
     - gears_simplytestable_com_sign_in.elements.body exists
 
 "sign in":
-  steps:
+  actions:
     - set gears_simplytestable_com_sign_in.elements.email_input to "user@example.com"
     - set gears_simplytestable_com_sign_in.elements.password_input to "password1"
     - click gears_simplytestable_com_sign_in.elements.sign_in_button
@@ -35,7 +35,7 @@ imports:
     - gears_simplytestable_com_dashboard.elements.account_link exists
 
 "navigate to account page":
-  steps:
+  actions:
     - click gears_simplytestable_com_dashboard.elements.account_link
 
   assertions:
@@ -43,7 +43,7 @@ imports:
     - gears_simplytestable_com_account.elements.title is "Your account"
 
 "sign out":
-  steps:
+  actions:
     - click gears_simplytestable_com_account.elements.sign_out_link
 
   assertions:
@@ -52,7 +52,7 @@ imports:
     - gears_simplytestable_com_dashboard.elements.not_logged_in exists
 
 "navigate to account page when not signed in":
-  steps:
+  actions:
     - open gears_simplytestable_com_account
 
   assertions:
