@@ -1,0 +1,6 @@
+actions:
+  - set ".gLFyf.gsfi" to "example"
+  - click ".FPdoLc.VlcLAe input[name=btnK]"
+
+assertions:
+  - "title" is "example - Google Search"
