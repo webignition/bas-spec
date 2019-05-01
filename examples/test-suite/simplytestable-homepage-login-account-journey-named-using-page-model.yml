@@ -1,8 +1,9 @@
 imports:
-  simplytestable_com: ../page-model/simplytestable.com.yml
-  gears_simplytestable_com_sign_in: ../page-model/gears.simplytestable.com.sign-in.yml
-  gears_simplytestable_com_dashboard: ../page-model/gears.simplytestable.com.dashboard.yml
-  gears_simplytestable_com_account: ../page-model/gears.simplytestable.com.account.yml
+  pages:
+    simplytestable_com: ../page-model/simplytestable.com.yml
+    gears_simplytestable_com_sign_in: ../page-model/gears.simplytestable.com.sign-in.yml
+    gears_simplytestable_com_dashboard: ../page-model/gears.simplytestable.com.dashboard.yml
+    gears_simplytestable_com_account: ../page-model/gears.simplytestable.com.account.yml
 
 "open https://simplytestable.com":
   actions:

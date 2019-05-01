@@ -1,5 +1,6 @@
 imports:
-  google_com: ../page-model/google.com.yml
+  pages:
+    google_com: ../page-model/google.com.yml
 
 "open https://www.google.com":
   actions:
