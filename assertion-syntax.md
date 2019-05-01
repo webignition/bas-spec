@@ -10,7 +10,7 @@ Examples use special tokens to denote non-literal text.
 
 ## Instruction syntax
 
-Assertion instructions take the form of a `selector` followed by a `comparison` and an optional `value`.
+Assertions take the form of a `selector` followed by a `comparison` and an optional `value`.
 
 `{selector} {comparison} [{value}]`
 

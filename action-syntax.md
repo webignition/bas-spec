@@ -1,7 +1,7 @@
-# Instruction Syntax
-A test consists of a sequence of instructions.
+# Action Syntax
+A test starts with of a series of actions.
 
-This document defines the syntax of a single instruction.
+This document defines the syntax of a single action.
 
 ## Format Definitions
 
@@ -10,9 +10,9 @@ Examples use special tokens to denote non-literal text.
 - `{variable-placeholder}`: indicates where a variable value is to be used
 - `[...]`: square brackets denote optional syntax that can be omitted
 
-## Instruction syntax
+## Syntax
 
-All instructions take the form of a verb followed by zero or more arguments and keywords.
+All actions take the form of a verb followed by zero or more arguments and keywords.
 
 `verb [arguments]`
 
