@@ -1,5 +1,5 @@
-# Verification Syntax
-A verification instruction checks whether a given assertion is correct.
+# Assertion Syntax
+An assertion instruction checks whether a given assumption is correct.
 
 ## Format Definitions
 
@@ -10,10 +10,9 @@ Examples use special tokens to denote non-literal text.
 
 ## Instruction syntax
 
-Verification instructions take the form of the `assert` action followed by a `selector`, a `comparison` and an
- optional `value`.
+Assertion instructions take the form of a `selector` followed by a `comparison` and an optional `value`.
 
-`assert {selector} {comparison} [{value}]`
+`{selector} {comparison} [{value}]`
 
 ## Arguments
 
@@ -44,80 +43,80 @@ Used with the `is`, `is-not`, `includes`, `excludes` and `matches` comparisons.
 Checks if the value being compared equals a given value.
 
 #### Syntax
-`assert {selector} is {value}`
+`{selector} is {value}`
 
 Everything after the `is` keyword (except the space after the keyword) is the value to be used.
 
 #### Examples
-- `assert "title" is Homepage`
-- `assert "title" is "Homepage"` (double quotes are taken literally)
-- `assert "a[href=/sign-in/"] is Sign in`
+- `"title" is Homepage`
+- `"title" is "Homepage"` (double quotes are taken literally)
+- `"a[href=/sign-in/"] is Sign in`
 
 ### is-not
 
 Checks if the value being compared does not equal a given value.
 
 #### Syntax
-`assert {selector} is-not {value}`
+`{selector} is-not {value}`
 
 Everything after the `is-not` keyword (except the space after the keyword) is the value to be used.
 
 #### Examples
-- `assert "title" is-not Account`
-- `assert "a[href=/sign-in/"] is-not My Account`
+- `"title" is-not Account`
+- `"a[href=/sign-in/"] is-not My Account`
 
 ### includes
 
 Checks if the value being compared contains a given value.
 
 #### Syntax
-`assert {selector} includes {value}`
+`{selector} includes {value}`
 
 Everything after the `includes` keyword (except the space after the keyword) is the value to be used.
 
 #### Examples
-- `assert "title" includes account`
+- `"title" includes account`
 
 ### excludes
 
 Checks if the value being compared does not contain a given value.
 
 #### Syntax
-`assert {selector} excludes {value}`
+`{selector} excludes {value}`
 
 Everything after the `excludes` keyword (except the space after the keyword) is the value to be used.
 
 #### Examples
-- `assert "title" excludes Homepage`
+- `"title" excludes Homepage`
 
 ### exists
 
 Checks if the element identified by the `selector` exists on the page.
 
 #### Syntax
-`assert {selector} exists`
+`{selector} exists`
 
 #### Examples
-- `assert "p.sign-in-warning" exists`
+- `"p.sign-in-warning" exists`
 
 ### not-exists
 
 Checks if the element identified by the `selector` does not exist on the page.
 
 #### Syntax
-`assert {selector} not-exists`
+`{selector} not-exists`
 
 #### Examples
-- `assert "p.sign-in-warning" not-exists`
+- `"p.sign-in-warning" not-exists`
 
-### is 
+### matches 
 
 Checks if the value being compared matches a given regular expression.
 
 #### Syntax
-`assert {selector} matches {regex}`
+`{selector} matches {regex}`
 
 Everything after the `matches` keyword (except the space after the keyword) is the regular expression to be used.
 
 #### Examples
-- `assert "title" matches /homepage$/i`
+- `"title" matches /homepage$/i`
