@@ -1,8 +1,14 @@
 "open https://www.google.com":
-  - open "https://www.google.com"
-  - assert "title" is "Google"
+  steps:
+    - open "https://www.google.com"
+
+  assertions:
+    - "title" is "Google"
 
 "query 'example'":
-  - set ".gLFyf.gsfi" to "example"
-  - click ".FPdoLc.VlcLAe input[name=btnK]"
-  - assert "title" is "example - Google Search"
+  steps:
+    - set ".gLFyf.gsfi" to "example"
+    - click ".FPdoLc.VlcLAe input[name=btnK]"
+
+  assertions:
+    - "title" is "example - Google Search"
