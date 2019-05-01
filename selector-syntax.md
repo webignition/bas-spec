@@ -1,7 +1,7 @@
 # Selector Syntax
 
 A `selector` is a string identifying one or more page elements and is used in conjunction with the 
-`assert`, `click`,  `set`, `submit` and `wait-for` actions.
+`click`,  `set`, `submit` and `wait-for` actions and with [assertion instructions](/assertion-syntax.md).
 
 ## Syntax
 
