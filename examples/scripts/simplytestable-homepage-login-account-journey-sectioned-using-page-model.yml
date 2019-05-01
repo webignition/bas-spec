@@ -1,0 +1,44 @@
+imports:
+  simplytestable_com: ../page-model/simplytestable.com.yml
+  gears_simplytestable_com_sign_in: ../page-model/gears.simplytestable.com.sign-in.yml
+  gears_simplytestable_com_dashboard: ../page-model/gears.simplytestable.com.dashboard.yml
+  gears_simplytestable_com_account: ../page-model/gears.simplytestable.com.account.yml
+
+"open https://simplytestable.com":
+  - open simplytestable_com
+  - assert simplytestable_com.elements.title contains "homepage"
+  - assert simplytestable_com.elements.body_not_logged_in exists
+
+"navigate to sign in page":
+  - click simplytestable_com.elements.sign_in_button
+  - assert url is gears_simplytestable_com_sign_in
+  - assert gears_simplytestable_com_sign_in.elements.title is "Sign in"
+  - assert gears_simplytestable_com_sign_in.elements.body exists
+
+"sign in":
+  - set gears_simplytestable_com_sign_in.elements.email_input to "user@example.com"
+  - set gears_simplytestable_com_sign_in.elements.password_input to "password1"
+  - click gears_simplytestable_com_sign_in.elements.sign_in_button
+  - assert url is gears_simplytestable_com_dashboard
+  - assert gears_simplytestable_com_dashboard.elements.title contains "dashboard"
+  - assert gears_simplytestable_com_dashboard.elements.body_dashboard exsits
+  - assert gears_simplytestable_com_dashboard.elements.logged_in exists
+
+"navigate to account page":
+  - assert gears_simplytestable_com_dashboard.elements.account_link exists
+  - click gears_simplytestable_com_dashboard.elements.account_link
+  - assert url is gears_simplytestable_com_account
+  - assert gears_simplytestable_com_account.elements.title is "Your account"
+
+"sign out":
+  - click gears_simplytestable_com_account.elements.sign_out_link
+  - assert url is gears_simplytestable_com_dashboard
+  - assert gears_simplytestable_com_dashboard.elements.title contains "dashboard"
+  - assert gears_simplytestable_com_dashboard.elements.not_logged_in exists
+
+"navigate to account page when not signed in":
+  - open gears_simplytestable_com_account
+  - assert url is gears_simplytestable_com_sign_in
+  - assert gears_simplytestable_com_sign_in.elements.title is "Sign in"
+  - assert gears_simplytestable_com_sign_in.elements.alert_notification exists
+  - assert gears_simplytestable_com_sign_in.elements.alert_notification contains "You need to sign in to access your account."

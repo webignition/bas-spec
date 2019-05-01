@@ -1,0 +1,11 @@
+imports:
+  google_com: ../page-model/google.com.yml
+
+"open https://www.google.com":
+  - open google_com
+  - assert google_com.elements.title is "Google"
+
+"query 'example'":
+  - set google_com.elements.search_input to "example"
+  - click google_com.elements.search_button
+  - assert google_com.elements.title is "example - Google Search"
