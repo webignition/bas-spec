@@ -1,0 +1,10 @@
+imports:
+  tests:
+    google_search_open_url: ../test/google-search-open-url.yaml
+    google_search_query_example: ../test/google-search-query-example.yaml
+
+"open https://www.google.com":
+  - google_search_open_url
+
+"query 'example'":
+  - google_search_query_example
