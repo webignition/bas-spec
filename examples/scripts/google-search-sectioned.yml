@@ -1,12 +1,12 @@
 "open https://www.google.com":
-  steps:
+  actions:
     - open "https://www.google.com"
 
   assertions:
     - "title" is "Google"
 
 "query 'example'":
-  steps:
+  actions:
     - set ".gLFyf.gsfi" to "example"
     - click ".FPdoLc.VlcLAe input[name=btnK]"
 
