@@ -1,5 +1,6 @@
 actions:
-  - open {{ url}}
+  - open {{ url }}
 
 assertions:
+  - url is {{ url }}
   - {{ title_selector}} is {{ expected_title }}
