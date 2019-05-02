@@ -31,4 +31,4 @@ elements:
 
 ## Using a Page Model Within a Test Suite
 
-Refer to the test suite example for [importing and using a page model](/test-suite-syntax.md).
+Refer to the test suite example for [importing and using a page model](/test-suite-syntax.md#page-model-imported-into-the-test-suite).
