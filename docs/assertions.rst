@@ -12,9 +12,9 @@ An assertion takes the form of an ``identifier`` followed by a ``comparison`` an
 
 ``{identifier} {comparison} [{value}]``
 
----------------
-Comparison List
----------------
+-----------
+Comparisons
+-----------
 
 - :ref:`is <comparisons-is>`
 - :ref:`is-not <comparisons-is-not>`
@@ -25,7 +25,7 @@ Comparison List
 .. _comparisons-is:
 
 --
-is
+Is
 --
 
 Checks if the value being compared equals a given value.
@@ -58,7 +58,7 @@ Examples
 .. _comparisons-is-not:
 
 ------
-is-not
+Is-not
 ------
 
 Checks if the value being compared does not equal a given value.
@@ -91,7 +91,7 @@ Examples
 .. _comparisons-includes:
 
 --------
-includes
+Includes
 --------
 
 Checks if the value being compared contains a given value.
@@ -123,7 +123,7 @@ Examples
 .. _comparisons-excludes:
 
 --------
-excludes
+Excludes
 --------
 
 Checks if the value being compared does not contain a given value.
@@ -155,7 +155,7 @@ Examples
 .. _comparisons-matches:
 
 -------
-matches
+Matches
 -------
 
 Checks if the value being compared matches a given regular expression.
