@@ -30,3 +30,4 @@ Goals:
     actions
     assertions
     browser-properties
+    identifiers
