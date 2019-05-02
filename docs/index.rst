@@ -3,18 +3,21 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Project Name's documentation!
-========================================
+Basil Language Documentation
+============================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+Basil (**B**\ rowser **A**\ utomation **S**\ cript **I**\ ntermediary **L**\ anguage) is a scripting language for web
+browser automation.
 
+Basil defines:
 
+* ``actions`` to be performed to get a browser into a desired state
+* ``assertions`` to verify the browser state
+* ``tests`` and ``test suites`` to arrange collections of actions and assertions
+* ``page models`` to de-couple tests from the pages being tested
 
-Indices and tables
-==================
+Goals:
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+* concise when compared to equivalent WebDriver-powered code
+* human-readable, understandable by non-developers
+* transpilable to a target language for execution
