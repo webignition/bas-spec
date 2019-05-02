@@ -24,7 +24,6 @@ elements:
 ```yaml
 url: https://www.google.com
 elements:
-  title: "title"
   search_input: ".gLFyf.gsfi"
   search_button: ".FPdoLc.VlcLAe input[name=btnK]"
 ```

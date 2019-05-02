@@ -3,7 +3,7 @@
     - open "https://www.google.com"
 
   assertions:
-    - "title" is "Google"
+    - browser.title is "Google"
 
 "query 'example'":
   actions:
@@ -11,4 +11,4 @@
     - click ".FPdoLc.VlcLAe input[name=btnK]"
 
   assertions:
-    - "title" is "example - Google Search"
+    - browser.title is "example - Google Search"

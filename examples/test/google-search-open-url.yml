@@ -2,4 +2,4 @@ actions:
   - open "https://www.google.com"
 
 assertions:
-  - "title" is "Google"
+  - browser.title is "Google"

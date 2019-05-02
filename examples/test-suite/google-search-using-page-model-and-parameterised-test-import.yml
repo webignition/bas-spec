@@ -7,7 +7,6 @@ imports:
 "open https://www.google.com":
   open_url:
     url: google_com
-    title_selector: google_com.elements.title
     expected_title: "Google"
 
 "query 'example'":
@@ -16,4 +15,4 @@ imports:
     - click google_com.elements.search_button
 
   assertions:
-    - google_com.elements.title is "example - Google Search"
+    - browser.title is "example - Google Search"

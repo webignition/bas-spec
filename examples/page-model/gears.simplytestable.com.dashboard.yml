@@ -1,6 +1,5 @@
 url: https://gears.simplytestable.com
 elements:
-  title: "title"
   body_dashboard: "body.dashboard"
   body_logged_in: "body.logged-in"
   body_not_logged_in: "body.not-logged-in"

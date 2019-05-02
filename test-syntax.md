@@ -35,7 +35,7 @@ actions:
   - open "https://example.com"
 
 assertions:
-  - "title" is "Example Domain"
+  - browser.title is "Example Domain"
 ```
 
 ### With placeholders
@@ -45,5 +45,5 @@ actions:
   - open {{ url }}
 
 assertions:
-  - {{ title_selector }} is {{ expected_title }}
+  - browser.title is {{ expected_title }}
 ```

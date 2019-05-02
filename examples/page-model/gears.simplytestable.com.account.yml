@@ -1,6 +1,5 @@
 url: https://gears.simplytestable.com/account/
 elements:
-  title: "title"
   body_dashboard: "body.dashboard"
   body_logged_in: "body.logged-in"
   account_link: "a[href$='/account/']"
