@@ -34,10 +34,6 @@ open
 
 Visit a URL in the browser.
 
-******
-Syntax
-******
-
 ``open {url} [in {browser}]``
 
 *********
@@ -71,10 +67,6 @@ click
 
 Click on an element.
 
-******
-Syntax
-******
-
 ``click {identifier}``
 
 *********
@@ -102,10 +94,6 @@ set
 ---
 
 Set the value of an element. Most applicable to form field elements.
-
-******
-Syntax
-******
 
 ``set {identifier} to {value}``
 
@@ -139,10 +127,6 @@ submit
 
 Submits a form.
 
-******
-Syntax
-******
-
 ``submit {identifier}``
 
 *********
@@ -169,10 +153,6 @@ wait
 ----
 
 Wait for a specified number of seconds.
-
-******
-Syntax
-******
 
 ``wait {number-of-seconds}``
 
@@ -201,10 +181,6 @@ wait-for
 
 Wait for an element to be rendered. Waits for up to 30 seconds.
 
-******
-Syntax
-******
-
 ``wait-for {identifier}``
 
 *********
@@ -232,10 +208,6 @@ reload
 
 Reload the current page.
 
-******
-Syntax
-******
-
 ``reload``
 
 .. _actions-forward:
@@ -246,10 +218,6 @@ forward
 
 Move forward one item in the current session history.
 
-******
-Syntax
-******
-
 ``forward``
 
 .. _actions-back:
@@ -259,9 +227,5 @@ back
 ----
 
 Move back one item in the current session history.
-
-******
-Syntax
-******
 
 ``back``
