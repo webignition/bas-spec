@@ -117,7 +117,6 @@ imports:
 
 ```yaml
 # test/open-url-parameterised.yml
-
 actions:
   - open {{ url }}
 
@@ -127,6 +126,7 @@ assertions:
 ```
 
 ```yaml
+# test-suite.yml
 imports:
   tests:
     # Import name cannot be 'actions' or 'assertions'
@@ -143,7 +143,6 @@ imports:
 
 ```yaml
 # test/google-search-open-url.yml
-
 actions:
   - open "https://www.google.com"
 
@@ -153,7 +152,6 @@ assertions:
 
 ```yaml
 # test/google-search-query-example.yml
-
 actions:
   - set ".gLFyf.gsfi" to "example"
   - click ".FPdoLc.VlcLAe input[name=btnK]"
@@ -163,6 +161,7 @@ assertions:
 ```
 
 ```yaml
+# test-suite.yml
 imports:
   tests:
     google_search_open_url: test/google-search-open-url.yml
@@ -182,7 +181,6 @@ imports:
 
 ```yaml
 # page/google.com.yml
-
 url: https://www.google.com
 elements:
   title: "title"
@@ -191,6 +189,7 @@ elements:
 ```
 
 ```yaml
+# test-suite.yml
 imports:
   pages:
     google_com: page/google.com.yml
