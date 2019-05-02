@@ -130,7 +130,7 @@ assertions:
 imports:
   tests:
     # Import name cannot be 'actions' or 'assertions'
-    open_url: ../test/open-url-parameterised.yml
+    open_url: test/open-url-parameterised.yml
 
 "open https://www.google.com":
   open_url:
