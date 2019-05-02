@@ -5,7 +5,7 @@ imports:
     gears_simplytestable_com_dashboard: ../page-model/gears.simplytestable.com.dashboard.yml
     gears_simplytestable_com_account: ../page-model/gears.simplytestable.com.account.yml
   tests:
-    open_url: ../test/open-url-parameterised.yaml
+    open_url: ../test/open-url-parameterised.yml
 
 "open https://simplytestable.com":
   open_url:

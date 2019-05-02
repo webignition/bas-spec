@@ -1,6 +1,6 @@
 imports:
   tests:
-    open_url: ../test/open-url-parameterised.yaml
+    open_url: ../test/open-url-parameterised.yml
 
 "open https://simplytestable.com":
   open_url:
