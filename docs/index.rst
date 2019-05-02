@@ -29,3 +29,4 @@ Goals:
 
     actions
     assertions
+    browser-properties
