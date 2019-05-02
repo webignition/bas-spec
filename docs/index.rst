@@ -3,6 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+============================
 Basil Language Documentation
 ============================
 
@@ -21,3 +22,9 @@ Goals:
 * concise when compared to equivalent WebDriver-powered code
 * human-readable, understandable by non-developers
 * transpilable to a target language for execution
+
+.. toctree::
+    :caption: Reference
+    :maxdepth: 3
+
+    actions
