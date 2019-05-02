@@ -10,15 +10,21 @@ Examples use special tokens to denote non-literal text.
 
 ## Instruction syntax
 
-Assertions take the form of a `selector` followed by a `comparison` and an optional `value`.
+Assertions take the form of a `selector` or `element_reference` followed by a `comparison` and an optional `value`.
 
-`{selector} {comparison} [{value}]`
+Either the `selector` or `element_reference` must be provided but not both.
+
+`{selector}|{element_reference} {comparison} [{value}]`
 
 ## Arguments
 
 **`selector`**
 
 Any valid [`selector`](/selector-syntax.md).
+
+**`element_reference`**
+
+Any valid [element reference](/page-model-element-reference-syntax.md).
 
 **`comparison`**
 
@@ -34,7 +40,8 @@ One of:
 Used with the `is`, `is-not`, `includes`, `excludes` and `matches` comparisons.
 
 `is`, `is-not`, `includes` and `excludes` expect a string value.
-`matches` expects a regular expression
+
+`matches` expects a regular expression.
 
 ## Comparisons
 
