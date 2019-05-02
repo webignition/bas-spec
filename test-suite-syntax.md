@@ -77,6 +77,21 @@ imports:
     - ...
 ```
 
+Page models can be imported and their properties referenced within the test suite.
+
+```yaml
+imports:
+  pages:
+    {import_name}: {import_path}
+
+"open page":
+  actions:
+    - open {import_name}
+    
+  assertions:
+    - {import_name}.elements.{element_name} {comparison} {value}
+```
+
 ## Examples
 
 ### Tests Defined Within The Test Suite
@@ -101,7 +116,7 @@ imports:
 ### Parameterised Tests Imported Into The Test Suite
 
 ```yaml
-# test/open-url-parameterised.yaml
+# test/open-url-parameterised.yml
 
 actions:
   - open {{ url }}
@@ -115,7 +130,7 @@ assertions:
 imports:
   tests:
     # Import name cannot be 'actions' or 'assertions'
-    open_url: ../test/open-url-parameterised.yaml
+    open_url: ../test/open-url-parameterised.yml
 
 "open https://www.google.com":
   open_url:
@@ -127,7 +142,7 @@ imports:
 ### Tests Imported Into The Test Suite With Additional Assertions
 
 ```yaml
-# test/google-search-open-url.yaml
+# test/google-search-open-url.yml
 
 actions:
   - open "https://www.google.com"
@@ -137,7 +152,7 @@ assertions:
 ```
 
 ```yaml
-# test/google-search-query-example.yaml
+# test/google-search-query-example.yml
 
 actions:
   - set ".gLFyf.gsfi" to "example"
@@ -150,8 +165,8 @@ assertions:
 ```yaml
 imports:
   tests:
-    google_search_open_url: test/google-search-open-url.yaml
-    google_search_query_example: test/google-search-query-example.yaml
+    google_search_open_url: test/google-search-open-url.yml
+    google_search_query_example: test/google-search-query-example.yml
 
 "open https://www.google.com":
   - google_search_open_url
@@ -161,4 +176,37 @@ imports:
 
 "query 'example'":
   - google_search_query_example
+```
+
+### Page Model Imported Into The Test Suite
+
+```yaml
+# page/google.com.yml
+
+url: https://www.google.com
+elements:
+  title: "title"
+  search_input: ".gLFyf.gsfi"
+  search_button: ".FPdoLc.VlcLAe input[name=btnK]"
+```
+
+```yaml
+imports:
+  pages:
+    google_com: page/google.com.yml
+
+"open https://www.google.com":
+  actions:
+    - open google_com
+
+  assertions:
+    - google_com.elements.title is "Google"
+
+"query 'example'":
+  actions:
+    - set google_com.elements.search_input to "example"
+    - click google_com.elements.search_button
+
+  assertions:
+    - google_com.elements.title is "example - Google Search"
 ```
