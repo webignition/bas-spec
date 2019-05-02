@@ -25,9 +25,11 @@ Goals:
 
 .. toctree::
     :caption: Reference
-    :maxdepth: 2
+    :maxdepth: 1
 
     actions
     assertions
     browser-properties
     identifiers
+    selectors
+    page-model

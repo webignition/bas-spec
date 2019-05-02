@@ -1,34 +1,17 @@
 .. include:: includes/line-break.rst
 
-===========
-Identifiers
-===========
+=========
+Selectors
+=========
 
-An ``identifier`` uniquely identifies an element within a page. This may take the form of a:
-
-- a :doc:`selector </selectors>` (a CSS selector or XPath query)
-- page model element reference
+A ``selector`` uniquely identifies an element within a page with the use of a CSS selector or XPath query.
+A ``selector`` is one form of :doc:`identifier </identifiers>`.
 
 ------
 Syntax
 ------
 
-For CSS selectors or XPath queries:
-
 .. include:: includes/selectors-syntax.rst
-
-For page model element references:
-
-``{import-name}.elements.{element-name}``
-
-.. list-table::
-    :widths: 10 90
-    :stub-columns: 1
-
-    * - ``import-name``
-      - The name chosen when importing a page model.
-    * - ``element-name``
-      - The element name as defined in the page model.
 
 --------
 Examples
@@ -55,6 +38,3 @@ Examples
 
     * - ``".listed-item":1``
       - Special position keyword ``last`` fetches the last matching item.
-
-    * - ``google_com.elements.search_button``
-      - Page model element reference.
