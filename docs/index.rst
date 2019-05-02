@@ -28,3 +28,4 @@ Goals:
     :maxdepth: 2
 
     actions
+    assertions

@@ -12,9 +12,9 @@ An action takes the form of a verb followed by zero or more arguments and keywor
 
 ``{verb} [arguments] [keywords]``
 
----------
-Verb List
----------
+-----
+Verbs
+-----
 
 - :ref:`open <actions-open>`
 - :ref:`click <actions-click>`
@@ -29,7 +29,7 @@ Verb List
 .. _actions-open:
 
 ----
-open
+Open
 ----
 
 Visit a URL in the browser.
@@ -62,7 +62,7 @@ Examples
 .. _actions-click:
 
 -----
-click
+Click
 -----
 
 Click on an element.
@@ -90,7 +90,7 @@ Examples
 .. _actions-set:
 
 ---
-set
+Set
 ---
 
 Set the value of an element. Most applicable to form field elements.
@@ -122,7 +122,7 @@ Examples
 .. _actions-submit:
 
 ------
-submit
+Submit
 ------
 
 Submits a form.
@@ -149,7 +149,7 @@ Examples
 .. _actions-wait:
 
 ----
-wait
+Wait
 ----
 
 Wait for a specified number of seconds.
@@ -176,7 +176,7 @@ Examples
 .. _actions-wait-for:
 
 --------
-wait-for
+Wait-for
 --------
 
 Wait for an element to be rendered. Waits for up to 30 seconds.
@@ -203,7 +203,7 @@ Examples
 .. _actions-reload:
 
 ------
-reload
+Reload
 ------
 
 Reload the current page.
@@ -213,7 +213,7 @@ Reload the current page.
 .. _actions-forward:
 
 -------
-forward
+Forward
 -------
 
 Move forward one item in the current session history.
@@ -223,7 +223,7 @@ Move forward one item in the current session history.
 .. _actions-back:
 
 ----
-back
+Back
 ----
 
 Move back one item in the current session history.
