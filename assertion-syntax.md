@@ -48,8 +48,8 @@ Checks if the value being compared equals a given value.
 Everything after the `is` keyword (except the space after the keyword) is the value to be used.
 
 #### Examples
-- `"title" is Homepage`
-- `"title" is "Homepage"` (double quotes are taken literally)
+- `browser.title is Homepage`
+- `browser.title is "Homepage"` (double quotes are taken literally)
 - `"a[href=/sign-in/"] is Sign in`
 
 ### is-not
@@ -62,7 +62,7 @@ Checks if the value being compared does not equal a given value.
 Everything after the `is-not` keyword (except the space after the keyword) is the value to be used.
 
 #### Examples
-- `"title" is-not Account`
+- `browser.title is-not Account`
 - `"a[href=/sign-in/"] is-not My Account`
 
 ### includes
@@ -75,7 +75,7 @@ Checks if the value being compared contains a given value.
 Everything after the `includes` keyword (except the space after the keyword) is the value to be used.
 
 #### Examples
-- `"title" includes account`
+- `browser.title includes account`
 
 ### excludes
 
@@ -87,7 +87,7 @@ Checks if the value being compared does not contain a given value.
 Everything after the `excludes` keyword (except the space after the keyword) is the value to be used.
 
 #### Examples
-- `"title" excludes Homepage`
+- `browser.title excludes Homepage`
 
 ### exists
 
@@ -119,4 +119,4 @@ Checks if the value being compared matches a given regular expression.
 Everything after the `matches` keyword (except the space after the keyword) is the regular expression to be used.
 
 #### Examples
-- `"title" matches /homepage$/i`
+- `browser.title matches /homepage$/i`

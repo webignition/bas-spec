@@ -3,7 +3,7 @@
     - open "https://simplytestable.com"
 
   assertions:
-    - "title" contains "homepage"
+    - browser.title contains "homepage"
     - "body.not-logged-in" exists
 
 "navigate to sign in page":
@@ -11,8 +11,8 @@
     - click ".btn.btn-sign-in"
 
   assertions:
-    - url is "https://gears.simplytestable.com/signin/"
-    - "title" is "Sign in"
+    - browser.url is "https://gears.simplytestable.com/signin/"
+    - browser.title is "Sign in"
     - "body.sign-in" exists
 
 "sign in":
@@ -22,8 +22,8 @@
     - click ".btn.btn-sign-in"
 
   assertions:
-    - url is "https://gears.simplytestable.com/"
-    - "title" contains "dashboard"
+    - browser.url is "https://gears.simplytestable.com/"
+    - browser.title contains "dashboard"
     - "body.dashboard" exists
     - "body.logged-in" exists
     - "a[href='/account/']" exists
@@ -33,15 +33,15 @@
     - click "a[href='/account/']"
 
   assertions:
-    - "title" is "Your account"
+    - browser.title is "Your account"
 
 "sign out":
   actions:
     - click ".navbar .sign-out"
 
   assertions:
-    - url is "https://gears.simplytestable.com/"
-    - "title" contains "dashboard"
+    - browser.url is "https://gears.simplytestable.com/"
+    - browser.title contains "dashboard"
     - "body.not-logged-in" exists
 
 "navigate to account page when not signed in":
@@ -49,6 +49,6 @@
     - open "https://gears.simplytestable.com/account"
 
   assertions:
-    - "title" is "Sign in"
+    - browser.title is "Sign in"
     - ".alert" exists
     - ".alert" contains "You need to sign in to access your account."

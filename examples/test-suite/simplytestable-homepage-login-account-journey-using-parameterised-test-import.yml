@@ -5,7 +5,6 @@ imports:
 "open https://simplytestable.com":
   open_url:
     url: "https://simplytestable.com"
-    title_selector: "title"
     expected_title: "homepage"
 
   assertions:
@@ -16,8 +15,8 @@ imports:
     - click ".btn.btn-sign-in"
 
   assertions:
-    - url is "https://gears.simplytestable.com/signin/"
-    - "title" is "Sign in"
+    - browser.url is "https://gears.simplytestable.com/signin/"
+    - browser.title is "Sign in"
     - "body.sign-in" exists
 
 "sign in":
@@ -27,8 +26,8 @@ imports:
     - click ".btn.btn-sign-in"
 
   assertions:
-    - url is "https://gears.simplytestable.com/"
-    - "title" contains "dashboard"
+    - browser.url is "https://gears.simplytestable.com/"
+    - browser.title contains "dashboard"
     - "body.dashboard" exists
     - "body.logged-in" exists
     - "a[href='/account/']" exists
@@ -38,21 +37,21 @@ imports:
     - click "a[href='/account/']"
 
   assertions:
-    - "title" is "Your account"
+    - browser.title is "Your account"
 
 "sign out":
   actions:
     - click ".navbar .sign-out"
 
   assertions:
-    - url is "https://gears.simplytestable.com/"
-    - "title" contains "dashboard"
+    - browser.url is "https://gears.simplytestable.com/"
+    - browser.title contains "dashboard"
     - "body.not-logged-in" exists
 
 "navigate to account page when not signed in":
   open_url:
     url: "https://gears.simplytestable.com/account"
-    title_selector: "title"
+    title_selector: browser.title
     expected_title: "Sign in"
 
   assertions:

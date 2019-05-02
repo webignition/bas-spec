@@ -2,5 +2,5 @@ actions:
   - open {{ url }}
 
 assertions:
-  - url is {{ url }}
-  - {{ title_selector}} is {{ expected_title }}
+  - browser.url is {{ url }}
+  - browser.title is {{ expected_title }}

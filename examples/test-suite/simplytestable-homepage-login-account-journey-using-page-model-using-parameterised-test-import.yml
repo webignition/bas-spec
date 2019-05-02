@@ -10,7 +10,6 @@ imports:
 "open https://simplytestable.com":
   open_url:
     url: simplytestable_com
-    title_selector: simplytestable_com.elements.title
     expected_title: "homepage"
 
   assertions:
@@ -21,8 +20,8 @@ imports:
     - click simplytestable_com.elements.sign_in_button
 
   assertions:
-    - url is gears_simplytestable_com_sign_in
-    - gears_simplytestable_com_sign_in.elements.title is "Sign in"
+    - browser.url is gears_simplytestable_com_sign_in
+    - browser.title is "Sign in"
     - gears_simplytestable_com_sign_in.elements.body exists
 
 "sign in":
@@ -32,8 +31,8 @@ imports:
     - click gears_simplytestable_com_sign_in.elements.sign_in_button
 
   assertions:
-    - url is gears_simplytestable_com_dashboard
-    - gears_simplytestable_com_dashboard.elements.title contains "dashboard"
+    - browser.url is gears_simplytestable_com_dashboard
+    - browser.title contains "dashboard"
     - gears_simplytestable_com_dashboard.elements.body_dashboard exists
     - gears_simplytestable_com_dashboard.elements.logged_in exists
     - gears_simplytestable_com_dashboard.elements.account_link exists
@@ -43,22 +42,21 @@ imports:
     - click gears_simplytestable_com_dashboard.elements.account_link
 
   assertions:
-    - url is gears_simplytestable_com_account
-    - gears_simplytestable_com_account.elements.title is "Your account"
+    - browser.url is gears_simplytestable_com_account
+    - browser.title is "Your account"
 
 "sign out":
   actions:
     - click gears_simplytestable_com_account.elements.sign_out_link
 
   assertions:
-    - url is gears_simplytestable_com_dashboard
-    - gears_simplytestable_com_dashboard.elements.title contains "dashboard"
+    - browser.url is gears_simplytestable_com_dashboard
+    - browser.title contains "dashboard"
     - gears_simplytestable_com_dashboard.elements.not_logged_in exists
 
 "navigate to account page when not signed in":
   open_url:
     url: gears_simplytestable_com_account
-    title_selector: gears_simplytestable_com_sign_in.elements.title
     expected_title: "Sign in"
 
   assertions:

@@ -5,7 +5,6 @@ imports:
 "open https://www.google.com":
   open_url:
     url: "https://www.google.com"
-    title_selector: "title"
     expected_title: "Google"
 
 "query 'example'":
@@ -14,4 +13,4 @@ imports:
     - click ".FPdoLc.VlcLAe input[name=btnK]"
 
   assertions:
-    - "title" is "example - Google Search"
+    - browser.title is "example - Google Search"

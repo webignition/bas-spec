@@ -102,7 +102,7 @@ imports:
     - open "https://www.google.com"
 
   assertions:
-    - "title" is "Google"
+    - browser.title is "Google"
 
 "query 'example'":
   actions:
@@ -110,7 +110,7 @@ imports:
     - click ".FPdoLc.VlcLAe input[name=btnK]"
 
   assertions:
-    - "title" is "example - Google Search"
+    - browser.title is "example - Google Search"
 ```
 
 ### Parameterised Tests Imported Into The Test Suite
@@ -135,7 +135,7 @@ imports:
 "open https://www.google.com":
   open_url:
     url: "https://www.google.com"
-    title_selector: "title"
+    title_selector: browser.title
     expected_title: "Google"
 ```
 
@@ -147,7 +147,7 @@ actions:
   - open "https://www.google.com"
 
 assertions:
-  - "title" is "Google"
+  - browser.title is "Google"
 ```
 
 ```yaml
@@ -157,7 +157,7 @@ actions:
   - click ".FPdoLc.VlcLAe input[name=btnK]"
 
 assertions:
-  - "title" is "example - Google Search"
+  - browser.title is "example - Google Search"
 ```
 
 ```yaml
@@ -183,7 +183,7 @@ imports:
 # page/google.com.yml
 url: https://www.google.com
 elements:
-  title: "title"
+  title: browser.title
   search_input: ".gLFyf.gsfi"
   search_button: ".FPdoLc.VlcLAe input[name=btnK]"
 ```
