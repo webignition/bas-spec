@@ -199,7 +199,7 @@ imports:
     - open google_com
 
   assertions:
-    - google_com.elements.title is "Google"
+    - browser.title is "Google"
 
 "query 'example'":
   actions:
@@ -207,5 +207,5 @@ imports:
     - click google_com.elements.search_button
 
   assertions:
-    - google_com.elements.title is "example - Google Search"
+    - browser.title is "example - Google Search"
 ```
