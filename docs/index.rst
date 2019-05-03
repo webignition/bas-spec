@@ -33,3 +33,4 @@ Goals:
     identifiers
     selectors
     page-model
+    tests
