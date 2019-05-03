@@ -1,0 +1,15 @@
+# test-suite/google-search-query-literal.yml
+"open https://www.google.com":
+  actions:
+    - open "https://www.google.com"
+
+  assertions:
+    - browser.title is Google
+
+"query 'example'":
+  actions:
+    - set ".gLFyf.gsfi" to example
+    - click ".FPdoLc.VlcLAe input[name=btnK]"
+
+  assertions:
+    - browser.title is example - Google Search

@@ -1,0 +1,13 @@
+imports:
+  tests:
+    {import-name}: {import-path}
+
+{first-test-name}:
+  - {import-name}
+
+{second-test-name}:
+  actions:
+    {actions}
+
+  assertions:
+    {assertions}

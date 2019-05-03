@@ -24,12 +24,4 @@ The page title (content of the ``<title>`` element).
 Example
 -------
 
-.. code-block:: yaml
-
-    # test.yml
-    actions:
-     - open "https://www.google.com"
-
-    assertions:
-      - browser.url is https://www.google.com
-      - browser.title is "Google"
+.. literalinclude:: includes/examples/test/google-open-literal.yml

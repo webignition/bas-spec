@@ -1,0 +1,17 @@
+# test-suite/google-search-query-parameterised.yml
+imports:
+  tests:
+    query_test: test/google-search-query-parameterised.yml
+  data_providers:
+    google_search_query_data: data-provider/google-search-query-parameterised.yml
+
+"open https://www.google.com":
+  actions:
+    - open "https://www.google.com"
+
+  assertions:
+    - browser.title is Google
+
+"query":
+  query_test:
+    data: google_search_query_data

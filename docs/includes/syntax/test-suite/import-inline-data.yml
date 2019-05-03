@@ -1,0 +1,12 @@
+imports:
+  tests:
+    {import-name}: {import-path}
+
+data:
+  {data-collection-name}:
+    {dataset-name-1}:
+    {parameter-name}: {parameter-value}
+
+{test-name}:
+  {import-name}:
+    data: {data-collection-name}

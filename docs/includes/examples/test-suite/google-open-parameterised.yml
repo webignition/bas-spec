@@ -1,0 +1,14 @@
+# test-suite/google-open-parameterised.yml
+imports:
+  tests:
+    open_url_test: test/open-url-parameterised.yml
+
+data:
+  open_url_data:
+    -
+      url: "https://www.google.com"
+      expected_title: "Google"
+
+"open https://www.google.com":
+  open_url_test:
+    data: data.open_url_data

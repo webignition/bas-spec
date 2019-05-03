@@ -1,0 +1,7 @@
+# test/open-url-parameterised.yml
+actions:
+  - open {{ url }}
+
+assertions:
+  - browser.url is {{ url }}
+  - browser.title is {{ expected_title }}
