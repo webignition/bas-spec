@@ -7,7 +7,7 @@ This document defines the syntax of a single action.
 
 Examples use special tokens to denote non-literal text. 
 
-- `{variable-placeholder}`: indicates where a variable value is to be used
+- `{variable}`: indicates where a variable value is to be used
 - `[...]`: square brackets denote optional syntax that can be omitted
 
 ## Syntax

@@ -16,8 +16,8 @@ A test is a YAML object with ``actions`` and ``assertions`` properties.
 The `actions` property is a list of :doc:`actions </actions>`.
 The `assertions` property is a list of :doc:`assertions </assertions>`.
 
-Action arguments and assertion values can be represented by placeholders. Values for placeholders are passed in
-test suites.
+Action arguments and assertion values can be represented by named parameters. Values for parameters are passed in
+:doc:`test suites </test-suites>`.
 
 .. code-block:: yaml
 
@@ -35,9 +35,9 @@ test suites.
 Examples
 --------
 
-********************
-Without Placeholders
-********************
+******************
+Without Parameters
+******************
 
 .. code-block:: yaml
 
@@ -48,9 +48,9 @@ Without Placeholders
       - browser.url is https://example.com
       - browser.title is Example Domain
 
-*****************
-With Placeholders
-*****************
+***************
+With Parameters
+***************
 
 .. code-block:: yaml
 
