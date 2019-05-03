@@ -12,7 +12,7 @@ The `assertions` property is a list of [assertions](/assertion-syntax.md).
 
 All actions take the form of a verb followed by zero or more arguments and keywords.
 
-Action arguments can be represented by placeholders. Values for placeholders are passed in [test suites](/test-suite-syntax.md).
+Action arguments can be represented by named parameters. Values for parameters are passed in [test suites](/test-suite-syntax.md).
 
 ```yaml
 actions:
@@ -28,7 +28,7 @@ assertions:
 
 ## Examples
 
-### Without placeholders
+### Without parameters
 
 ```yaml
 actions:
@@ -38,7 +38,7 @@ assertions:
   - browser.title is "Example Domain"
 ```
 
-### With placeholders
+### With parameters
 
 ```yaml
 actions:
