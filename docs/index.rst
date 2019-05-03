@@ -35,3 +35,4 @@ Goals:
     page-model
     tests
     test-suites
+    data-providers
