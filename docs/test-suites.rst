@@ -57,15 +57,39 @@ A test suite may both define and import tests.
 
 Imported tests that require parameters must have the parameter values passed at usage time.
 
+Data can be supplied via the ``data`` property of the test suite. The ``data`` property can have any number of data
+collections. Each data collection contains one or more data sets. Each data set provides values for the parameters
+as required by a test.
+
 .. code-block:: yaml
 
     imports:
       tests:
         {import-name}: {import-path}
 
+    data:
+      {data-collection-name}:
+        {data-set-name-1}:
+          {parameter-name}: {parameter-value}
+
     {test-name}:
       {import-name}:
-        {parameter-name}: {parameter-value}
+        data: {data-collection-name}
+
+Data can be supplied through the import of a data provider. A data provider is a data collection defined externally
+to the test suite.
+
+.. code-block:: yaml
+
+    imports:
+      tests:
+        {import-name}: {import-path}
+      data_providers:
+        {data-provider-name}: {data-provider-import-path}
+
+    {test-name}:
+      {import-name}:
+        data: {data-provider-name}
 
 Page models can be imported and their properties referenced within the test suite.
 
@@ -107,9 +131,9 @@ Tests Defined Within The test Suite
       assertions:
         - browser.title is "example - Google Search"
 
-*************************************************
-Parameterised Tests Defined Within The test Suite
-*************************************************
+***********************************************************
+Parameterised Tests With Data Defined Within The test Suite
+***********************************************************
 
 .. code-block:: yaml
 
@@ -119,19 +143,75 @@ Parameterised Tests Defined Within The test Suite
 
     assertions:
       - url is {{ url }}
-      - {{ title_selector}} is {{ expected_title }}
+      - browser.title is {{ expected_title }}
 
 .. code-block:: yaml
 
     # test-suite.yml
     imports:
       tests:
-        open_url: test/open-url-parameterised.yml
+        open_url_test: test/open-url-parameterised.yml
+
+    data:
+      open_url_data:
+        -
+          url: "https://www.google.com"
+          expected_title: "Google"
 
     "open https://www.google.com":
-      open_url:
-        url: "https://www.google.com"
-        expected_title: "Google"
+      open_url_test:
+        data: data.open_url_data
+
+*******************************************************************
+Parameterised Tests With Data Supplied By An Imported Data Provider
+*******************************************************************
+
+.. code-block:: yaml
+
+    # test/google-search-query-parameterised.yml
+    actions:
+      - set ".gLFyf.gsfi" to {{ search_term }}
+      - click ".FPdoLc.VlcLAe input[name=btnK]"
+
+    assertions:
+      - browser.title is {{ expected_title }}
+
+.. code-block:: yaml
+
+    # data-provider/google-search-query.yml
+    foo:
+      search_term: foo
+      expected_title: foo - Google Search
+
+    bar:
+      search_term: bar
+      expected_title: bar - Google Search
+
+.. code-block:: yaml
+
+    # test-suite.yml
+    imports:
+      tests:
+        query_test: test/open-url-parameterised.yml
+      data_providers:
+        google_search_query_data: data-provider/google-search-query.yml
+
+    data:
+      open_url_data:
+        -
+          url: "https://www.google.com"
+          expected_title: "Google"
+
+    "open https://www.google.com":
+      actions:
+        - open "https://www.google.com"
+
+      assertions:
+        - browser.title is "Google"
+
+    "query":
+      query_test:
+        data: google_search_query_data
 
 *************************************************************
 Tests Imported Into the Test Suite With Additional Assertions
