@@ -1,0 +1,6 @@
+actions:
+  - set ".gLFyf.gsfi" to {{ search_term }}
+  - click ".FPdoLc.VlcLAe input[name=btnK]"
+
+assertions:
+  - browser.title is {{ expected_title }}
