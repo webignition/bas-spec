@@ -34,3 +34,4 @@ Goals:
     selectors
     page-model
     tests
+    test-suites
