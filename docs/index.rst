@@ -29,6 +29,7 @@ Goals:
     :maxdepth: 1
 
     tutorial
+    tutorial-terminology
 
 .. toctree::
     :caption: Reference
