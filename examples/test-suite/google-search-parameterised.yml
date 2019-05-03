@@ -1,0 +1,13 @@
+imports:
+  tests:
+    google_search_open_url: ../test/google-search-open-url.yml
+    google_search_query_parameterised: ../test/google-search-query-parmeterised.yml
+  data_providers:
+    google_search_query_data_provider: ../data-provider/google-search-query.yml
+
+"open https://www.google.com":
+  - google_search_open_url
+
+"query 'example'":
+  google_search_query_parameterised:
+    data: google_search_query_data_provider
