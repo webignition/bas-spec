@@ -25,6 +25,12 @@ Goals:
 * transpilable to a target language for execution
 
 .. toctree::
+    :caption: Tutorial
+    :maxdepth: 1
+
+    tutorial
+
+.. toctree::
     :caption: Reference
     :maxdepth: 1
 
