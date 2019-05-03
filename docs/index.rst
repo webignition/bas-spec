@@ -16,7 +16,7 @@ Basil defines:
 * ``assertions`` to verify the browser state
 * ``tests`` and ``test suites`` to arrange collections of actions and assertions
 * ``page models`` to de-couple tests from the pages being tested
-* ``data providers`` to de-couple parameterised tests from the data exercising the test
+* ``data providers`` to de-couple parameterised tests from the data driving them
 
 Goals:
 
