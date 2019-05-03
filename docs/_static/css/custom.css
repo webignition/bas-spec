@@ -1,0 +1,12 @@
+.rst-content table.docutils th {
+  font-weight: normal;
+  text-align: left;
+}
+
+.rst-content table.docutils code {
+  border: none;
+}
+
+.rst-content table.docutils td {
+  vertical-align: top;
+}
