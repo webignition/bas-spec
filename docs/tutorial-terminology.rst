@@ -1,6 +1,6 @@
-===========
-Terminology
-===========
+===========================
+Get To Know the Terminology
+===========================
 
 Throughout this tutorial we will be talking about ``tests``, ``test suites``, ``page models``, ``data providers``,
 ``parameterised tests`` and other related terms.
