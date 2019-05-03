@@ -12,23 +12,12 @@ Syntax
 A page model is a YAML document with ``url`` and ``elements`` properties.
 
 The ``url`` property provides the URL for the web page.
-
 The ``elements`` property is an optional collection mapping a convenience name to a :doc:`selector </selectors>`.
 
-.. code-block:: yaml
-
-    url: {url}
-    elements:
-      {element_name}: {selector}
+.. literalinclude:: includes/syntax/page-model.yml
 
 -------
 Example
 -------
 
-.. code-block:: yaml
-
-    # google.com.yml
-    url: "https://www.google.com"
-    elements:
-      search_input: ".gLFyf.gsfi"
-      search_button: ".FPdoLc.VlcLAe input[name=btnK]"
+.. literalinclude:: includes/examples/page-model/google.com.yml

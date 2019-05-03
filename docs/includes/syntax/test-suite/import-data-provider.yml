@@ -1,0 +1,9 @@
+imports:
+  tests:
+    {import-name}: {import-path}
+  data_providers:
+    {data-provider-name}: {data-provider-import-path}
+
+{test-name}:
+  {import-name}:
+    data: {data-provider-name}

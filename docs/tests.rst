@@ -19,17 +19,7 @@ The `assertions` property is a list of :doc:`assertions </assertions>`.
 Action arguments and assertion values can be represented by named parameters. Values for parameters are passed in
 :doc:`test suites </test-suites>`.
 
-.. code-block:: yaml
-
-    actions:
-      - ...
-      - ...
-      - ...
-
-    assertions:
-      - ...
-      - ...
-      - ...
+.. literalinclude:: includes/syntax/test.yml
 
 --------
 Examples
@@ -39,24 +29,10 @@ Examples
 Without Parameters
 ******************
 
-.. code-block:: yaml
-
-    actions:
-      - open "https://example.com"
-
-    assertions:
-      - browser.url is https://example.com
-      - browser.title is Example Domain
+.. literalinclude:: includes/examples/test/google-open-literal.yml
 
 ***************
 With Parameters
 ***************
 
-.. code-block:: yaml
-
-    actions:
-      - open {{ url }}
-
-    assertions:
-      - browser.url is {{ url }}
-      - browser.title is {{ expected_title }}
+.. literalinclude:: includes/examples/test/open-url-parameterised.yml

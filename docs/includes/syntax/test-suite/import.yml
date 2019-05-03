@@ -1,0 +1,6 @@
+imports:
+  tests:
+    {import-name}: {import-path}
+
+{test-name}:
+  - {import-name}
