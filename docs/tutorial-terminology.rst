@@ -57,7 +57,7 @@ The tests you create are performed against specific pages.
 Each page has a URL (somewhat useful if we want to go to the page in browser) and have some elements with which we want
 to interact.
 
-We want to check if certain text labels are use they should be, we want to click links and buttons and we
+We want to check if certain text labels are as they should be, we want to click links and buttons and we
 want to enter text into forms.
 
 A page model is a way of putting all of this information in one place. You'll probably need to refer to specific
@@ -82,7 +82,7 @@ a thing over here using that set of data over there. Keeping the two separate ma
 Parameterised Tests
 -------------------
 
-A regular test puts what is being tested together what the data that it needs.
+A regular test puts what is being tested together with the data that it needs.
 
 Do so often enough and you notice that you're repeating yourself for common test needs such as "visit this page and
 verify that the title is correct".
