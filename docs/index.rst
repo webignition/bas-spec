@@ -31,6 +31,7 @@ Goals:
     tutorial
     tutorial-terminology
     tutorial-test-suite
+    tutorial-actions-and-assertions
 
 .. toctree::
     :caption: Reference

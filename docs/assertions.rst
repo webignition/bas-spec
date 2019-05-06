@@ -16,11 +16,7 @@ An assertion takes the form of an ``identifier`` followed by a ``comparison`` an
 Comparisons
 -----------
 
-- :ref:`is <comparisons-is>`
-- :ref:`is-not <comparisons-is-not>`
-- :ref:`includes <comparisons-includes>`
-- :ref:`excludes <comparisons-excludes>`
-- :ref:`matches <comparisons-matches>`
+.. include:: includes/assertion-comparison-list.rst
 
 .. _comparisons-is:
 
