@@ -160,9 +160,9 @@ Matches
 
 Checks if the value being compared matches a given regular expression.
 
-``{identifier} matches {value}``
+``{identifier} matches "{value}"``
 
-Everything after the ``matches`` keyword (except the space after the keyword) is the value to be used.
+The value to be used must be within double quotes. The double quotes are not part of the value.
 
 *********
 Arguments
@@ -181,5 +181,5 @@ Arguments
 Examples
 ********
 
-- ``browser.title matches /homepage$/i``
-- ``imported_page_model.elements.sign_in_button matches /^Sign/``
+- ``browser.title matches "/homepage$/i"``
+- ``imported_page_model.elements.sign_in_button matches "/^Sign/"``
