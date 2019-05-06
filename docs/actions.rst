@@ -85,7 +85,7 @@ Examples
 ********
 - ``click ".sign-in-form .submit-button"``
 - ``click ".listed-item":0``
-- ``click imported_page_model.elements_element_name``
+- ``click imported_page_model.elements.element_name``
 
 .. _actions-set:
 
