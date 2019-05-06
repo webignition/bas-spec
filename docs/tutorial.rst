@@ -2,7 +2,7 @@
 Tutorial Overview
 =================
 
-Learn how to write browser automation tests in basil.
+A learn-as-you-go guide on how to write browser automation tests in basil.
 
 - :doc:`Get To Know the Terminology </tutorial-terminology>`
 - :doc:`Creating a Test Suite To Define Your Tests </tutorial-test-suite>`
@@ -11,3 +11,25 @@ Learn how to write browser automation tests in basil.
 - Using Parameterised Tests
 - Creating a Page Model To Define Properties Of The Page Being Tested
 - Using a Data Provider To Supply Data Sets To Your Tests
+
+We'll start out by :doc:`covering some terminology </tutorial-terminology>` so that we're all clear about
+browser automation testing concepts.
+
+You will then :doc:`create a test suite </tutorial-test-suite>` and will see how through a series of tests we can get
+the browser into an expected state and then verify that the browser state is as expected.
+
+We will show you how the :ref:`operations a user can perform <tutorial-actions>` within a browser are translated into a
+sequence of actions within a test and how the :ref:`verification of browser state <tutorial-assertions>` is carried out
+through a set of assertions.
+
+You will learn how to define commonly-repeated tests outside of a test suite and how to import a test into many test
+suites.
+
+We will see how through the use of parameterised tests we can create tests with 'blanks' and replace those blanks later
+with specific values.
+
+Repeated references to page elements will get sorted out when we see how page models can define page properties and how
+to refer to these within your tests.
+
+We will finish by learning how to use data providers to separate what is being tested from the data with which it is
+being tested.

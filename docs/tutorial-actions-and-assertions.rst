@@ -11,6 +11,8 @@ Here's the test suite we previously created for testing Google search:
 
 In this tutorial, we'll look at how ``actions`` and ``assertions`` are formed and what we can do with them.
 
+.. _tutorial-actions:
+
 -------
 Actions
 -------
@@ -38,6 +40,8 @@ Action Verb List
 .. admonition:: Technical Reference: Action Verbs
 
     .. include:: includes/action-verb-list.rst
+
+.. _tutorial-assertions:
 
 ----------
 Assertions

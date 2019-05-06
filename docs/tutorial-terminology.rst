@@ -18,7 +18,7 @@ Test
 A test will verify one small, precise, exact piece of functionality. It does so by performing a sequence of actions
 and then executing a series of assertions.
 
-An action is something that an end user can do in a browser, such as visit a URL, click on link, enter text into a
+An action is something that an end user can do in a browser, such as visit a URL, click on a link, enter text into a
 field or submit a form.
 
 An assertion is statement of fact that we want to demonstrate to be either correct or incorrect (true or false).
@@ -52,10 +52,8 @@ represent a full user journey.
 Page Models
 -----------
 
-The tests you create are performed against specific pages.
-
-Each page has a URL (somewhat useful if we want to go to the page in browser) and have some elements with which we want
-to interact.
+The tests you create are performed against specific pages. Each page has a URL and has some elements with which we
+want to interact.
 
 We want to check if certain text labels are as they should be, we want to click links and buttons and we
 want to enter text into forms.
@@ -87,7 +85,8 @@ A regular test puts what is being tested together with the data that it needs.
 Do so often enough and you notice that you're repeating yourself for common test needs such as "visit this page and
 verify that the title is correct".
 
-A parameterised version of this test may read as "visit ``url`` and verify that the title is ``expected-title``".
+A parameterised plain English version of this test may read as "visit ``url`` and verify that the title is
+``expected-title``".
 
 A parameterised test does just this. You can define commonly-tested needs with blanks where some actual values might go.
 When the parameterised test is used in a test suite, you can pass in the parameter values needed to fill in the blanks,
