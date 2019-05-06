@@ -1,0 +1,9 @@
+- :ref:`open <actions-open>`
+- :ref:`click <actions-click>`
+- :ref:`set <actions-set>`
+- :ref:`submit <actions-submit>`
+- :ref:`wait <actions-wait>`
+- :ref:`wait-for <actions-wait-for>`
+- :ref:`reload <actions-reload>`
+- :ref:`forward <actions-forward>`
+- :ref:`back <actions-back>`

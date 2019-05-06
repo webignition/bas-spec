@@ -1,0 +1,24 @@
+- open https://www.google.com/
+- open https://example.com in chrome # specify the browser
+- open "https://example.com in chrome" in firefox # double-quote URLs containing spaces
+
+- click ".sign-in-form .submit-button"
+- click ".listed-item":1 # ':1' denotes the first item where the selector matches many items
+- click imported_page_model.elements.element_name # page model reference
+
+- set "#sign-in-form .username" to user@example.com
+- set "#sign-in-form .username" to "user@example.com" # (literal double quotes)
+- set imported_page_model.elements.username to user@example.com
+
+- submit "#sign-in-form"
+- submit imported_page_model.elements.submit_button
+
+- wait 1
+- wait 15
+
+- wait-for "#asychronously-loaded-content"
+- wait-for imported_page_model.elements.delayed_element_name
+
+- reload
+- forward
+- back
