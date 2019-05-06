@@ -1,6 +1,6 @@
-========
-Tutorial
-========
+=================
+Tutorial Overview
+=================
 
 Learn how to write browser automation tests in basil.
 
