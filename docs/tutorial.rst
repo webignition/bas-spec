@@ -5,7 +5,7 @@ Tutorial
 Learn how to write browser automation tests in basil.
 
 - :doc:`Get To Know the Terminology </tutorial-terminology>`
-- Creating a Test Suite To Define Your Tests
+- :doc:`Creating a Test Suite To Define Your Tests </tutorial-test-suite>`
 - Importing Tests Into Your Test Suite
 - Using Parameterised Tests
 - Creating a Page Model To Define Properties Of The Page Being Tested
