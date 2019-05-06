@@ -1,4 +1,4 @@
-# test-suite/google-search-query-literal.yml
+# examples/test-suite/google-search-query-literal.yml
 "open https://www.google.com":
   actions:
     - open "https://www.google.com"

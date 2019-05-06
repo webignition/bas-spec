@@ -1,4 +1,4 @@
-# test-suite/google-inline-tests-with-page-model.yml
+# examples/test-suite/google-inline-tests-with-page-model.yml
 imports:
   pages:
     google_com: page-model/google.com.yml

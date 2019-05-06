@@ -1,4 +1,4 @@
-# test-suites/google-import-open-import-query-additional-assertions.yml
+# examples/test-suite/google-import-open-import-query-additional-assertions.yml
 imports:
   tests:
     google_open: test/google-open-literal.yml
