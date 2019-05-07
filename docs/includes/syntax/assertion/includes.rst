@@ -1,9 +1,9 @@
 .. code-block:: text
 
-    identifier includes "value"
+    {identifier} includes "{value}"
 
-    identifier:
+    {identifier}:
         <identifier-string>
 
-    value:
+    {value}:
         <string>

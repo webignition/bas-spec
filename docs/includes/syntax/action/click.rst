@@ -1,6 +1,6 @@
 .. code-block:: text
 
-    click identifier
+    click {identifier}
 
-    identifier:
+    {identifier}:
         <identifier-string>

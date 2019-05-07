@@ -1,6 +1,6 @@
 .. code-block:: text
 
-    submit identifier
+    submit {identifier}
 
-    identifier:
+    {identifier}:
         <identifier-string>

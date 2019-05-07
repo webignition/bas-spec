@@ -1,10 +1,10 @@
 .. code-block:: text
 
-    open "url" in "browser"
+    open "{url}" in "{browser}"
 
-    url:
+    {url}:
         <url-string>
 
-    browser:
+    {browser}:
         chrome
         firefox

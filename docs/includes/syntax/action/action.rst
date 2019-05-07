@@ -1,6 +1,6 @@
 .. code-block:: text
 
-    verb [arguments-section]
+    verb [{arguments-section}]
 
     verb:
         back
@@ -13,12 +13,12 @@
         wait
         wait-for
 
-    arguments-section:
-        [argument [keyword [argument]]]
+    {arguments-section}:
+        [{argument} [{keyword} [{argument}]]]
 
-    argument:
+    {argument}:
         <string>, double-quoted
 
-    keyword:
+    {keyword}:
         in
         to

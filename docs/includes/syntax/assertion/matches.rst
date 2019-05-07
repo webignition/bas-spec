@@ -1,9 +1,9 @@
 .. code-block:: text
 
-    identifier matches "regex"
+    {identifier} matches "{regex}"
 
-    identifier:
+    {identifier}:
         <identifier-string>
 
-    regex:
+    {regex}:
         <regular-expression>
