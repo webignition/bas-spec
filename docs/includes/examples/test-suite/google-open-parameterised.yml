@@ -1,7 +1,7 @@
 # examples/test-suite/google-open-parameterised.yml
 imports:
   tests:
-    open_url_test: test/open-url-parameterised.yml
+    open_url_test: ../test/open-url-parameterised.yml
 
 data:
   open_url_data:
