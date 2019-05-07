@@ -24,7 +24,7 @@ copyright = u'2019, Jon Cram'
 author = u'Jon Cram'
 
 # The short X.Y version
-version = u''
+version = u'latest'
 # The full version, including alpha/beta/rc tags
 release = u''
 
@@ -174,17 +174,8 @@ epub_title = project
 epub_exclude_files = ['search.html']
 
 html_baseurl = 'https://basil-docs.webignition.net/'
-sitemap_source_path = '_build/html/sitemap.xml'
-sitemap_target_path = '_build/html/_static/sitemap.xml'
 
 html_extra_path = ['robots.txt']
 
-from shutil import copyfile
-
-def source_read_handler(x, y):
-    print('Copying ' + sitemap_source_path + ' to ' + sitemap_target_path)
-    copyfile(sitemap_source_path, sitemap_target_path)
-
 def setup(app):
     app.add_stylesheet('css/custom.css')
-    app.connect('build-finished', source_read_handler)

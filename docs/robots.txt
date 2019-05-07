@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://basil-docs.webignition.net/_static/sitemap.xml
+Sitemap: https://basil-docs.webignition.net/en/latest/sitemap.xml
