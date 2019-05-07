@@ -31,7 +31,7 @@ Each test starts with a set of actions to get the browser into an expected state
 Action Examples
 ***************
 
-.. literalinclude:: includes/examples/action-examples.yml
+.. include:: includes/examples/action-examples.rst
 
 ****************
 Action Verb List
@@ -59,7 +59,7 @@ If not, your test will have failed.
 Assertion Examples
 ******************
 
-.. literalinclude:: includes/examples/assertion-examples.yml
+.. include:: includes/examples/assertion-examples.rst
 
 *************************
 Assertion Comparison List

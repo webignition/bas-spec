@@ -1,0 +1,2 @@
+- submit "#sign-in-form"
+- submit imported_page_model.elements.submit_button

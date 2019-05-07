@@ -1,0 +1,2 @@
+- browser.title matches "/homepage$/i"
+- imported_page_model.elements.sign_in_button matches "/^Sign/"

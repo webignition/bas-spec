@@ -8,12 +8,12 @@ imports:
     - open google_com
 
   assertions:
-    - browser.title is Google
+    - browser.title is "Google"
 
 "query 'example'":
   actions:
-    - set google_com.elements.search_input to example
+    - set google_com.elements.search_input to "example"
     - click google_com.elements.search_button
 
   assertions:
-    - browser.title is example - Google Search
+    - browser.title is "example - Google Search"
