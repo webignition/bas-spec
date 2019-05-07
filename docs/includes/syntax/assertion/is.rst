@@ -1,9 +1,9 @@
 .. code-block:: text
 
-    identifier is "value"
+    {identifier} is "{value}"
 
-    identifier:
+    {identifier}:
         <identifier-string>
 
-    value:
+    {value}:
         <string>

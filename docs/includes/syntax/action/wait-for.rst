@@ -1,6 +1,6 @@
 .. code-block:: text
 
-    wait-for identifier
+    wait-for {identifier}
 
-    identifier:
+    {identifier}:
         <identifier-string>

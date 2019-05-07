@@ -1,16 +1,16 @@
 .. code-block:: text
 
-    identifier comparison [value]
+    {identifier} {comparison} [{value}]
 
-    identifier:
+    {identifier}:
         <identifier-string>
 
-    comparison:
+    {comparison}:
         excludes
         includes
         is
         is-not
         matches
 
-    value:
+    {value}:
         <string>

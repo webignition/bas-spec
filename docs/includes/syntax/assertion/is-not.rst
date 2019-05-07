@@ -1,9 +1,9 @@
 .. code-block:: text
 
-    identifier is-not "value"
+    {identifier} is-not "{value}"
 
-    identifier:
+    {identifier}:
         <identifier-string>
 
-    value:
+    {value}:
         <string>
