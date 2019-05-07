@@ -1,0 +1,15 @@
+# examples/test-suite/google-import-open.yml
+imports:
+  tests:
+    google_open: test/google-open-literal.yml
+
+"open https://www.google.com":
+  use: google_open
+
+"query 'example'":
+  actions:
+    - set ".gLFyf.gsfi" to example
+    - click ".FPdoLc.VlcLAe input[name=btnK]"
+
+  assertions:
+    - browser.title is example - Google Search

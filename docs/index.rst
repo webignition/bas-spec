@@ -32,6 +32,7 @@ Goals:
     tutorial-terminology
     tutorial-test-suite
     tutorial-actions-and-assertions
+    tutorial-import-test
 
 .. toctree::
     :caption: Reference

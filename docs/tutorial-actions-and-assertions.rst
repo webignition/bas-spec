@@ -3,7 +3,7 @@ Understanding Test Actions and Assertions
 =========================================
 
 The previous :doc:`tutorial on test suites </tutorial-test-suite>` showed how a test suite brings a collection of tests
-together to represent a full user journey
+together to represent a full user journey.
 
 Here's the test suite we previously created for testing Google search:
 
