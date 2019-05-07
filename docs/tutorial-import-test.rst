@@ -62,3 +62,8 @@ An imported test can have additional assertions applied. As actions always come 
 test will have performed actions, an imported test cannot have additional actions.
 
 .. literalinclude:: includes/examples/test-suite/google-import-open-additional-assertions.yml
+
+That's starting to look quite nice, except I feel that those identifiers (such as ``.gLFyf.gsfi``) are going to get messy
+if we keep having to write them out in the middle of each test that needs them.
+
+Next? Page models!
