@@ -24,4 +24,5 @@ Examples
 --------
 
 .. literalinclude:: includes/examples/page-model/google.com.yml
-.. literalinclude:: includes/examples/page-model/google.com-scoped.yml
+.. literalinclude:: includes/examples/page-model/google.com-selector-scoped.yml
+.. literalinclude:: includes/examples/page-model/google.com-element-scoped.yml
