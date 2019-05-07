@@ -68,7 +68,7 @@ Arguments
     :stub-columns: 1
 
     * - ``identifier``
-      - A valid identifier.
+      - A valid :doc:`identifier </identifiers>`.
 
 ********
 Examples
@@ -95,7 +95,7 @@ Arguments
     :stub-columns: 1
 
     * - ``identifier``
-      - A valid identifier.
+      - A valid :doc:`identifier </identifiers>`.
     * - ``value``
       - A string.
 
@@ -124,7 +124,7 @@ Arguments
     :stub-columns: 1
 
     * - ``identifier``
-      - A valid identifier.
+      - A valid :doc:`identifier </identifiers>`.
 
 ********
 Examples
@@ -178,7 +178,7 @@ Arguments
     :stub-columns: 1
 
     * - ``identifier``
-      - A valid identifier.
+      - A valid :doc:`identifier </identifiers>`.
 
 ********
 Examples
