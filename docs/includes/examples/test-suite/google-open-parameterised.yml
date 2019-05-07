@@ -10,5 +10,5 @@ data:
       expected_title: "Google"
 
 "open https://www.google.com":
-  open_url_test:
-    data: data.open_url_data
+  use: open_url_test
+  data: data.open_url_data

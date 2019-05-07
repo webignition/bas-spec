@@ -3,7 +3,7 @@ imports:
     {import-name}: {import-path}
 
 {first-test-name}:
-  - {import-name}
+  use: {import-name}
 
 {second-test-name}:
   actions:

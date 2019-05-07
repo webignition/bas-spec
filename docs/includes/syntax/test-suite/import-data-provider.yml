@@ -5,5 +5,5 @@ imports:
     {data-provider-name}: {data-provider-import-path}
 
 {test-name}:
-  {import-name}:
-    data: {data-provider-name}
+  use: {import-name}
+  data: {data-provider-name}

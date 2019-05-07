@@ -8,5 +8,5 @@ data:
     {parameter-name}: {parameter-value}
 
 {test-name}:
-  {import-name}:
-    data: {data-collection-name}
+  use: {import-name}
+  data: {data-collection-name}

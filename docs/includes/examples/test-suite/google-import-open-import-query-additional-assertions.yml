@@ -5,10 +5,10 @@ imports:
     google_query_example: test/google-query-example-literal.yml
 
 "open https://www.google.com":
-  - google_open
+  use: google_open
 
   assertions:
     - browser.title excludes error
 
 "query 'example'":
-  - google_query_example
+  use: google_query_example
