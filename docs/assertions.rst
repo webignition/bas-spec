@@ -168,3 +168,9 @@ Examples
 ********
 
 .. literalinclude:: includes/examples/assertions/matches.yml
+
+------------
+Example List
+------------
+
+.. include:: includes/examples/assertion-examples.rst

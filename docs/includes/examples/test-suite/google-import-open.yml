@@ -8,8 +8,8 @@ imports:
 
 "query 'example'":
   actions:
-    - set ".gLFyf.gsfi" to example
+    - set ".gLFyf.gsfi" to "example"
     - click ".FPdoLc.VlcLAe input[name=btnK]"
 
   assertions:
-    - browser.title is example - Google Search
+    - browser.title is "example - Google Search"

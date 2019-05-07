@@ -59,7 +59,7 @@ If not, your test will have failed.
 Assertion Examples
 ******************
 
-.. literalinclude:: includes/examples/assertion-examples.yml
+.. include:: includes/examples/assertion-examples.rst
 
 *************************
 Assertion Comparison List

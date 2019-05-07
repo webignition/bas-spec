@@ -10,7 +10,7 @@ imports:
     - open "https://www.google.com"
 
   assertions:
-    - browser.title is Google
+    - browser.title is "Google"
 
 "query":
   user: query_test
