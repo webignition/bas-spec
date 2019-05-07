@@ -1,0 +1,3 @@
+- set "#sign-in-form .username" to "user@example.com"
+- set "#sign-in-form .username" to "\"user@example.com\"" (literal double quotes)
+- set imported_page_model.elements.username to "user@example.com"

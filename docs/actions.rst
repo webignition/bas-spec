@@ -8,9 +8,11 @@ Actions are operations that can be performed to get the browser into the desired
 Syntax
 ------
 
-An action takes the form of a verb followed by zero or more arguments and keywords and zero or more keywords.
+An action takes the form of a verb followed optionally an argument, a keyword and an additional argument.
 
-``{verb} [arguments] [keywords]``
+The verb is always required. Whether arguments and keywords are optional is dependent on the verb.
+
+.. include:: includes/syntax/action/action.rst
 
 -----
 Verbs
@@ -26,7 +28,7 @@ Open
 
 Visit a URL in the browser.
 
-``open {url} [in {browser}]``
+.. include:: includes/syntax/action/open.rst
 
 *********
 Arguments
@@ -37,19 +39,15 @@ Arguments
     :stub-columns: 1
 
     * - ``url``
-      - The URL to visit. Double-quoting is required if the URL contains whitespace.
+      - The URL to visit, in double quotes.
     * - ``browser``
-      - The browser to use. One of: ``chrome``, ``firefox``. Optional, defaults to ``chrome``.
+      - The browser to use, in double quotes.
 
 ********
 Examples
 ********
 
-- ``open https://example.com``
-- ``open "https://example.com"``
-- ``open https://example.com in chrome``
-- ``open "https://example.com" in firefox``
-- ``open "https://example.com in chrome" in firefox``
+.. literalinclude:: includes/examples/actions/open.yml
 
 .. _actions-click:
 
@@ -59,7 +57,7 @@ Click
 
 Click on an element.
 
-``click {identifier}``
+.. include:: includes/syntax/action/click.rst
 
 *********
 Arguments
@@ -70,14 +68,13 @@ Arguments
     :stub-columns: 1
 
     * - ``identifier``
-      - Any valid identifier.
+      - A valid identifier.
 
 ********
 Examples
 ********
-- ``click ".sign-in-form .submit-button"``
-- ``click ".listed-item":0``
-- ``click imported_page_model.elements.element_name``
+
+.. literalinclude:: includes/examples/actions/click.yml
 
 .. _actions-set:
 
@@ -87,9 +84,7 @@ Set
 
 Set the value of an element. Most applicable to form field elements.
 
-``set {identifier} to {value}``
-
-Anything following the ``to`` keyword (except the space after the keyword) is the value to be used.
+.. include:: includes/syntax/action/set.rst
 
 *********
 Arguments
@@ -100,16 +95,15 @@ Arguments
     :stub-columns: 1
 
     * - ``identifier``
-      - Any valid identifier.
+      - A valid identifier.
     * - ``value``
       - Any string.
 
 ********
 Examples
 ********
-- ``set "#sign-in-form .username" to user@example.com``
-- ``set "#sign-in-form .username" to "user@example.com"`` (literal double quotes)
-- ``set imported_page_model.elements.username to user@example.com``
+
+.. literalinclude:: includes/examples/actions/set.yml
 
 .. _actions-submit:
 
@@ -119,7 +113,7 @@ Submit
 
 Submits a form.
 
-``submit {identifier}``
+.. include:: includes/syntax/action/submit.rst
 
 *********
 Arguments
@@ -130,13 +124,13 @@ Arguments
     :stub-columns: 1
 
     * - ``identifier``
-      - Any valid identifier.
+      - A valid identifier.
 
 ********
 Examples
 ********
-- ``submit "#sign-in-form"``
-- ``submit imported_page_model.elements.submit_button``
+
+.. literalinclude:: includes/examples/actions/submit.yml
 
 .. _actions-wait:
 
@@ -146,7 +140,7 @@ Wait
 
 Wait for a specified number of seconds.
 
-``wait {number-of-seconds}``
+.. include:: includes/syntax/action/wait.rst
 
 *********
 Arguments
@@ -157,13 +151,13 @@ Arguments
     :stub-columns: 1
 
     * - ``number-of-seconds``
-      - Any whole integer greater than ``0``.
+      - An integer greater than ``0``.
 
 ********
 Examples
 ********
-- ``wait 1``
-- ``wait 15``
+
+.. literalinclude:: includes/examples/actions/wait.yml
 
 .. _actions-wait-for:
 
@@ -173,7 +167,7 @@ Wait-for
 
 Wait for an element to be rendered. Waits for up to 30 seconds.
 
-``wait-for {identifier}``
+.. include:: includes/syntax/action/wait-for.rst
 
 *********
 Arguments
@@ -184,13 +178,13 @@ Arguments
     :stub-columns: 1
 
     * - ``identifier``
-      - Any valid identifier.
+      - A valid identifier.
 
 ********
 Examples
 ********
-- ``wait-for "#asychronously-loaded-content"``
-- ``wait-for imported_page_model.elements.delayed_element_name``
+
+.. literalinclude:: includes/examples/actions/wait-for.yml
 
 .. _actions-reload:
 
@@ -200,7 +194,7 @@ Reload
 
 Reload the current page.
 
-``reload``
+.. include:: includes/syntax/action/reload.rst
 
 .. _actions-forward:
 
@@ -210,7 +204,7 @@ Forward
 
 Move forward one item in the current session history.
 
-``forward``
+.. include:: includes/syntax/action/forward.rst
 
 .. _actions-back:
 
@@ -220,4 +214,10 @@ Back
 
 Move back one item in the current session history.
 
-``back``
+.. include:: includes/syntax/action/back.rst
+
+------------
+Example List
+------------
+
+.. include:: includes/examples/action-examples.rst
