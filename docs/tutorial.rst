@@ -24,14 +24,14 @@ We will show you how the :ref:`operations a user can perform <tutorial-actions>`
 sequence of actions within a test and how the :ref:`verification of browser state <tutorial-assertions>` is carried out
 through a set of assertions.
 
-You will learn how to define commonly-repeated tests outside of a test suite and how to import a test into many test
-suites.
+You will learn how to :doc:`define commonly-repeated tests </tutorial-import-test>` outside of a test suite and how to
+import a test into many test suites.
+
+Repeated references to page elements will get sorted out when we see how :doc:`page models can define page properties </tutorial-page-model>`
+and how to refer to these within your tests.
 
 We will see how through the use of parameterised tests we can create tests with 'blanks' and replace those blanks later
 with specific values.
-
-Repeated references to page elements will get sorted out when we see how page models can define page properties and how
-to refer to these within your tests.
 
 We will finish by learning how to use data providers to separate what is being tested from the data with which it is
 being tested.
