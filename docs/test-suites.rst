@@ -67,7 +67,7 @@ Parameterised Tests With Data Supplied By An Imported Data Provider
 
 .. literalinclude:: includes/examples/test/google-search-query-parameterised.yml
 
-.. literalinclude:: includes/examples/data-provider/google-search-query.yml
+.. literalinclude:: includes/examples/data-provider/google-search-query-object.yml
 
 .. literalinclude:: includes/examples/test-suite/google-search-query-parameterised.yml
 
