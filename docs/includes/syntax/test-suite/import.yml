@@ -3,4 +3,4 @@ imports:
     {import-name}: {import-path}
 
 {test-name}:
-  - {import-name}
+  use: {import-name}
