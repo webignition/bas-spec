@@ -7,8 +7,8 @@
 Basil Language Documentation
 ============================
 
-Basil (**B**\ rowser **A**\ utomation **S**\ cript **I**\ ntermediary **L**\ anguage) is a scripting language for web
-browser automation.
+Basil (**B**\ rowser **A**\ utomation **S**\ cript **I**\ ntermediary **L**\ anguage) is a programming language for
+creating web browser automation tests.
 
 Basil defines:
 
