@@ -1,0 +1,9 @@
+.. code-block:: text
+
+    identifier excludes "value"
+
+    identifier:
+        <identifier-string>
+
+    value:
+        <string>

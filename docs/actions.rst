@@ -97,7 +97,7 @@ Arguments
     * - ``identifier``
       - A valid identifier.
     * - ``value``
-      - Any string.
+      - A string.
 
 ********
 Examples

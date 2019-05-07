@@ -10,7 +10,7 @@ Syntax
 
 An assertion takes the form of an ``identifier`` followed by a ``comparison`` and an optional ``value``.
 
-``{identifier} {comparison} [{value}]``
+.. include:: includes/syntax/assertion/assertion.rst
 
 -----------
 Comparisons
@@ -26,9 +26,7 @@ Is
 
 Checks if the value being compared equals a given value.
 
-``{identifier} is {value}``
-
-Everything after the ``is`` keyword (except the space after the keyword) is the value to be used.
+.. include:: includes/syntax/assertion/is.rst
 
 *********
 Arguments
@@ -39,17 +37,15 @@ Arguments
     :stub-columns: 1
 
     * - ``identifier``
-      - Any valid identifier.
+      - A valid identifier.
     * - ``value``
-      - Any string.
+      - A string.
 
 ********
 Examples
 ********
 
-- ``browser.title is Homepage``
-- ``browser.title is "Homepage"`` (literal double quotes)
-- ``imported_page_model.elements.sign_in_button is Sign in``
+.. literalinclude:: includes/examples/assertions/is.yml
 
 .. _comparisons-is-not:
 
@@ -59,9 +55,7 @@ Is-not
 
 Checks if the value being compared does not equal a given value.
 
-``{identifier} is-not {value}``
-
-Everything after the ``is-not`` keyword (except the space after the keyword) is the value to be used.
+.. include:: includes/syntax/assertion/is-not.rst
 
 *********
 Arguments
@@ -72,17 +66,15 @@ Arguments
     :stub-columns: 1
 
     * - ``identifier``
-      - Any valid identifier.
+      - A valid identifier.
     * - ``value``
-      - Any string.
+      - A string.
 
 ********
 Examples
 ********
 
-- ``browser.title is-not Homepage``
-- ``browser.title is-not "Homepage"`` (literal double quotes)
-- ``imported_page_model.elements.sign_out_button is-not Sign in``
+.. literalinclude:: includes/examples/assertions/is-not.yml
 
 .. _comparisons-includes:
 
@@ -92,7 +84,7 @@ Includes
 
 Checks if the value being compared contains a given value.
 
-``{identifier} includes {value}``
+.. include:: includes/syntax/assertion/includes.rst
 
 Everything after the ``includes`` keyword (except the space after the keyword) is the value to be used.
 
@@ -105,16 +97,15 @@ Arguments
     :stub-columns: 1
 
     * - ``identifier``
-      - Any valid identifier.
+      - A valid identifier.
     * - ``value``
-      - Any string.
+      - A string.
 
 ********
 Examples
 ********
 
-- ``browser.title includes page``
-- ``imported_page_model.elements.sign_in_button includes Sign``
+.. literalinclude:: includes/examples/assertions/includes.yml
 
 .. _comparisons-excludes:
 
@@ -124,7 +115,7 @@ Excludes
 
 Checks if the value being compared does not contain a given value.
 
-``{identifier} excludes {value}``
+.. include:: includes/syntax/assertion/excludes.rst
 
 Everything after the ``excludes`` keyword (except the space after the keyword) is the value to be used.
 
@@ -137,16 +128,15 @@ Arguments
     :stub-columns: 1
 
     * - ``identifier``
-      - Any valid identifier.
+      - A valid identifier.
     * - ``value``
-      - Any string.
+      - A string.
 
 ********
 Examples
 ********
 
-- ``browser.title excludes error``
-- ``imported_page_model.elements.sign_in_button excludes Log``
+.. literalinclude:: includes/examples/assertions/excludes.yml
 
 .. _comparisons-matches:
 
@@ -156,7 +146,7 @@ Matches
 
 Checks if the value being compared matches a given regular expression.
 
-``{identifier} matches "{value}"``
+.. include:: includes/syntax/assertion/matches.rst
 
 The value to be used must be within double quotes. The double quotes are not part of the value.
 
@@ -169,7 +159,7 @@ Arguments
     :stub-columns: 1
 
     * - ``identifier``
-      - Any valid identifier.
+      - A valid identifier.
     * - ``value``
       - A regular expression.
 
@@ -177,5 +167,4 @@ Arguments
 Examples
 ********
 
-- ``browser.title matches "/homepage$/i"``
-- ``imported_page_model.elements.sign_in_button matches "/^Sign/"``
+.. literalinclude:: includes/examples/assertions/matches.yml
