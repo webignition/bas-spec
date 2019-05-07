@@ -1,9 +1,9 @@
 # examples/test-suite/google-import-open-with-page-model.yml
 imports:
   tests:
-    google_open: test/google-open-literal.yml
+    google_open: ../test/google-open-literal.yml
   pages:
-    google_com: page-model/google.com.yml
+    google_com: ../page-model/google.com.yml
 
 "open https://www.google.com":
   use: google_open

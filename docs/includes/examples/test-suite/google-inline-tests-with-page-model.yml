@@ -1,7 +1,7 @@
 # examples/test-suite/google-inline-tests-with-page-model.rst
 imports:
   pages:
-    google_com: page-model/google.com.yml
+    google_com: ../page-model/google.com.yml
 
 "open https://www.google.com":
   actions:

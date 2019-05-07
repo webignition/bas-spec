@@ -1,7 +1,7 @@
 # examples/test/google-query-page-model.yml
 imports:
   pages:
-    google_com: page-model/google.com.yml
+    google_com: ../page-model/google.com.yml
 
 actions:
   - set google_com.elements.search_input to "example"
