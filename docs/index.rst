@@ -33,6 +33,7 @@ Goals:
     tutorial-test-suite
     tutorial-actions-and-assertions
     tutorial-import-test
+    tutorial-parameterised-tests
 
 .. toctree::
     :caption: Reference

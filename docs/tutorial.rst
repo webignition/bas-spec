@@ -10,7 +10,7 @@ A learn-as-you-go guide on writing browser automation tests in basil.
     - :doc:`Creating a Test Suite To Define Your Tests </tutorial-test-suite>`
     - :doc:`Understanding Test Actions and Assertions </tutorial-actions-and-assertions>`
     - :doc:`Importing Tests Into Your Test Suite </tutorial-import-test>`
-    - Using Parameterised Tests
+    - :doc:`Creating and Using Parameterised Tests </tutorial-parameterised-tests>`
     - Creating a Page Model To Define Properties Of The Page Being Tested
     - Using a Data Provider To Supply Data Sets To Your Tests
 
