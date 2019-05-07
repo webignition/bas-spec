@@ -173,7 +173,18 @@ epub_title = project
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
 
+html_baseurl = 'https://basil-docs.webignition.net/'
+sitemap_source_path = '_build/html/sitemap.xml'
+sitemap_target_path = '_build/html/_static/sitemap.xml'
+
+html_extra_path = ['robots.txt']
+
+from shutil import copyfile
+
+def source_read_handler(x, y):
+    print('Copying ' + sitemap_source_path + ' to ' + sitemap_target_path)
+    copyfile(sitemap_source_path, sitemap_target_path)
+
 def setup(app):
     app.add_stylesheet('css/custom.css')
-
-html_baseurl = 'https://basil-docs.webignition.net/'
+    app.connect('build-finished', source_read_handler)
