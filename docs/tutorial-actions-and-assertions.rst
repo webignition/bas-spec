@@ -1,6 +1,6 @@
-=========================================
-Understanding Test Actions and Assertions
-=========================================
+====================================
+Understanding Actions and Assertions
+====================================
 
 The previous :doc:`tutorial on test suites </tutorial-test-suite>` showed how a test suite brings a collection of tests
 together to represent a full user journey.

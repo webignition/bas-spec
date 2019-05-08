@@ -1,6 +1,6 @@
-===================================================================
-Creating a Page Model to Define Properties of the Page Being Tested
-===================================================================
+=====================
+Creating a Page Model
+=====================
 
 We've been working on a test suite to open https:/www.google.com and to query for the word "example".
 For the querying part, we need to identify the search input field and the button to submit the search form.

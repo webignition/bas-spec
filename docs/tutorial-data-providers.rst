@@ -1,6 +1,6 @@
-=======================================================
-Using a Data Provider to Supply Data Sets to Your Tests
-=======================================================
+=====================
+Using a Data Provider
+=====================
 
 We previously learned how a :doc:`data collection can be passed to a parameterised test </tutorial-parameterised-tests>`
 to run a single test once per set of data.
