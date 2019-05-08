@@ -46,7 +46,7 @@ Our test suite contains two tests, each having a name that we've chosen:
 - ``open https://www.google.com``
 - ``query 'example'``
 
-The name can be whatever you chosen. There is no right answer, but it is good practice to name a test after what an end
+The name can be whatever you chose. There is no right answer, but it is good practice to name a test after what an end
 user would be looking to achieve. Phrasing the name of a test as an action to be undertaken works well.
 
 *****************************
