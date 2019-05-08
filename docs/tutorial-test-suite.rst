@@ -87,7 +87,7 @@ submission button.
 
 The input field (``.gLFyf.gsfi``) and submit button (``.FPdoLc.VlcLAe input[name=btnK]``) are identified here
 with CSS selectors. Page elements can also be identified with XPath and, more robustly, with page model element
-reference. The tutorial on identifiers goes into more depth.
+reference. The :doc:`tutorial on page models </tutorial-page-model>` goes into more depth.
 
 The ``assertions`` section lists one assertion to verify that the page ``<title>`` is as expected. We could also
 verify that ``browser.url`` but in this case the page title suffices. The fewer assertions needed to verify the browser
