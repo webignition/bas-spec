@@ -1,13 +1,19 @@
 .. code-block:: text
 
     actions:
-      {action-list}
+      - {action-1}
+      ...
+      - {action-N}
 
     assertions:
-      {assertion-list}
+      - {assertion-1}
+      ...
+      - {assertion-N}
 
-    {action-list}:
-      <list> of actions
+    -----------------
 
-    {assertion-list}:
-      <list> of assertions
+    action-*:
+        <action>
+
+    assertion-*:
+        <assertion>
