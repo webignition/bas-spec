@@ -1,18 +1,21 @@
 .. code-block:: text
 
-    url: url-value
-
+    url: {url}
     elements:
-        element-name: [{{ predefined-element-name}}] css-or-xpath-identifier
+        {element-name-1}: [{{ {predefined-element-name} }}] {selector}
+        ...
+        {element-name-N}: [{{ {predefined-element-name} }}] {selector}
 
-    url-value:
-        <url-string>
+    ----------------------------------------------------------------
 
-    element-name:
+    url:
+        <url>
+
+    element-name-*:
         <string>
 
     predefined-element-name:
-        <string>, already-defined element name, optional
+        <string>, name of an element that has previously been defined
 
-    css-or-xpath-identifier:
-        <css-or-xpath-identifier>
+    selector:
+        <selector>
