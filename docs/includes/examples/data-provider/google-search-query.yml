@@ -1,8 +1,8 @@
-# examples/data-provider/google-search-query-array.yml
--
+# examples/data-provider/google-search-query.yml
+foo:
   search_term: "foo"
   expected_title: "foo - Google Search"
 
--
+bar:
   search_term: "bar"
   expected_title: "bar - Google Search"
