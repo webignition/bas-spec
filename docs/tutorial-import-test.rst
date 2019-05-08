@@ -1,6 +1,6 @@
-====================================
-Importing Tests Into Your Test Suite
-====================================
+===============================
+Importing Tests Into Your Suite
+===============================
 
 In the previous :doc:`tutorial on test suites </tutorial-test-suite>` we opened https://www.google.com/ and then we
 performed a search.

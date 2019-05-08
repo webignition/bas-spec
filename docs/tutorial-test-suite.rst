@@ -1,6 +1,6 @@
-==========================================
-Creating a Test Suite To Define Your Tests
-==========================================
+=====================
+Creating a Test Suite
+=====================
 
 A test suite brings a collection of tests together to represent a full user journey.
 You might think it odd that we're diving straight into test suites before covering how to create tests.
