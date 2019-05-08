@@ -12,7 +12,7 @@ A learn-as-you-go guide on writing browser automation tests in basil.
     - :doc:`Importing Tests Into Your Test Suite </tutorial-import-test>`
     - :doc:`Creating a Page Model to Define Properties of the Page Being Tested </tutorial-page-model>`
     - :doc:`Creating and Using Parameterised Tests </tutorial-parameterised-tests>`
-    - Using a Data Provider To Supply Data Sets To Your Tests
+    - :doc:`Using a Data Provider to Supply Data Sets to Your Tests </tutorial-data-providers>`
 
 We'll start out by :doc:`covering some terminology </tutorial-terminology>` so that we're all clear about
 browser automation testing concepts.
@@ -30,8 +30,8 @@ import a test into many test suites.
 Repeated references to page elements will get sorted out when we see how :doc:`page models can define page properties </tutorial-page-model>`
 and how to refer to these within your tests.
 
-We will see how through the use of parameterised tests we can create tests with 'blanks' and replace those blanks later
-with specific values.
+We will see how through the use of :doc:`parameterised tests </tutorial-parameterised-tests>` we can create tests with
+'blanks' and replace those blanks later with specific values.
 
-We will finish by learning how to use data providers to separate what is being tested from the data with which it is
-being tested.
+We will finish by learning how to :doc:`use data providers </tutorial-data-providers>` to separate what is being tested
+from the data with which it is being tested.
