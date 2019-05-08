@@ -2,5 +2,7 @@
 
     wait-for {identifier}
 
+    ---------------------
+
     {identifier}:
-        <identifier-string>
+        <identifier>

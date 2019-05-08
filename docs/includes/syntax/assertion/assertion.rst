@@ -2,15 +2,17 @@
 
     {identifier} {comparison} [{value}]
 
-    {identifier}:
-        <identifier-string>
+    -----------------------------------
 
-    {comparison}:
+    identifier:
+        <identifier>
+
+    comparison:
         excludes
         includes
         is
         is-not
         matches
 
-    {value}:
+    value:
         <string>

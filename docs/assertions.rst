@@ -32,14 +32,17 @@ Checks if the value being compared equals a given value.
 Arguments
 *********
 
+.. rst-class:: typed
 .. list-table::
-    :widths: 10 90
+    :widths: 10 10 90
     :stub-columns: 1
 
     * - ``identifier``
-      - A valid :doc:`identifier </identifiers>`.
+      - :doc:`<identifier> </types>`
+      - An :doc:`identifier </identifiers>`.
     * - ``value``
-      - A string.
+      - :doc:`<string> </types>`
+      - A string, in double quotes.
 
 ********
 Examples
@@ -61,14 +64,17 @@ Checks if the value being compared does not equal a given value.
 Arguments
 *********
 
+.. rst-class:: typed
 .. list-table::
-    :widths: 10 90
+    :widths: 10 10 90
     :stub-columns: 1
 
     * - ``identifier``
-      - A valid :doc:`identifier </identifiers>`.
+      - :doc:`<identifier> </types>`
+      - An :doc:`identifier </identifiers>`.
     * - ``value``
-      - A string.
+      - :doc:`<string> </types>`
+      - A string, in double quotes.
 
 ********
 Examples
@@ -92,14 +98,17 @@ Everything after the ``includes`` keyword (except the space after the keyword) i
 Arguments
 *********
 
+.. rst-class:: typed
 .. list-table::
-    :widths: 10 90
+    :widths: 10 10 90
     :stub-columns: 1
 
     * - ``identifier``
-      - A valid :doc:`identifier </identifiers>`.
+      - :doc:`<identifier> </types>`
+      - An :doc:`identifier </identifiers>`.
     * - ``value``
-      - A string.
+      - :doc:`<string> </types>`
+      - A string, in double quotes.
 
 ********
 Examples
@@ -123,14 +132,17 @@ Everything after the ``excludes`` keyword (except the space after the keyword) i
 Arguments
 *********
 
+.. rst-class:: typed
 .. list-table::
-    :widths: 10 90
+    :widths: 10 10 90
     :stub-columns: 1
 
     * - ``identifier``
-      - A valid :doc:`identifier </identifiers>`.
+      - :doc:`<identifier> </types>`
+      - An :doc:`identifier </identifiers>`.
     * - ``value``
-      - A string.
+      - :doc:`<string> </types>`
+      - A string, in double quotes.
 
 ********
 Examples
@@ -154,13 +166,16 @@ The value to be used must be within double quotes. The double quotes are not par
 Arguments
 *********
 
+.. rst-class:: typed
 .. list-table::
-    :widths: 10 90
+    :widths: 10 10 90
     :stub-columns: 1
 
     * - ``identifier``
-      - A valid :doc:`identifier </identifiers>`.
-    * - ``value``
+      - :doc:`<identifier> </types>`
+      - An :doc:`identifier </identifiers>`.
+    * - ``regex``
+      - :doc:`<regular-expression> </types>`
       - A regular expression.
 
 ********

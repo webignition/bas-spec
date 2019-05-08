@@ -2,22 +2,30 @@
 
     imports:
       pages:
-        {import-name}: {import-path}
+        {import-name-1}: {import-path-1}
+        ...
+        {import-name-N}: {import-path-N}
 
     actions:
-      {action-list}
+      - {action-1}
+      ...
+      - {action-N}
 
     assertions:
-      {assertion-list}
+      - {assertion-1}
+      ...
+      - {assertion-N}
 
-    {action-list}:
-      <list> of actions
+    ------------------------------------
 
-    {assertion-list}:
-      <list> of assertions
+    action-*:
+        <action>
 
-    {import-name}:
-      <string>
+    assertion-*:
+        <assertion>
 
-    {import-path}:
-      <string>
+    import-name-*:
+        <string>, must be unique within a test
+
+    import-path-*:
+        <string>, a path to the file to import, relative to the location of the test

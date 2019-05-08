@@ -2,8 +2,10 @@
 
     set {identifier} to "{value}"
 
-    {identifier}:
-        <identifier-string>
+    -----------------------------
 
-    {value}:
+    identifier:
+        <identifier>
+
+    value:
         <string>

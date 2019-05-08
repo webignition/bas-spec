@@ -2,8 +2,10 @@
 
     {identifier} is-not "{value}"
 
-    {identifier}:
-        <identifier-string>
+    -----------------------------
+
+    identifier:
+        <identifier>
 
     {value}:
         <string>

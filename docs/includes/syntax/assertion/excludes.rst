@@ -2,8 +2,10 @@
 
     {identifier} excludes "{value}"
 
-    {identifier}:
-        <identifier-string>
+    -------------------------------
+
+    identifier:
+        <identifier>
 
     {value}:
         <string>

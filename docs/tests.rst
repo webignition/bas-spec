@@ -11,10 +11,8 @@ A test comprises two parts:
 Syntax
 ------
 
-A test is a YAML object with ``actions`` and ``assertions`` properties.
-
-The `actions` property is a list of :doc:`actions </actions>`.
-The `assertions` property is a list of :doc:`assertions </assertions>`.
+A test is a YAML object with ``actions`` and ``assertions`` properties. The `actions` property is a list of
+:doc:`actions </actions>`. The `assertions` property is a list of :doc:`assertions </assertions>`.
 
 Action arguments and assertion values can be represented by named parameters. Values for parameters are passed in
 :doc:`test suites </test-suites>`.
@@ -24,7 +22,6 @@ Action arguments and assertion values can be represented by named parameters. Va
 Page models can be imported and referenced in actions and assertions:
 
 .. include:: includes/syntax/test/test-page-model.rst
-
 
 --------
 Examples

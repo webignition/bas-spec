@@ -4,7 +4,7 @@ Data Providers
 
 A data provider defines a data collection to be used with a parameterised :doc:`test </tests>`.
 
-A data collection contains one or more data sets. Each data set provides values for the parameters
+A data collection contains one or more data sets. Each data set has a name and provides values for the parameters
 as required by a test.
 
 ------
@@ -20,5 +20,4 @@ Each property name is the name of a data set. Each data set maps parameter names
 Examples
 --------
 
-.. literalinclude:: includes/examples/data-provider/google-search-query-array.yml
-.. literalinclude:: includes/examples/data-provider/google-search-query-object.yml
+.. literalinclude:: includes/examples/data-provider/google-search-query.yml

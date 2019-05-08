@@ -4,10 +4,8 @@
 Identifiers
 ===========
 
-An ``identifier`` uniquely identifies an element within a page. This may take the form of a:
-
-- a :doc:`selector </selectors>` (a CSS selector or XPath query) followed by an optional position if matching more than one element
-- page model element reference
+An ``identifier`` uniquely identifies an element within a page. It is either a :doc:`selector </selectors>` or a page
+model reference.
 
 ------
 Syntax

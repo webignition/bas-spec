@@ -1,24 +1,25 @@
-.. include:: includes/line-break.rst
+.. |br| raw:: html
+
+   <br />
 
 =========
 Selectors
 =========
 
-A ``selector`` uniquely identifies an element within a page with the use of a CSS selector or XPath query.
-A ``selector`` is one form of :doc:`identifier </identifiers>`.
+A ``selector`` uniquely identifies an element within a page with the use of a CSS selector or XPath.
+A selector is one form of :doc:`identifier </identifiers>`.
 
 ------
 Syntax
 ------
 
-.. include:: includes/selectors-syntax.rst
+.. include:: includes/syntax/selector.rst
 
 --------
 Examples
 --------
 
 .. list-table::
-    :widths: 40 60
     :stub-columns: 1
 
     * - ``"#element-id"``
@@ -28,13 +29,19 @@ Examples
       - XPath query matching against the element ``id`` attribute.
 
     * - ``".listed-item":1``
-      - CSS selector matching all elements with the ``listed-item`` |br| class name, fetching the first item in the list.
+      - Finding the first matched item from the start of the list.
 
     * - ``".listed-item":3``
-      - CSS selector matching all elements with the ``listed-item`` |br| class name, fetching the third item in the list.
+      - Finding the third matched item from the start of the list.
+
+    * - ``".listed-item":-1``
+      - Finding the first matched item from the end of the list.
+
+    * - ``".listed-item":-3``
+      - Finding the third matched item from the end of the list.
 
     * - ``".listed-item":first``
       - Special position keyword ``first`` is equivalent to ``:1``.
 
-    * - ``".listed-item":1``
-      - Special position keyword ``last`` fetches the last matching item.
+    * - ``".listed-item":last``
+      - Special position keyword ``last`` is equivalent to ``:-1``.

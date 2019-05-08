@@ -2,8 +2,10 @@
 
     {identifier} matches "{regex}"
 
-    {identifier}:
-        <identifier-string>
+    ------------------------------
+
+    identifier:
+        <identifier>
 
     {regex}:
         <regular-expression>

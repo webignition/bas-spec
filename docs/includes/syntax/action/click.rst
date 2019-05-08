@@ -2,5 +2,7 @@
 
     click {identifier}
 
-    {identifier}:
-        <identifier-string>
+    ------------------
+
+    identifier:
+        <identifier>

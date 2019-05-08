@@ -1,6 +1,0 @@
-imports:
-  tests:
-    {import-name}: {import-path}
-
-{test-name}:
-  use: {import-name}

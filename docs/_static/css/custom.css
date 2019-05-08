@@ -10,3 +10,9 @@
 .rst-content table.docutils td {
   vertical-align: top;
 }
+
+.rst-content table.typed td:first-of-type {
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
+  font-size: 12px;
+  line-height: 1.4;
+}
