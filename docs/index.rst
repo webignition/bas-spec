@@ -41,6 +41,7 @@ Goals:
     :maxdepth: 1
 
     syntax-notation
+    types
     actions
     assertions
     browser-properties
