@@ -8,3 +8,4 @@ model and some data providers.
 .. admonition:: Topics
 
     - :doc:`Simple Test Suite </examples-simple-test-suite>`
+    - :doc:`Import a Test Into a Test Suite </examples-import-test>`

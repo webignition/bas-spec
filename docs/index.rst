@@ -43,6 +43,7 @@ Goals:
 
     examples
     examples-simple-test-suite
+    examples-import-test
 
 .. toctree::
     :caption: Reference
