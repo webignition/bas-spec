@@ -48,6 +48,7 @@ Goals:
     examples-page-model
     examples-parameterised-test
     examples-data-provider
+    examples-environment-variables
 
 .. toctree::
     :caption: Reference
