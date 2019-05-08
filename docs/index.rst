@@ -35,6 +35,7 @@ Goals:
     tutorial-import-test
     tutorial-page-model
     tutorial-parameterised-tests
+    tutorial-data-providers
 
 .. toctree::
     :caption: Reference

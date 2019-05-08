@@ -13,5 +13,5 @@ imports:
     - browser.title is "Google"
 
 "query":
-  user: query_test
+  use: query_test
   data: google_search_query_data

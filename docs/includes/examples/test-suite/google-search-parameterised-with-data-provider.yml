@@ -1,8 +1,10 @@
-# examples/test-suite/google-search-parameterised.yml
+# examples/test-suite/google-search-parameterised-with-data-provider.yml
 imports:
   tests:
     open_url_test: ../test/open-url-parameterised.yml
     query_test: ../test/google-search-query-parameterised.yml
+  data_providers:
+    imported_query_data: ../data-provider/google-search-query.yml
 
 data:
   open_url_data:
@@ -10,20 +12,10 @@ data:
       url: "https://www.google.com"
       expected_title: "Google"
 
-  query_data:
-    -
-      search_term: "foo"
-      expected_title: "foo - Google Search"
-
-    -
-      search_term: "bar"
-      expected_title: "bar - Google Search"
-
-
 "open https://www.google.com":
   use: open_url_test
   data: data.open_url_data
 
 "query":
   use: query_test
-  data: data.query_data
+  data: imported_query_data
