@@ -63,3 +63,4 @@ Goals:
     tests
     test-suites
     data-providers
+    environment-variables
