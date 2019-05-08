@@ -13,6 +13,7 @@ A learn-as-you-go guide on writing browser automation tests in basil.
     - :doc:`Creating a Page Model to Define Properties of the Page Being Tested </tutorial-page-model>`
     - :doc:`Creating and Using Parameterised Tests </tutorial-parameterised-tests>`
     - :doc:`Using a Data Provider to Supply Data Sets to Your Tests </tutorial-data-providers>`
+    - :doc:`Using Environment Variables to Keep Secrets Secret </tutorial-environment-variables>`
 
 We'll start out by :doc:`covering some terminology </tutorial-terminology>` so that we're all clear about
 browser automation testing concepts.
@@ -34,4 +35,5 @@ We will see how through the use of :doc:`parameterised tests </tutorial-paramete
 'blanks' and replace those blanks later with specific values.
 
 We will finish by learning how to :doc:`use data providers </tutorial-data-providers>` to separate what is being tested
-from the data with which it is being tested.
+from the data with which it is being tested and how to :doc:`use environment variables </tutorial-environment-variables>`
+to keep secrets secret.

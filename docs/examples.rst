@@ -12,3 +12,4 @@ model and some data providers.
     - :doc:`Define Page Properties in a Page Model </examples-page-model>`
     - :doc:`Parameterise a Test </examples-parameterised-test>`
     - :doc:`Define Data Externally In a Data Provider </examples-data-provider>`
+    - :doc:`Using Data Within Environment Variables </examples-environment-variables>`

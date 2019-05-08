@@ -36,6 +36,7 @@ Goals:
     tutorial-page-model
     tutorial-parameterised-tests
     tutorial-data-providers
+    tutorial-environment-variables
 
 .. toctree::
     :caption: Examples
@@ -47,6 +48,7 @@ Goals:
     examples-page-model
     examples-parameterised-test
     examples-data-provider
+    examples-environment-variables
 
 .. toctree::
     :caption: Reference
@@ -63,3 +65,4 @@ Goals:
     tests
     test-suites
     data-providers
+    environment-variables
