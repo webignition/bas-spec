@@ -90,7 +90,7 @@ with CSS selectors. Page elements can also be identified with XPath and, more ro
 reference. The :doc:`tutorial on page models </tutorial-page-model>` goes into more depth.
 
 The ``assertions`` section lists one assertion to verify that the page ``<title>`` is as expected. We could also
-verify that ``browser.url`` but in this case the page title suffices. The fewer assertions needed to verify the browser
-state the faster your tests will complete.
+verify that ``browser.url`` is correct but in this case the page title suffices. The fewer assertions needed to verify
+the browser state the faster your tests will complete.
 
 .. _YAML: https://en.wikipedia.org/wiki/YAML/
