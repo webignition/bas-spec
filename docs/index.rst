@@ -38,6 +38,17 @@ Goals:
     tutorial-data-providers
 
 .. toctree::
+    :caption: Examples
+    :maxdepth: 1
+
+    examples
+    examples-simple-test-suite
+    examples-import-test
+    examples-page-model
+    examples-parameterised-test
+    examples-data-provider
+
+.. toctree::
     :caption: Reference
     :maxdepth: 1
 
