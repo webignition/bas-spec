@@ -46,7 +46,7 @@ Our test suite contains two tests, each having a name that we've chosen:
 - ``open https://www.google.com``
 - ``query 'example'``
 
-The name can be whatever you chosen. There is no right answer, but it is good practice to name a test after what an end
+The name can be whatever you chose. There is no right answer, but it is good practice to name a test after what an end
 user would be looking to achieve. Phrasing the name of a test as an action to be undertaken works well.
 
 *****************************
@@ -87,10 +87,10 @@ submission button.
 
 The input field (``.gLFyf.gsfi``) and submit button (``.FPdoLc.VlcLAe input[name=btnK]``) are identified here
 with CSS selectors. Page elements can also be identified with XPath and, more robustly, with page model element
-reference. The tutorial on identifiers goes into more depth.
+reference. The :doc:`tutorial on page models </tutorial-page-model>` goes into more depth.
 
 The ``assertions`` section lists one assertion to verify that the page ``<title>`` is as expected. We could also
-verify that ``browser.url`` but in this case the page title suffices. The fewer assertions needed to verify the browser
-state the faster your tests will complete.
+verify that ``browser.url`` is correct but in this case the page title suffices. The fewer assertions needed to verify
+the browser state the faster your tests will complete.
 
 .. _YAML: https://en.wikipedia.org/wiki/YAML/
