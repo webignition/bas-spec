@@ -1,16 +1,20 @@
 .. code-block:: text
 
-    {variable-value} {later-defined-value} [{optional-variable-value}] literal
+    {variable} {later-defined} "{variable-within-literal-quotes}" [{optional}] literal
 
-    ----------------------------------------------------
+    -------------------------------------------------------------------------------------------
 
-    {variable-value}:
+    variable:
         <type>, the type for the variable value (<string>, <integer>, <url>).
 
-    {later-defined-value}:
+    later-defined:
         A variable value to be defined later, most commonly if composed of multiple parts where
-        each part requires its own description.
+        each part requires its own definition or description.
 
-    {optional-variable-value}:
-        <type>, optional values are encapsulated in curly braces.
+    optional:
+        <type>, optional values are encapsulated in [square brackets].
+
+
+    Any characters within the definition not encapsulated in curly or square brackets are
+    literal. Literal characters do not denote any special purpose and to be present as-is.
 
