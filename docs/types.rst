@@ -27,3 +27,12 @@ Variable Types
 
     * - ``<regular-expression>``
       - A `PRCE regular expression <https://en.wikipedia.org/wiki/Perl_Compatible_Regular_Expressions>`_.
+
+    * - ``<selector>``
+      - A :doc:`selector </selectors>`.
+
+    * - ``<css-selector>``
+      - A `CSS selector <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors>`_.
+
+    * - ``<xpath>``
+      - A `XPath <https://developer.mozilla.org/en-US/docs/Web/XPath>`_.
