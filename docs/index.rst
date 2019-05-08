@@ -36,6 +36,7 @@ Goals:
     tutorial-page-model
     tutorial-parameterised-tests
     tutorial-data-providers
+    tutorial-environment-variables
 
 .. toctree::
     :caption: Examples

@@ -1,0 +1,18 @@
+# examples/test-suite/example-sign-in.yml
+"open https://www.example.com":
+  actions:
+    - open "https://www.example.com"
+
+  assertions:
+    - browser.url is "https://www.example.com"
+    - browser.title is "Example Domain"
+
+"sign in as user":
+  actions:
+    - set ".sign-in-form .user" to "user@example.com"
+    - set ".sign-in-form .password" to "password123"
+    - click ".sign-in-form .submit"
+
+  assertions:
+    - browser.url is "https://www.example.com/account/"
+    - browser.title is "Welcome user@example.com"
