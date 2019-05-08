@@ -9,3 +9,4 @@ model and some data providers.
 
     - :doc:`Simple Test Suite </examples-simple-test-suite>`
     - :doc:`Import a Test Into a Test Suite </examples-import-test>`
+    - :doc:`Define Page Properties in a Page Model </examples-page-model>`

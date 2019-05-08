@@ -44,6 +44,7 @@ Goals:
     examples
     examples-simple-test-suite
     examples-import-test
+    examples-page-model
 
 .. toctree::
     :caption: Reference
