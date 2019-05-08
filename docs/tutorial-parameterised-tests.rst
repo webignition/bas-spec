@@ -71,8 +71,9 @@ The act of opening https://www.google.com doesn't lend itself to being repeated 
 
 But querying Google does!
 
+.. literalinclude:: includes/examples/page-model/google.com-element-scoped.yml
 .. literalinclude:: includes/examples/test/open-url-parameterised.yml
-.. literalinclude:: includes/examples/test/google-search-query-parameterised.yml
+.. literalinclude:: includes/examples/test/google-search-query-parameterised-with-page-model.yml
 .. literalinclude:: includes/examples/test-suite/google-search-parameterised.yml
 
 Our import of a the parameterised test to open a page is there as before. We've now defined a parameterised test to
