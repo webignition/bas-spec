@@ -36,3 +36,9 @@ Variable Types
 
     * - ``<xpath>``
       - A `XPath <https://developer.mozilla.org/en-US/docs/Web/XPath>`_.
+
+    * - ``<action>``
+      - An :doc:`action </actions>`.
+
+    * - ``<assertion>``
+      - An :doc:`selector </assertions>`.
