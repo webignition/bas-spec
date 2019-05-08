@@ -2,9 +2,11 @@
 
     open "{url}" in "{browser}"
 
-    {url}:
-        <url-string>
+    ---------------------------
 
-    {browser}:
+    url:
+        <url>
+
+    browser:
         chrome
         firefox

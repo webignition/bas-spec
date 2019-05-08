@@ -34,13 +34,16 @@ Visit a URL in the browser.
 Arguments
 *********
 
+.. rst-class:: typed
 .. list-table::
-    :widths: 10 90
+    :widths: 10 10 80
     :stub-columns: 1
 
     * - ``url``
+      - :doc:`url </types>`
       - The URL to visit, in double quotes.
     * - ``browser``
+      - :doc:`string </types>`
       - The browser to use, in double quotes.
 
 ********
@@ -63,12 +66,14 @@ Click on an element.
 Arguments
 *********
 
+.. rst-class:: typed
 .. list-table::
-    :widths: 10 90
+    :widths: 10 10 80
     :stub-columns: 1
 
     * - ``identifier``
-      - A valid :doc:`identifier </identifiers>`.
+      - :doc:`identifier </types>`
+      - An :doc:`identifier </identifiers>`.
 
 ********
 Examples
@@ -90,13 +95,16 @@ Set the value of an element. Most applicable to form field elements.
 Arguments
 *********
 
+.. rst-class:: typed
 .. list-table::
-    :widths: 10 90
+    :widths: 10 10 80
     :stub-columns: 1
 
     * - ``identifier``
-      - A valid :doc:`identifier </identifiers>`.
+      - :doc:`identifier </types>`
+      - An :doc:`identifier </identifiers>`.
     * - ``value``
+      - :doc:`string </types>`
       - A string.
 
 ********
@@ -119,12 +127,14 @@ Submits a form.
 Arguments
 *********
 
+.. rst-class:: typed
 .. list-table::
-    :widths: 10 90
+    :widths: 10 10 80
     :stub-columns: 1
 
     * - ``identifier``
-      - A valid :doc:`identifier </identifiers>`.
+      - :doc:`identifier </types>`
+      - An :doc:`identifier </identifiers>`.
 
 ********
 Examples
@@ -146,12 +156,14 @@ Wait for a specified number of seconds.
 Arguments
 *********
 
+.. rst-class:: typed
 .. list-table::
-    :widths: 10 90
+    :widths: 10 10 90
     :stub-columns: 1
 
     * - ``number-of-seconds``
-      - An integer greater than ``0``.
+      - :doc:`positive-integer </types>`
+      - An integer greater than zero.
 
 ********
 Examples
@@ -173,12 +185,14 @@ Wait for an element to be rendered. Waits for up to 30 seconds.
 Arguments
 *********
 
+.. rst-class:: typed
 .. list-table::
-    :widths: 10 90
+    :widths: 10 10 90
     :stub-columns: 1
 
     * - ``identifier``
-      - A valid :doc:`identifier </identifiers>`.
+      - :doc:`identifier </types>`
+      - An :doc:`identifier </identifiers>`.
 
 ********
 Examples

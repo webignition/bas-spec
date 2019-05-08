@@ -2,5 +2,7 @@
 
     submit {identifier}
 
-    {identifier}:
-        <identifier-string>
+    -------------------
+
+    identifier:
+        <identifier>
