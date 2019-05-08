@@ -15,7 +15,6 @@ A test suite is a YAML object. The most basic test suite defines tests directly.
 .. include:: includes/syntax/test-suite/test-suite.rst
 
 A test may be defined independently of the test suite and imported in one or more test suites.
-
 Import names are user-defined. Import paths are relative to the test suite.
 
 .. include:: includes/syntax/test-suite/import.rst

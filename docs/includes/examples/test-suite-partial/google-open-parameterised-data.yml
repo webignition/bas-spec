@@ -1,5 +1,0 @@
-data:
-  open_url_data:
-    -
-      url: "https://www.google.com"
-      expected_title: "Google"

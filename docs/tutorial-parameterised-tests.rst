@@ -49,12 +49,7 @@ Importing and Using a Parameterised Test
 At the start of the test suite, under the ``imports`` and ``tests`` objects, we provide an import name and import path
 just as when importing any other test.
 
-Next we define the data we want made available to the parameterised test. This is defined under the ``data`` property
-of the test suite.
-
-.. literalinclude:: includes/examples/test-suite-partial/google-open-parameterised-data.yml
-
-The ``data`` property is a data collection. A data collection is given a name, in this case ``open_url_data``, and an
+The ``data`` property of the test is a data collection. A data collection defined directly within a test contains
 a list of data sets. Each data set is a YAML object with property names matching the test parameter names and values as
 needed.
 
@@ -64,9 +59,6 @@ many data sets will be run once per data set.
 Let's see how the data is passed to the parameterised test.
 
 .. literalinclude:: includes/examples/test-suite-partial/google-open-parameterised-test.yml
-
-Under the test name, the ``use`` property denotes the imported test to run. Under the ``data`` property we reference
-the required data collection within the global data object.
 
 ------------------------------
 Parameterising Querying Google
