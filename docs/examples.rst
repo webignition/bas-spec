@@ -11,3 +11,4 @@ model and some data providers.
     - :doc:`Import a Test Into a Test Suite </examples-import-test>`
     - :doc:`Define Page Properties in a Page Model </examples-page-model>`
     - :doc:`Parameterise a Test </examples-parameterised-test>`
+    - :doc:`Define Data Externally In a Data Provider </examples-data-provider>`

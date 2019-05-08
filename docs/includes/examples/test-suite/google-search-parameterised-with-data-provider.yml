@@ -6,15 +6,12 @@ imports:
   data_providers:
     imported_query_data: ../data-provider/google-search-query.yml
 
-data:
-  open_url_data:
-    -
-      url: "https://www.google.com"
-      expected_title: "Google"
-
 "open https://www.google.com":
   use: open_url_test
-  data: data.open_url_data
+  data:
+    0:
+      url: "https://www.google.com"
+      expected_title: "Google"
 
 "query":
   use: query_test
