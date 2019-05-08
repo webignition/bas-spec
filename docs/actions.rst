@@ -40,10 +40,10 @@ Arguments
     :stub-columns: 1
 
     * - ``url``
-      - :doc:`url </types>`
+      - :doc:`<url> </types>`
       - The URL to visit, in double quotes.
     * - ``browser``
-      - :doc:`string </types>`
+      - :doc:`<string> </types>`
       - The browser to use, in double quotes.
 
 ********
@@ -72,7 +72,7 @@ Arguments
     :stub-columns: 1
 
     * - ``identifier``
-      - :doc:`identifier </types>`
+      - :doc:`<identifier> </types>`
       - An :doc:`identifier </identifiers>`.
 
 ********
@@ -101,10 +101,10 @@ Arguments
     :stub-columns: 1
 
     * - ``identifier``
-      - :doc:`identifier </types>`
+      - :doc:`<identifier> </types>`
       - An :doc:`identifier </identifiers>`.
     * - ``value``
-      - :doc:`string </types>`
+      - :doc:`<string> </types>`
       - A string.
 
 ********
@@ -133,7 +133,7 @@ Arguments
     :stub-columns: 1
 
     * - ``identifier``
-      - :doc:`identifier </types>`
+      - :doc:`<identifier> </types>`
       - An :doc:`identifier </identifiers>`.
 
 ********
@@ -162,7 +162,7 @@ Arguments
     :stub-columns: 1
 
     * - ``number-of-seconds``
-      - :doc:`positive-integer </types>`
+      - :doc:`<positive-integer> </types>`
       - An integer greater than zero.
 
 ********
@@ -191,7 +191,7 @@ Arguments
     :stub-columns: 1
 
     * - ``identifier``
-      - :doc:`identifier </types>`
+      - :doc:`<identifier> </types>`
       - An :doc:`identifier </identifiers>`.
 
 ********
