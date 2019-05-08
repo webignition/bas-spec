@@ -24,3 +24,6 @@ Variable Types
 
     * - ``<identifier>``
       - An :doc:`identifier </identifiers>`.
+
+    * - ``<regular-expression>``
+      - A `PRCE regular expression <https://en.wikipedia.org/wiki/Perl_Compatible_Regular_Expressions>`_.
