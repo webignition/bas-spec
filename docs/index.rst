@@ -40,6 +40,7 @@ Goals:
     :caption: Reference
     :maxdepth: 1
 
+    syntax-notation
     actions
     assertions
     browser-properties
