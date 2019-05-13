@@ -52,6 +52,6 @@ What if we have a set of test users that we want to run through the sign in test
 Here are two examples, one with the data sets defined within the test and a one with the data sets defined within
 a data provider.
 
-.. literalinclude:: includes/examples/test/example-sign-in-as-user.yml
+.. literalinclude:: includes/examples/step/example-sign-in-as-user.yml
 .. literalinclude:: includes/examples/data-provider/example-sign-in.yml
 .. literalinclude:: includes/examples/test-suite/example-sign-in-with-data-provider.yml

@@ -62,7 +62,7 @@ Goals:
     identifiers
     selectors
     page-model
-    tests
+    steps
     test-suites
     data-providers
     environment-variables

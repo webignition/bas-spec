@@ -19,7 +19,7 @@ to repeatedly redefine the *visit the homepage* test.
 Defining and Importing a Test
 -----------------------------
 
-.. literalinclude:: includes/examples/test/google-open-literal.yml
+.. literalinclude:: includes/examples/step/google-open-literal.yml
 
 A test is a YAML object with ``actions`` and ``assertions`` properties. This is the same as the :ref:`first test from
 the test suite tutorial <tutorial-test-suite-test-suite>` placed into its own file.

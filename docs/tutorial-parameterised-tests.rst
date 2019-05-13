@@ -8,7 +8,7 @@ where needed.
 In that instance, the commonly-used test opened https://www.google.com/ and verified that the page URL and page title
 were as expected.
 
-.. literalinclude:: includes/examples/test/google-open-literal.yml
+.. literalinclude:: includes/examples/step/google-open-literal.yml
 
 Needing to open a page and to then verify that the correct page is open is a common starting point for many test suites.
 
@@ -21,7 +21,7 @@ Let's do that.
 Adding Parameters to a Test
 ---------------------------
 
-.. literalinclude:: includes/examples/test/open-url-parameterised.yml
+.. literalinclude:: includes/examples/step/open-url-parameterised.yml
 
 We've replace absolute values (``https://www.google.com`` and ``Google``) with named parameters (``url`` and ``expected_title``).
 
@@ -43,7 +43,7 @@ Let's see how.
 Importing and Using a Parameterised Test
 ----------------------------------------
 
-.. literalinclude:: includes/examples/test/open-url-parameterised.yml
+.. literalinclude:: includes/examples/step/open-url-parameterised.yml
 .. literalinclude:: includes/examples/test-suite/google-open-parameterised.yml
 
 At the start of the test suite, under the ``imports`` and ``tests`` objects, we provide an import name and import path
@@ -72,8 +72,8 @@ The act of opening https://www.google.com doesn't lend itself to being repeated 
 But querying Google does!
 
 .. literalinclude:: includes/examples/page-model/google.com-element-scoped.yml
-.. literalinclude:: includes/examples/test/open-url-parameterised.yml
-.. literalinclude:: includes/examples/test/google-search-query-parameterised-with-page-model.yml
+.. literalinclude:: includes/examples/step/open-url-parameterised.yml
+.. literalinclude:: includes/examples/step/google-search-query-parameterised-with-page-model.yml
 .. literalinclude:: includes/examples/test-suite/google-search-parameterised.yml
 
 Our import of a the parameterised test to open a page is there as before. We've now defined a parameterised test to

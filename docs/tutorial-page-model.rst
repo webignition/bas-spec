@@ -25,7 +25,7 @@ A page model is a YAML object with ``url`` and ``elements`` properties. The ``ur
 
 For the time being those selectors are a little hard on the eyes but at least we need to only update them in one place.
 
-.. literalinclude:: includes/examples/test/google-open-literal.yml
+.. literalinclude:: includes/examples/step/google-open-literal.yml
 .. literalinclude:: includes/examples/test-suite/google-import-open-with-page-model.yml
 
 We've added a ``pages`` property to the ``imports`` object to import the page model we created. We've chosen an import
