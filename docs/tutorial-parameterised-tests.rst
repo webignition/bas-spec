@@ -2,7 +2,7 @@
 Creating and Using Parameterised Tests
 ======================================
 
-We previously saw how a commonly-used test can be :doc:`defined independently and imported into a test suite </tutorial-import-test>`
+We previously saw how a commonly-used test can be :doc:`defined independently and imported into a test suite </tutorial-import-step>`
 where needed.
 
 In that instance, the commonly-used test opened https://www.google.com/ and verified that the page URL and page title

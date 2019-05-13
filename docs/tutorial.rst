@@ -9,7 +9,7 @@ A learn-as-you-go guide on writing browser automation tests in basil.
     - :doc:`Get To Know the Terminology </tutorial-terminology>`
     - :doc:`Creating a Test Suite To Define Your Tests </tutorial-test>`
     - :doc:`Understanding Test Actions and Assertions </tutorial-actions-and-assertions>`
-    - :doc:`Importing Tests Into Your Test Suite </tutorial-import-test>`
+    - :doc:`Importing Tests Into Your Test Suite </tutorial-import-step>`
     - :doc:`Creating a Page Model to Define Properties of the Page Being Tested </tutorial-page-model>`
     - :doc:`Creating and Using Parameterised Tests </tutorial-parameterised-tests>`
     - :doc:`Using a Data Provider to Supply Data Sets to Your Tests </tutorial-data-providers>`
@@ -25,7 +25,7 @@ We will show you how the :ref:`operations a user can perform <tutorial-actions>`
 sequence of actions within a test and how the :ref:`verification of browser state <tutorial-assertions>` is carried out
 through a set of assertions.
 
-You will learn how to :doc:`define commonly-repeated tests </tutorial-import-test>` outside of a test suite and how to
+You will learn how to :doc:`define commonly-repeated tests </tutorial-import-step>` outside of a test suite and how to
 import a test into many test suites.
 
 Repeated references to page elements will get sorted out when we see how :doc:`page models can define page properties </tutorial-page-model>`

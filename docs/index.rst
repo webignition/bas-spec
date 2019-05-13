@@ -32,7 +32,7 @@ Goals:
     tutorial-terminology
     tutorial-test
     tutorial-actions-and-assertions
-    tutorial-import-test
+    tutorial-import-step
     tutorial-page-model
     tutorial-parameterised-tests
     tutorial-data-providers
