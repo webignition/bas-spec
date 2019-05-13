@@ -1,7 +1,7 @@
 # examples/step/google-search-query-parameterised.yml
 actions:
-  - set ".gLFyf.gsfi" to "{{ search_term }}"
+  - set ".gLFyf.gsfi" to "{{ data.search_term }}"
   - click ".FPdoLc.VlcLAe input[name=btnK]"
 
 assertions:
-  - browser.title is "{{ expected_title }}"
+  - browser.title is "{{ data.expected_title }}"
