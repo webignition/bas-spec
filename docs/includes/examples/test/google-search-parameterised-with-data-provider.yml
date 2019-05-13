@@ -1,18 +1,18 @@
 # examples/test/google-search-parameterised-with-data-provider.yml
 imports:
-  tests:
-    open_url_test: ../step/open-url-parameterised.yml
-    query_test: ../step/google-search-query-parameterised.yml
+  steps:
+    open_url_step: ../step/open-url-parameterised.yml
+    query_step: ../step/google-search-query-parameterised.yml
   data_providers:
     imported_query_data: ../data-provider/google-search-query.yml
 
 "open https://www.google.com":
-  use: open_url_test
+  use: open_url_step
   data:
     0:
       url: "https://www.google.com"
       expected_title: "Google"
 
 "query":
-  use: query_test
+  use: query_step
   data: imported_query_data
