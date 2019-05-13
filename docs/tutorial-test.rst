@@ -29,7 +29,7 @@ Let's start somewhere nice and simple. We want to
 
 Here's what that looks like in basil:
 
-.. _tutorial-test-suite-test-suite:
+.. _tutorial-test-test:
 
 
 .. literalinclude:: includes/examples/test/google-search-query-literal.yml

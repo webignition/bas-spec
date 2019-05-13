@@ -7,7 +7,7 @@ A learn-as-you-go guide on writing browser automation tests in basil.
 .. admonition:: Topics
 
     - :doc:`Get To Know the Terminology </tutorial-terminology>`
-    - :doc:`Creating a Test Suite To Define Your Tests </tutorial-test-suite>`
+    - :doc:`Creating a Test Suite To Define Your Tests </tutorial-test>`
     - :doc:`Understanding Test Actions and Assertions </tutorial-actions-and-assertions>`
     - :doc:`Importing Tests Into Your Test Suite </tutorial-import-test>`
     - :doc:`Creating a Page Model to Define Properties of the Page Being Tested </tutorial-page-model>`
@@ -18,7 +18,7 @@ A learn-as-you-go guide on writing browser automation tests in basil.
 We'll start out by :doc:`covering some terminology </tutorial-terminology>` so that we're all clear about
 browser automation testing concepts.
 
-You will then :doc:`create a test suite </tutorial-test-suite>` and will see how through a series of tests we can get
+You will then :doc:`create a test suite </tutorial-test>` and will see how through a series of tests we can get
 the browser into an expected state and then verify that the browser state is as expected.
 
 We will show you how the :ref:`operations a user can perform <tutorial-actions>` within a browser are translated into a

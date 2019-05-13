@@ -2,7 +2,7 @@
 Importing Tests Into Your Suite
 ===============================
 
-In the previous :doc:`tutorial on test suites </tutorial-test-suite>` we opened https://www.google.com/ and then we
+In the previous :doc:`tutorial on tests </tutorial-test>` we opened https://www.google.com/ and then we
 performed a search.
 
 The Google search form is shown on the homepage which is why we first visit the homepage before performing a search.
@@ -22,7 +22,7 @@ Defining and Importing a Test
 .. literalinclude:: includes/examples/step/google-open-literal.yml
 
 A test is a YAML object with ``actions`` and ``assertions`` properties. This is the same as the :ref:`first test from
-the test suite tutorial <tutorial-test-suite-test-suite>` placed into its own file.
+the test suite tutorial <tutorial-test-test>` placed into its own file.
 
 .. literalinclude:: includes/examples/test/google-import-open.yml
 
