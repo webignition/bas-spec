@@ -1,27 +1,27 @@
 .. code-block:: text
 
     imports:
-        tests:
-            {test-import-name}: {import-path}
+        steps:
+            {step-import-name}: {import-path}
 
-    {test-name-1}:
-        use: {test-import-name}
+    {step-name-1}:
+        use: {step-import-name}
     ...
-    {test-name-N}
-        {test}
+    {step-name-N}
+        {step}
 
     ------------------------------------
 
-    test-import-name:
-        <string>, must be unique within a test
-
-    import-path:
-        <string>, a path to the file to import, relative to the location of the suite
-
-    test-name-*:
+    step-import-name:
         <string>
 
-    test:
+    import-path:
+        <string>, a path to the file to import, relative to the location of the test
+
+    step-name-*:
+        <string>
+
+    step:
         actions:
           - {action-1}
           ...

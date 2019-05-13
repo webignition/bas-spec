@@ -1,17 +1,17 @@
 .. code-block:: text
 
-    {test-name-1}:
+    {step-name-1}:
         {test}
     ...
-    {test-name-N}
-        {test}
+    {step-name-N}
+        {step}
 
     --------
 
-    test-name-*:
+    step-name-*:
         <string>
 
-    test:
+    step:
         actions:
           - {action-1}
           ...
