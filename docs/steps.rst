@@ -2,7 +2,7 @@
 Test Steps
 ==========
 
-A test is composed of steps. A step comprises two parts:
+A test is composed of steps. Each step comprises two parts:
 
 - a sequence of :doc:`actions </actions>` to be performed to get the browser into a desired state
 - a set of :doc:`assertions </assertions>` to verify the browser state
