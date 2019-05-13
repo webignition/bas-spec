@@ -1,11 +1,7 @@
 # examples/step/google-query-page-model.yml
-imports:
-  pages:
-    google_com: ../page-model/google.com.yml
-
 actions:
-  - set google_com.elements.search_input to "example"
-  - click google_com.elements.search_button
+  - set "{{ elements.search_input }}" to "{{ data.query_term }}"
+  - click "{{ elements.search_button }}"
 
 assertions:
-  - browser.title is "example - Google Search"
+  - browser.title is "{{ data.expected_title }}"

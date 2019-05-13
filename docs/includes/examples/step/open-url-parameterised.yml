@@ -1,7 +1,7 @@
 # examples/step/open-url-parameterised.yml
 actions:
-  - open "{{ url }}"
+  - open "{{ data.url }}"
 
 assertions:
-  - browser.url is "{{ url }}"
-  - browser.title is "{{ expected_title }}"
+  - browser.url is "{{ data.url }}"
+  - browser.title is "{{ data.expected_title }}"
