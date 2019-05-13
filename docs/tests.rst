@@ -43,22 +43,22 @@ Page models can be imported and their defined page properties referenced within 
 Examples
 --------
 
-*****************************
-Tests Defined Within The Test
-*****************************
+*************************
+Steps With Literal Values
+*************************
 
 .. literalinclude:: includes/examples/test/google-search-query-literal.yml
 
-*****************************************************
-Parameterised Steps With Data Defined Within The Test
-*****************************************************
+************************************
+Parameterised Steps With Inline Data
+************************************
 
 .. literalinclude:: includes/examples/step/open-url-parameterised.yml
 .. literalinclude:: includes/examples/test/google-open-parameterised.yml
 
-*******************************************************************
-Parameterised Steps With Data Supplied By An Imported Data Provider
-*******************************************************************
+**************************************
+Parameterised Steps With Provided Data
+**************************************
 
 .. literalinclude:: includes/examples/step/google-search-query-parameterised.yml
 .. literalinclude:: includes/examples/data-provider/google-search-query.yml
@@ -72,9 +72,17 @@ Steps Imported Into the Test With Additional Assertions
 .. literalinclude:: includes/examples/step/google-query-example-literal.yml
 .. literalinclude:: includes/examples/test/google-import-open-import-query-additional-assertions.yml
 
-*********************************
-Page Model Imported Into the Test
-*********************************
+*********************************************
+Imported Page Model Used Directly Within Test
+*********************************************
 
 .. literalinclude:: includes/examples/page-model/google.com.yml
-.. literalinclude:: includes/examples/test/google-inline-tests-with-page-model.yml
+.. literalinclude:: includes/examples/test/google-inline-steps-with-page-model.yml
+
+****************************************************
+Imported Page Model Elements Passed To Imported Step
+****************************************************
+
+.. literalinclude:: includes/examples/page-model/google.com.yml
+.. literalinclude:: includes/examples/step/google-query-parameterised-elements.yml
+.. literalinclude:: includes/examples/test/google-imported-steps-with-page-model.yml
