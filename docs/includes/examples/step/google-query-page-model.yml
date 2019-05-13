@@ -4,8 +4,8 @@ imports:
     google_com: ../page-model/google.com.yml
 
 actions:
-  - set google_com.elements.search_input to "example"
-  - click google_com.elements.search_button
+  - set "{{ search_input }}" to "{{ query_term }}"
+  - click "{{ search_button }}"
 
 assertions:
-  - browser.title is "example - Google Search"
+  - browser.title is "{{ expected_title }}"
