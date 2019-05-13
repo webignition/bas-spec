@@ -2,14 +2,14 @@
 Using a Data Provider
 =====================
 
-We previously learned how a :doc:`data collection can be passed to a parameterised test </tutorial-parameterised-tests>`
-to run a single test once per set of data.
+We previously learned how a :doc:`data set list can be passed to a parameterised test step </tutorial-parameterised-tests>`
+to run a single step once per set of data.
 
-We defined a data collection within our test suite. Doing so can get cumbersome over time. An overly-large data collection
-can make the test suite hard to follow. We run the risk of too-closely coupling that which is being tested with the data
+We defined a data list set within our test. Doing so can get cumbersome over time. An overly-large collection of data
+can make the test hard to follow. We run the risk of too-closely coupling that which is being tested with the data
 with which it is being tested.
 
-A data provider imported into a test suite solves addresses these matters.
+A data provider imported into a test addresses these matters.
 
 ------------------------
 Creating a Data Provider
