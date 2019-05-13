@@ -64,5 +64,6 @@ Goals:
     page-model
     steps
     tests
+    test-suites
     data-providers
     environment-variables
