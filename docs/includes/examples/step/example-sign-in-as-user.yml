@@ -1,9 +1,9 @@
 # examples/step/example-sign-in-as-user.yml
 actions:
-  - set ".sign-in-form .user" to "{{ username }}"
-  - set ".sign-in-form .password" to "{{ password }}"
+  - set ".sign-in-form .user" to "{{ data.username }}"
+  - set ".sign-in-form .password" to "{{ data.password }}"
   - click ".sign-in-form .submit"
 
 assertions:
   - browser.url is "https://www.example.com/account/"
-  - browser.title is "Welcome {{ username }}"
+  - browser.title is "Welcome {{ data.username }}"
