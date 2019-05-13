@@ -1,4 +1,4 @@
-# examples/test-suite/example-sign-in-with-environment-variables.yml
+# examples/test/example-sign-in-with-environment-variables.yml
 "open https://www.example.com":
   actions:
     - open "https://www.example.com"

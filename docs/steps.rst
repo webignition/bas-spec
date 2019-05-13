@@ -15,7 +15,7 @@ A step is a YAML object with ``actions`` and ``assertions`` properties. The `act
 :doc:`actions </actions>`. The `assertions` property is a list of :doc:`assertions </assertions>`.
 
 Action arguments and assertion values can be represented by named parameters. Values for parameters are passed in
-:doc:`test suites </test-suites>`.
+:doc:`tests </tests>`.
 
 .. include:: includes/syntax/step/step.rst
 

@@ -63,6 +63,6 @@ Goals:
     selectors
     page-model
     steps
-    test-suites
+    tests
     data-providers
     environment-variables

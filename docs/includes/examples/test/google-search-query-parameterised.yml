@@ -1,4 +1,4 @@
-# examples/test-suite/google-search-query-parameterised.yml
+# examples/test/google-search-query-parameterised.yml
 imports:
   tests:
     query_test: ../step/google-search-query-parameterised.yml

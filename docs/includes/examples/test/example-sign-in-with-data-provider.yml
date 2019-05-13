@@ -1,4 +1,4 @@
-# examples/test-suite/example-sign-in-with-data-provider.yml
+# examples/test/example-sign-in-with-data-provider.yml
 import:
   tests:
     sign_in_test: ../step/example-sign-in-as-user.yml

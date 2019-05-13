@@ -32,7 +32,7 @@ Here's what that looks like in basil:
 .. _tutorial-test-suite-test-suite:
 
 
-.. literalinclude:: includes/examples/test-suite/google-search-query-literal.yml
+.. literalinclude:: includes/examples/test/google-search-query-literal.yml
 
 ----------------------------
 Understanding the Test Suite
@@ -56,7 +56,7 @@ Opening the Page to Be Tested
 The first test within a suite can be whatever you choose. In practice, opening the page at which we want to start, and
 verifying that this has occurred, is generally a good idea.
 
-.. literalinclude:: includes/examples/test-suite-partial/google-search-query-literal-open.yml
+.. literalinclude:: includes/examples/test-partial/google-search-query-literal-open.yml
 
 Here we define the name of the test (``open https://www.google.com``). This name is not part of the test itself, it is
 here to give meaning to the test within the context of the test suite.
@@ -80,7 +80,7 @@ Querying For the Word "example"
 We want to enter the word "example" (without the quotes) into the Google search field and then to submit the search
 form.
 
-.. literalinclude:: includes/examples/test-suite-partial/google-search-query-literal-query.yml
+.. literalinclude:: includes/examples/test-partial/google-search-query-literal-query.yml
 
 The ``actions`` section lists the two steps needed: setting the input field to the required value and clicking the form
 submission button.
