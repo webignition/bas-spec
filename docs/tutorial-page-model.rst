@@ -5,7 +5,7 @@ Creating a Page Model
 We've been working on a test suite to open https:/www.google.com and to query for the word "example".
 For the querying part, we need to identify the search input field and the button to submit the search form.
 
-.. literalinclude:: includes/examples/test-suite-partial/google-search-query-literal-query.yml
+.. literalinclude:: includes/examples/test-partial/google-search-query-literal-query.yml
 
 The test works for now so that's fine, right? Well, those selectors are a bit messy and that's not so fine.
 The selectors are hard to read (``.gLFyf.gsfi``, doesn't really shout "search input") and may well need to
@@ -26,7 +26,7 @@ A page model is a YAML object with ``url`` and ``elements`` properties. The ``ur
 For the time being those selectors are a little hard on the eyes but at least we need to only update them in one place.
 
 .. literalinclude:: includes/examples/step/google-open-literal.yml
-.. literalinclude:: includes/examples/test-suite/google-import-open-with-page-model.yml
+.. literalinclude:: includes/examples/test/google-import-open-with-page-model.yml
 
 We've added a ``pages`` property to the ``imports`` object to import the page model we created. We've chosen an import
 name (``google_com``) and provided an import path (``page-model/google.com.yml``).

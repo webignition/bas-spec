@@ -21,4 +21,4 @@ path to our data provider.
 Now just pass the import name we chose as the ``data`` property of the test.
 
 .. literalinclude:: includes/examples/data-provider/google-search-query.yml
-.. literalinclude:: includes/examples/test-suite/google-search-parameterised-with-data-provider.yml
+.. literalinclude:: includes/examples/test/google-search-parameterised-with-data-provider.yml

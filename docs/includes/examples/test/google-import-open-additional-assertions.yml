@@ -1,11 +1,13 @@
-# examples/test-suite/google-search-query-literal.yml
+# examples/test/google-import-open-additional-assertions.yml
+imports:
+  tests:
+    google_open: ../step/google-open-literal.yml
+
 "open https://www.google.com":
-  actions:
-    - open "https://www.google.com"
+  use: google_open
 
   assertions:
-    - browser.url is "https://www.google.com"
-    - browser.title is "Google"
+    - browser.title excludes "Error"
 
 "query 'example'":
   actions:

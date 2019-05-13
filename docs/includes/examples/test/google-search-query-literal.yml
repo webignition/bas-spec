@@ -1,10 +1,11 @@
-# examples/test-suite/google-import-open.yml
-imports:
-  tests:
-    google_open: ../step/google-open-literal.yml
-
+# examples/test/google-search-query-literal.yml
 "open https://www.google.com":
-  use: google_open
+  actions:
+    - open "https://www.google.com"
+
+  assertions:
+    - browser.url is "https://www.google.com"
+    - browser.title is "Google"
 
 "query 'example'":
   actions:

@@ -44,7 +44,7 @@ Importing and Using a Parameterised Test
 ----------------------------------------
 
 .. literalinclude:: includes/examples/step/open-url-parameterised.yml
-.. literalinclude:: includes/examples/test-suite/google-open-parameterised.yml
+.. literalinclude:: includes/examples/test/google-open-parameterised.yml
 
 At the start of the test suite, under the ``imports`` and ``tests`` objects, we provide an import name and import path
 just as when importing any other test.
@@ -58,7 +58,7 @@ many data sets will be run once per data set.
 
 Let's see how the data is passed to the parameterised test.
 
-.. literalinclude:: includes/examples/test-suite-partial/google-open-parameterised-test.yml
+.. literalinclude:: includes/examples/test-partial/google-open-parameterised-test.yml
 
 ------------------------------
 Parameterising Querying Google
@@ -74,7 +74,7 @@ But querying Google does!
 .. literalinclude:: includes/examples/page-model/google.com-element-scoped.yml
 .. literalinclude:: includes/examples/step/open-url-parameterised.yml
 .. literalinclude:: includes/examples/step/google-search-query-parameterised-with-page-model.yml
-.. literalinclude:: includes/examples/test-suite/google-search-parameterised.yml
+.. literalinclude:: includes/examples/test/google-search-parameterised.yml
 
 Our import of a the parameterised test to open a page is there as before. We've now defined a parameterised test to
 query Google and we've define a data collection with two data sets to pass to the parameterised querying test.

@@ -24,7 +24,7 @@ Defining and Importing a Test
 A test is a YAML object with ``actions`` and ``assertions`` properties. This is the same as the :ref:`first test from
 the test suite tutorial <tutorial-test-suite-test-suite>` placed into its own file.
 
-.. literalinclude:: includes/examples/test-suite/google-import-open.yml
+.. literalinclude:: includes/examples/test/google-import-open.yml
 
 Here we import and use the test within our test suite.
 
@@ -48,11 +48,11 @@ Compare our previous test suite defined the test within the suite to how we are 
 
 **Previously**
 
-.. literalinclude:: includes/examples/test-suite-partial/google-search-query-literal-open.yml
+.. literalinclude:: includes/examples/test-partial/google-search-query-literal-open.yml
 
 **Now**
 
-.. literalinclude:: includes/examples/test-suite-partial/google-search-import-open.yml
+.. literalinclude:: includes/examples/test-partial/google-search-import-open.yml
 
 --------------------------
 Extending an Imported Test
@@ -61,7 +61,7 @@ Extending an Imported Test
 An imported test can have additional assertions applied. As actions always come before assertions and as an imported
 test will have performed actions, an imported test cannot have additional actions.
 
-.. literalinclude:: includes/examples/test-suite/google-import-open-additional-assertions.yml
+.. literalinclude:: includes/examples/test/google-import-open-additional-assertions.yml
 
 That's starting to look quite nice, except I feel that those identifiers (such as ``.gLFyf.gsfi``) are going to get messy
 if we keep having to write them out in the middle of each test that needs them.

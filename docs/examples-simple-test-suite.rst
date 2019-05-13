@@ -2,4 +2,4 @@
 Simple Test Suite
 =================
 
-.. literalinclude:: includes/examples/test-suite/google-search-query-literal.yml
+.. literalinclude:: includes/examples/test/google-search-query-literal.yml

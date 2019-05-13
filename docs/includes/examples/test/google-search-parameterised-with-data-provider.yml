@@ -1,4 +1,4 @@
-# examples/test-suite/google-search-parameterised-with-data-provider.yml
+# examples/test/google-search-parameterised-with-data-provider.yml
 imports:
   tests:
     open_url_test: ../step/open-url-parameterised.yml

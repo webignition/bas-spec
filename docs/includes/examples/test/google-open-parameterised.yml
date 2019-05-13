@@ -1,4 +1,4 @@
-# examples/test-suite/google-open-parameterised.yml
+# examples/test/google-open-parameterised.yml
 imports:
   tests:
     open_url_test: ../step/open-url-parameterised.yml
