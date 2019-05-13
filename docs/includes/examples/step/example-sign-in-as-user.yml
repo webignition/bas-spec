@@ -1,4 +1,4 @@
-# examples/test/example-sign-in-as-user.yml
+# examples/step/example-sign-in-as-user.yml
 actions:
   - set ".sign-in-form .user" to "{{ username }}"
   - set ".sign-in-form .password" to "{{ password }}"

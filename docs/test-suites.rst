@@ -2,7 +2,7 @@
 Test Suites
 ===========
 
-A test suite is composed of a series of :doc:`tests </tests>`. Tests may be defined directly within a suite or may be
+A test suite is composed of a series of :doc:`tests </steps>`. Tests may be defined directly within a suite or may be
 defined independently and imported into a suite. A test suite may import tests, may import page models
 and may import data providers.
 
@@ -54,7 +54,7 @@ Tests Defined Within The test Suite
 Parameterised Tests With Data Defined Within The test Suite
 ***********************************************************
 
-.. literalinclude:: includes/examples/test/open-url-parameterised.yml
+.. literalinclude:: includes/examples/step/open-url-parameterised.yml
 
 .. literalinclude:: includes/examples/test-suite/google-open-parameterised.yml
 
@@ -62,7 +62,7 @@ Parameterised Tests With Data Defined Within The test Suite
 Parameterised Tests With Data Supplied By An Imported Data Provider
 *******************************************************************
 
-.. literalinclude:: includes/examples/test/google-search-query-parameterised.yml
+.. literalinclude:: includes/examples/step/google-search-query-parameterised.yml
 
 .. literalinclude:: includes/examples/data-provider/google-search-query.yml
 
@@ -72,9 +72,9 @@ Parameterised Tests With Data Supplied By An Imported Data Provider
 Tests Imported Into the Test Suite With Additional Assertions
 *************************************************************
 
-.. literalinclude:: includes/examples/test/google-open-literal.yml
+.. literalinclude:: includes/examples/step/google-open-literal.yml
 
-.. literalinclude:: includes/examples/test/google-query-example-literal.yml
+.. literalinclude:: includes/examples/step/google-query-example-literal.yml
 
 .. literalinclude:: includes/examples/test-suite/google-import-open-import-query-additional-assertions.yml
 

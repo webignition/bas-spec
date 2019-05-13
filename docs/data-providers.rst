@@ -2,7 +2,7 @@
 Data Providers
 ==============
 
-A data provider defines a data collection to be used with a parameterised :doc:`test </tests>`.
+A data provider defines a data collection to be used with a parameterised :doc:`test </steps>`.
 
 A data collection contains one or more data sets. Each data set has a name and provides values for the parameters
 as required by a test.
