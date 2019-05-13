@@ -1,7 +1,7 @@
 .. code-block:: text
 
     {step-name-1}:
-        {test}
+        {step}
     ...
     {step-name-N}
         {step}
