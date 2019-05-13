@@ -1,14 +1,11 @@
-=====================
-Creating a Test Suite
-=====================
+===============
+Creating a Test
+===============
 
-A test suite brings a collection of tests together to represent a full user journey.
-You might think it odd that we're diving straight into test suites before covering how to create tests.
+Through a series of steps, a test performs actions to get the browser into a required state and evaluates assertions
+to verify that the state is as expected.
 
-Tests outside of the context of a test suite are somewhat abstract. Running head first into defining a test suite
-is the way to go.
-
-We're going to be creating a YAML_ file to define our test suite. In fact, all basil code is stored in YAML files.
+We will be creating a YAML_ file to define our test. In fact, all basil code is stored in YAML files.
 
 .. admonition:: Note
 
@@ -34,34 +31,34 @@ Here's what that looks like in basil:
 
 .. literalinclude:: includes/examples/test/google-search-query-literal.yml
 
-----------------------------
-Understanding the Test Suite
-----------------------------
+----------------------
+Understanding the Test
+----------------------
 
-Remember from the :doc:`terminology overview </tutorial-terminology>` that a test verifies one precise piece of functionality
-and a test suite combines a series of tests to represent a full user journey.
+Remember from the :doc:`terminology overview </tutorial-terminology>` that a step verifies one precise piece of functionality
+and a test combines a series of steps to represent a full user journey.
 
-Our test suite contains two tests, each having a name that we've chosen:
+Our test contains two steps, each having a name that we've chosen:
 
-- ``open https://www.google.com``
+- ``open Google``
 - ``query 'example'``
 
 The name can be whatever you chose. There is no right answer, but it is good practice to name a test after what an end
-user would be looking to achieve. Phrasing the name of a test as an action to be undertaken works well.
+user would be looking to achieve. Phrasing the name of a step as an action to be undertaken works well.
 
 *****************************
 Opening the Page to Be Tested
 *****************************
 
-The first test within a suite can be whatever you choose. In practice, opening the page at which we want to start, and
+The first step within a test can be whatever you choose. In practice, opening the page at which we want to start, and
 verifying that this has occurred, is generally a good idea.
 
 .. literalinclude:: includes/examples/test-partial/google-search-query-literal-open.yml
 
-Here we define the name of the test (``open https://www.google.com``). This name is not part of the test itself, it is
-here to give meaning to the test within the context of the test suite.
+Here we define the name of the step (``open Google``). This name is not part of the step itself, it is
+here to give meaning to the step within the context of the test.
 
-The test itself comprises the ``actions`` and ``assertions`` that follow the name:
+The step itself comprises the ``actions`` and ``assertions`` that follow the name:
 
 .. literalinclude:: includes/examples/step/google-open-literal.yml
 
@@ -77,8 +74,7 @@ of the page ``<title>`` element.
 Querying For the Word "example"
 *******************************
 
-We want to enter the word "example" (without the quotes) into the Google search field and then to submit the search
-form.
+We want to enter the word "example" (without the quotes) into the Google search field and to submit the search form.
 
 .. literalinclude:: includes/examples/test-partial/google-search-query-literal-query.yml
 
@@ -87,7 +83,7 @@ submission button.
 
 The input field (``.gLFyf.gsfi``) and submit button (``.FPdoLc.VlcLAe input[name=btnK]``) are identified here
 with CSS selectors. Page elements can also be identified with XPath and, more robustly, with page model element
-reference. The :doc:`tutorial on page models </tutorial-page-model>` goes into more depth.
+references. The :doc:`tutorial on page models </tutorial-page-model>` goes into more depth.
 
 The ``assertions`` section lists one assertion to verify that the page ``<title>`` is as expected. We could also
 verify that ``browser.url`` is correct but in this case the page title suffices. The fewer assertions needed to verify

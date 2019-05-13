@@ -4,7 +4,7 @@ imports:
     google_open: ../step/google-open-literal.yml
     google_query_example: ../step/google-query-example-literal.yml
 
-"open https://www.google.com":
+"open Google":
   use: google_open
 
   assertions:

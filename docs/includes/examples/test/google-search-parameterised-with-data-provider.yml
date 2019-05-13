@@ -6,7 +6,7 @@ imports:
   data_providers:
     imported_query_data: ../data-provider/google-search-query.yml
 
-"open https://www.google.com":
+"open Google":
   use: open_url_step
   data:
     0:

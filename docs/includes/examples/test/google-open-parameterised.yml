@@ -3,7 +3,7 @@ imports:
   steps:
     open_url_step: ../step/open-url-parameterised.yml
 
-"open https://www.google.com":
+"open Google":
   use: open_url_step
   data:
     0:

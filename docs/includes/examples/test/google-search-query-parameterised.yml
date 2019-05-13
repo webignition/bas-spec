@@ -5,7 +5,7 @@ imports:
   data_providers:
     google_search_query_data: ../data-provider/google-search-query-parameterised.yml
 
-"open https://www.google.com":
+"open Google":
   actions:
     - open "https://www.google.com" in "chrome"
 

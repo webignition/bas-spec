@@ -5,7 +5,7 @@ imports:
   pages:
     google_com: ../page-model/google.com.yml
 
-"open https://www.google.com":
+"open Google":
   use: google_open
 
 "query 'example'":

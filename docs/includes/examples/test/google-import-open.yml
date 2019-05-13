@@ -3,7 +3,7 @@ imports:
   steps:
     google_open: ../step/google-open-literal.yml
 
-"open https://www.google.com":
+"open Google":
   use: google_open
 
 "query 'example'":

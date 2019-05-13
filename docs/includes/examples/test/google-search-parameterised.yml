@@ -4,7 +4,7 @@ imports:
     open_url_step: ../step/open-url-parameterised.yml
     query_step: ../step/google-search-query-parameterised.yml
 
-"open https://www.google.com":
+"open Google":
   use: open_url_step
   data:
     0:

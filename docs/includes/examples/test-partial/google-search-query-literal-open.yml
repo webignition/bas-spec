@@ -1,4 +1,4 @@
-"open https://www.google.com":
+"open Google":
   actions:
     - open "https://www.google.com" in "chrome"
 

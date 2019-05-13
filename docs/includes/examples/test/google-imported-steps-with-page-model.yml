@@ -5,7 +5,7 @@ imports:
   steps:
     google_query: ../step/google-query-parameterised-elements.yml
 
-"open https://www.google.com":
+"open Google":
   actions:
     - open google_com
 
