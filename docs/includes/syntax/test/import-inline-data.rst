@@ -25,6 +25,9 @@
     import-path:
         <string>, a path to the file to import, relative to the location of the test
 
+    step-name:
+        <string>
+
     data-set-name-*:
         <string>
 
@@ -32,7 +35,4 @@
         <string>, must match the name of a parameter as required by a step
 
     parameter-value-*:
-        <string>
-
-    step-name:
         <string>
