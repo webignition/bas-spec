@@ -1,6 +1,6 @@
 # examples/test/google-import-open-with-page-model.yml
 imports:
-  tests:
+  steps:
     google_open: ../step/google-open-literal.yml
   pages:
     google_com: ../page-model/google.com.yml

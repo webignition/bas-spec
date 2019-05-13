@@ -1,7 +1,7 @@
 # examples/test/example-sign-in-with-data-provider.yml
 import:
-  tests:
-    sign_in_test: ../step/example-sign-in-as-user.yml
+  steps:
+    sign_in_step: ../step/example-sign-in-as-user.yml
   data_providers:
     users: ../data-provider/example-sign-in.yml
 
@@ -14,7 +14,7 @@ import:
     - browser.title is "Example Domain"
 
 "sign in as user (literal data)":
-  use: sign_in_test
+  use: sign_in_step
   data:
     user1:
       username: "{{ env:TEST_USER_1_USERNAME }}"
@@ -25,5 +25,5 @@ import:
       password: "{{ env:TEST_USER_2_PASSWORD }}"
 
 "sign in as user (imported data)":
-  use: sign_in_test
+  use: sign_in_step
   data: users

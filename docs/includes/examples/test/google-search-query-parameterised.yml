@@ -1,7 +1,7 @@
 # examples/test/google-search-query-parameterised.yml
 imports:
-  tests:
-    query_test: ../step/google-search-query-parameterised.yml
+  steps:
+    query_step: ../step/google-search-query-parameterised.yml
   data_providers:
     google_search_query_data: ../data-provider/google-search-query-parameterised.yml
 
@@ -13,5 +13,5 @@ imports:
     - browser.title is "Google"
 
 "query":
-  use: query_test
+  use: query_step
   data: google_search_query_data

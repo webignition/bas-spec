@@ -1,11 +1,11 @@
 .. code-block:: text
 
     imports:
-        tests:
-            {test-import-name}: {import-path}
+        steps:
+            {step-import-name}: {import-path}
 
-    {test-name}:
-        use: {test-import-name}
+    {step-name}:
+        use: {step-import-name}
         data:
             {data-set-name-1}:
                 {parameter-name-1}: {parameter-value-1}
@@ -19,20 +19,20 @@
 
     -----------------------------------------------
 
-    test-import-name:
+    step-import-name:
         <string>
 
     import-path:
-        <string>, a path to the file to import, relative to the location of the suite
+        <string>, a path to the file to import, relative to the location of the test
 
     data-set-name-*:
         <string>
 
     parameter-name-*:
-        <string>, must match the name of a parameter as required by a test
+        <string>, must match the name of a parameter as required by a step
 
     parameter-value-*:
         <string>
 
-    test-name:
+    step-name:
         <string>

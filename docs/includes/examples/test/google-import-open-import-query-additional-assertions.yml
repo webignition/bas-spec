@@ -1,6 +1,6 @@
 # examples/test/google-import-open-import-query-additional-assertions.yml
 imports:
-  tests:
+  steps:
     google_open: ../step/google-open-literal.yml
     google_query_example: ../step/google-query-example-literal.yml
 

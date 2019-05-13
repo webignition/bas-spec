@@ -4,7 +4,7 @@
         pages:
             {page-import-name}: {import-path}
 
-    {test-name}:
+    {step-name}:
       actions:
         - open {import_name}
 
@@ -17,9 +17,9 @@
         <string>
 
     import-path:
-        <string>, a path to the file to import, relative to the location of the suite
+        <string>, a path to the file to import, relative to the location of the test
 
-    test-name:
+    step-name:
         <string>
 
     element-name:

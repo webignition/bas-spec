@@ -1,6 +1,6 @@
 # examples/test/google-import-open-additional-assertions.yml
 imports:
-  tests:
+  steps:
     google_open: ../step/google-open-literal.yml
 
 "open https://www.google.com":
