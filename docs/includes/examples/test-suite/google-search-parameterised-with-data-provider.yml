@@ -1,8 +1,8 @@
 # examples/test-suite/google-search-parameterised-with-data-provider.yml
 imports:
   tests:
-    open_url_test: ../test/open-url-parameterised.yml
-    query_test: ../test/google-search-query-parameterised.yml
+    open_url_test: ../step/open-url-parameterised.yml
+    query_test: ../step/google-search-query-parameterised.yml
   data_providers:
     imported_query_data: ../data-provider/google-search-query.yml
 

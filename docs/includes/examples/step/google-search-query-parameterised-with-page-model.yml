@@ -1,4 +1,4 @@
-# examples/test/google-search-query-parameterised-with-page-model.yml
+# examples/step/google-search-query-parameterised-with-page-model.yml
 imports:
   pages:
     google_com: ../page-model/google.com-element-scoped.yml

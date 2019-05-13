@@ -1,7 +1,7 @@
 # examples/test-suite/google-import-open-additional-assertions.yml
 imports:
   tests:
-    google_open: ../test/google-open-literal.yml
+    google_open: ../step/google-open-literal.yml
 
 "open https://www.google.com":
   use: google_open

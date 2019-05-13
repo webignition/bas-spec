@@ -1,4 +1,4 @@
-# examples/test/open-url-parameterised.yml
+# examples/step/open-url-parameterised.yml
 actions:
   - open "{{ url }}"
 

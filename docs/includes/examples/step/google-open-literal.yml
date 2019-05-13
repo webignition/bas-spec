@@ -1,4 +1,4 @@
-# examples/test/google-open-literal.yml
+# examples/step/google-open-literal.yml
 actions:
   - open "https://www.google.com"
 
