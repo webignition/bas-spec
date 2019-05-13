@@ -2,14 +2,15 @@
 Creating a Page Model
 =====================
 
-We've been working on a test suite to open https:/www.google.com and to query for the word "example".
+We've been working on a test to open https:/www.google.com and to query for the word "example".
 For the querying part, we need to identify the search input field and the button to submit the search form.
 
 .. literalinclude:: includes/examples/test-partial/google-search-query-literal-query.yml
 
-The test works for now so that's fine, right? Well, those selectors are a bit messy and that's not so fine.
-The selectors are hard to read (``.gLFyf.gsfi``, doesn't really shout "search input") and may well need to
-be updated in many places when the page being tested changes.
+The test step works for now so that's fine, right?
+
+Well, those selectors are a bit messy and that's not so fine. The selectors are hard to read (``.gLFyf.gsfi``,
+doesn't really shout "search input") and may well need to be updated in many places when the page being tested changes.
 
 Let's create a page model to store all of these page properties. We can refer to the page model in our tests, making
 the tests clearer to read. And we can make sure that if something needs updating it only needs to be changed in one place.
@@ -42,7 +43,7 @@ Scoping Elements Within a Page Model
 Both the search input field and the search button are within a form. And both elements have some properties other than
 class names that are probably less prone to change.
 
-We can tidy up those selectors within our page model.
+We can make our page model more robust.
 
 .. literalinclude:: includes/examples/page-model/google.com-selector-scoped.yml
 
