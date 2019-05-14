@@ -19,7 +19,7 @@ the tests clearer to read. And we can make sure that if something needs updating
 Creating and Using a Page Model
 -------------------------------
 
-.. literalinclude:: includes/examples/page-model/google.com.yml
+.. literalinclude:: includes/examples/page/google.com.yml
 
 A page model is a YAML object with ``url`` and ``elements`` properties. The ``url`` property holds the page URL. The
 ``elements`` property maps convenience names to ways of identifying elements.
@@ -45,13 +45,13 @@ class names that are probably less prone to change.
 
 We can make our page model more robust.
 
-.. literalinclude:: includes/examples/page-model/google.com-selector-scoped.yml
+.. literalinclude:: includes/examples/page/google.com-selector-scoped.yml
 
 That makes my brain hurt just a little bit less. But we're still repeating the ``form[action='/search']`` part of each
 of the selectors.
 
 Thankfully we can refer to any element that we have already named within any subsequent element identifier.
 
-.. literalinclude:: includes/examples/page-model/google.com-element-scoped.yml
+.. literalinclude:: includes/examples/page/google.com-element-scoped.yml
 
 That is much easier to read.

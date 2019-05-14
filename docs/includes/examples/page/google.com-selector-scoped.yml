@@ -1,4 +1,4 @@
-# examples/page-model/google.com-selector-scoped.yml
+# examples/page/google.com-selector-scoped.yml
 url: "https://www.google.com"
 elements:
   # finds "[name=q]" within the context of "form[action='/search']"

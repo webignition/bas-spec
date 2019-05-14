@@ -76,13 +76,13 @@ Steps Imported Into the Test With Additional Assertions
 Imported Page Model Used Directly Within Test
 *********************************************
 
-.. literalinclude:: includes/examples/page-model/google.com.yml
+.. literalinclude:: includes/examples/page/google.com.yml
 .. literalinclude:: includes/examples/test/google-inline-steps-with-page-model.yml
 
 ****************************************************
 Imported Page Model Elements Passed To Imported Step
 ****************************************************
 
-.. literalinclude:: includes/examples/page-model/google.com.yml
+.. literalinclude:: includes/examples/page/google.com.yml
 .. literalinclude:: includes/examples/step/google-query-parameterised.yml
 .. literalinclude:: includes/examples/test/google-imported-steps-with-page-model.yml
