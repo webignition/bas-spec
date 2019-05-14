@@ -2,13 +2,13 @@
 Tests Suites
 ============
 
-A test suite is composed of a series of :doc:`tests </tests>`. Tests are defined externally and imported into a suite.
+A test suite is a series of :doc:`tests </tests>`. Tests are defined externally and imported into a suite.
 
 ------
 Syntax
 ------
 
-A test suite is a YAML object. An ``import`` property defines the tests to include.
+A test suite is a YAML list.
 
 .. include:: includes/syntax/test-suite/test-suite.rst
 

@@ -1,4 +1,2 @@
 # examples/test-suite/google-open-and-query.yml
-imports:
-  tests:
-    - "../test/google-search-query-literal.yml"
+- "../test/google-search-query-literal.yml"

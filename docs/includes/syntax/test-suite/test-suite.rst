@@ -1,10 +1,8 @@
 .. code-block:: text
 
-    import:
-        tests:
-            - "{import-path-1}"
-            - ...
-            - "{import-path-N}"
+    - "{import-path-1}"
+    - ...
+    - "{import-path-N}"
 
     -------------------------
 
