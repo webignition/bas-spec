@@ -9,10 +9,10 @@
 
 "sign in as user":
   actions:
-    - set ".sign-in-form .user" to "{{ env::TEST_USER_EMAIL }}"
-    - set ".sign-in-form .password" to "{{ env::TEST_USER_PASSWORD }}"
+    - set ".sign-in-form .user" to "{{ env.TEST_USER_EMAIL }}"
+    - set ".sign-in-form .password" to "{{ env.TEST_USER_PASSWORD }}"
     - click ".sign-in-form .submit"
 
   assertions:
     - browser.url is "https://www.example.com/account/"
-    - browser.title is "Welcome {{ env::TEST_USER_EMAIL }}"
+    - browser.title is "Welcome {{ env.TEST_USER_EMAIL }}"

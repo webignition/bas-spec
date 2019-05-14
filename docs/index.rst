@@ -30,11 +30,12 @@ Goals:
 
     tutorial
     tutorial-terminology
-    tutorial-test-suite
+    tutorial-test
     tutorial-actions-and-assertions
-    tutorial-import-test
+    tutorial-import-step
     tutorial-page-model
     tutorial-parameterised-tests
+    tutorial-test-suite
     tutorial-data-providers
     tutorial-environment-variables
 

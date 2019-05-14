@@ -84,5 +84,5 @@ Imported Page Model Elements Passed To Imported Step
 ****************************************************
 
 .. literalinclude:: includes/examples/page-model/google.com.yml
-.. literalinclude:: includes/examples/step/google-query-parameterised-elements.yml
+.. literalinclude:: includes/examples/step/google-query-parameterised.yml
 .. literalinclude:: includes/examples/test/google-imported-steps-with-page-model.yml

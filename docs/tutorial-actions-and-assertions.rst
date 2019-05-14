@@ -2,14 +2,14 @@
 Understanding Actions and Assertions
 ====================================
 
-The previous :doc:`tutorial on test suites </tutorial-test-suite>` showed how a test suite brings a collection of tests
-together to represent a full user journey.
+The previous :doc:`tutorial on tests </tutorial-test>` showed how a test brings a collection of steps together to
+examine a full user journey.
 
-Here's the test suite we previously created for testing Google search:
+Here's the test we previously created for testing Google search:
 
 .. literalinclude:: includes/examples/test/google-search-query-literal.yml
 
-In this tutorial, we'll look at how ``actions`` and ``assertions`` are formed and what we can do with them.
+In this tutorial section, we'll look at how ``actions`` and ``assertions`` are formed and what we can do with them.
 
 .. _tutorial-actions:
 
@@ -50,10 +50,9 @@ Assertions
 Actions get the browser into an expected state. Assertions then verify that the state is as expected.
 
 In plain English, we might say "Verify that the page title is "Google". A basil assertion for this reads as
-``browser.title is Google``.
+``browser.title is "Google"``.
 
-If an assertion is found to be correct (if the page ``<title>`` is indeed the word "Google") your test will have passed.
-If not, your test will have failed.
+If an assertion is found to be *incorrect* (if the page ``<title>`` is not the word "Google") your test will have failed.
 
 ******************
 Assertion Examples

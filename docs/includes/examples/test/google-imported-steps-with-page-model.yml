@@ -3,9 +3,9 @@ imports:
   pages:
     google_com: ../page-model/google.com.yml
   steps:
-    google_query: ../step/google-query-parameterised-elements.yml
+    google_query: ../step/google-query-parameterised.yml
 
-"open https://www.google.com":
+"open Google":
   actions:
     - open google_com
 
