@@ -1,7 +1,7 @@
 # examples/test/example-sign-in-with-environment-variables.yml
 "open https://www.example.com":
   actions:
-    - open "https://www.example.com" in "chrome"
+    - open "https://www.example.com"
 
   assertions:
     - page.url is "https://www.example.com"

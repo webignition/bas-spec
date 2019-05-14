@@ -1,7 +1,7 @@
 # examples/test/google-search-query-literal.yml
 "open Google":
   actions:
-    - open "https://www.google.com" in "chrome"
+    - open "https://www.google.com"
 
   assertions:
     - page.url is "https://www.google.com"
