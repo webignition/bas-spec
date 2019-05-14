@@ -16,11 +16,4 @@
         wait-for
 
     arguments-section:
-        [{argument} [{keyword} [{argument}]]]
-
-    argument:
-        <string>
-
-    keyword:
-        in
-        to
+        dependent on the verb
