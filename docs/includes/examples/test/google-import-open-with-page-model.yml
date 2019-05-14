@@ -1,9 +1,9 @@
 # examples/test/google-import-open-with-page-model.yml
 imports:
   steps:
-    google_open: ../step/google-open-literal.yml
+    google_open: "../step/google-open-literal.yml"
   pages:
-    google_com: ../page-model/google.com.yml
+    google_com: "../page-model/google.com.yml"
 
 "open Google":
   use: google_open

@@ -1,10 +1,10 @@
 # examples/test/google-search-parameterised-with-data-provider.yml
 imports:
   steps:
-    open_url_step: ../step/open-url-parameterised.yml
-    query_step: ../step/google-search-query-parameterised.yml
+    open_url_step: "../step/open-url-parameterised.yml"
+    query_step: "../step/google-search-query-parameterised.yml"
   data_providers:
-    imported_query_data: ../data-provider/google-search-query.yml
+    imported_query_data: "../data-provider/google-search-query.yml"
 
 "open Google":
   use: open_url_step

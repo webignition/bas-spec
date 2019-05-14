@@ -2,9 +2,9 @@
 
     imports:
         steps:
-            {step-import-name}: {import-path}
+            {step-import-name}: "{import-path}"
         data_providers:
-            {data-provider-import-name}: {import-path}
+            {data-provider-import-name}: "{import-path}"
 
     {step-name}:
         use: {step-import-name}

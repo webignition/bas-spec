@@ -1,9 +1,9 @@
 # examples/test/google-search-query-parameterised.yml
 imports:
   steps:
-    query_step: ../step/google-search-query-parameterised.yml
+    query_step: "../step/google-search-query-parameterised.yml"
   data_providers:
-    google_search_query_data: ../data-provider/google-search-query-parameterised.yml
+    google_search_query_data: "../data-provider/google-search-query-parameterised.yml"
 
 "open Google":
   actions:

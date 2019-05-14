@@ -2,7 +2,7 @@
 
     imports:
         steps:
-            {step-import-name}: {import-path}
+            {step-import-name}: "{import-path}"
 
     {step-name-1}:
         use: {step-import-name}
