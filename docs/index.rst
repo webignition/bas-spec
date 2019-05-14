@@ -44,8 +44,8 @@ Goals:
     :maxdepth: 1
 
     examples
-    examples-simple-test-suite
-    examples-import-test
+    examples-simple-test
+    examples-import-step
     examples-page-model
     examples-parameterised-test
     examples-data-provider
