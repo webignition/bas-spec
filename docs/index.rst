@@ -35,6 +35,7 @@ Goals:
     tutorial-import-step
     tutorial-page-model
     tutorial-parameterised-tests
+    tutorial-test-suite
     tutorial-data-providers
     tutorial-environment-variables
 

@@ -1,0 +1,18 @@
+# examples/test/google-store.yml
+"open Google Store":
+  actions:
+    - open "https://store.google.com" in "chrome"
+
+  assertions:
+    - browser.url is "https://store.google.com"
+    - browser.title matches "/^Google Store/"
+
+"top navigation elements are present":
+  assertions:
+    - "div[new-product-nav]" exists
+    - "div[new-product-nav] button[data-category-id='phones']" exists
+    - "div[new-product-nav] button[data-category-id='connected_home']" exists
+    - "div[new-product-nav] button[data-category-id='tablets']" exists
+    - "div[new-product-nav] button[data-category-id='laptops']" exists
+    - "div[new-product-nav] button[data-category-id='accessories']" exists
+    - "div[new-product-nav] a[href='/collection/offers']" exists

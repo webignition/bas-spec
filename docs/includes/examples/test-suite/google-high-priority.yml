@@ -1,0 +1,4 @@
+# examples/test-suite/google-high-priority.yml
+
+- "../test/google-search-query-literal.yml"
+- "../test/google-store.yml"

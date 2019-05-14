@@ -1,0 +1,3 @@
+# examples/test-suite/google-low-priority.yml
+
+- "../test/about-google.yml"
