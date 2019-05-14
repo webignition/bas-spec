@@ -3,5 +3,5 @@ actions:
   - open "{{ data.url }}" in "chrome"
 
 assertions:
-  - "{{ page.url }}" is "{{ data.url }}"
-  - "{{ page.title }}" is "{{ data.expected_title }}"
+  - page.url is "{{ data.url }}"
+  - page.title is "{{ data.expected_title }}"

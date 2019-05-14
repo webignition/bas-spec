@@ -10,8 +10,8 @@ import:
     - open "https://www.example.com" in "chrome"
 
   assertions:
-    - "{{ page.url }}" is "https://www.example.com"
-    - "{{ page.title }}" is "Example Domain"
+    - page.url is "https://www.example.com"
+    - page.title is "Example Domain"
 
 "sign in as user (literal data)":
   use: sign_in_step

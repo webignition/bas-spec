@@ -1,3 +1,3 @@
-- "{{ page.title }}" is "Homepage"
-- "{{ page.title }}" is "\"Homepage\"" (literal double quotes)
+- page.title is "Homepage"
+- page.title is "\"Homepage\"" (literal double quotes)
 - imported_page_model.elements.sign_in_button is "Sign in"

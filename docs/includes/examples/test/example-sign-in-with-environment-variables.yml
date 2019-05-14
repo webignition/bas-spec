@@ -4,8 +4,8 @@
     - open "https://www.example.com" in "chrome"
 
   assertions:
-    - "{{ page.url }}" is "https://www.example.com"
-    - "{{ page.title }}" is "Example Domain"
+    - page.url is "https://www.example.com"
+    - page.title is "Example Domain"
 
 "sign in as user":
   actions:
@@ -14,5 +14,5 @@
     - click ".sign-in-form .submit"
 
   assertions:
-    - "{{ page.url }}" is "https://www.example.com/account/"
-    - "{{ page.title }}" is "Welcome {{ env.TEST_USER_EMAIL }}"
+    - page.url is "https://www.example.com/account/"
+    - page.title is "Welcome {{ env.TEST_USER_EMAIL }}"

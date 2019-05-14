@@ -10,7 +10,7 @@ imports:
     - open "https://www.google.com" in "chrome"
 
   assertions:
-    - "{{ page.title }}" is "Google"
+    - page.title is "Google"
 
 "query":
   use: query_step

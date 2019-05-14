@@ -4,4 +4,4 @@ actions:
   - click ".FPdoLc.VlcLAe input[name=btnK]"
 
 assertions:
-  - "{{ page.title }}" is "{{ data.expected_title }}"
+  - page.title is "{{ data.expected_title }}"

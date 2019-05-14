@@ -4,8 +4,8 @@
     - open "https://about.google/" in "chrome"
 
   assertions:
-    - "{{ page.url }}" is "https://about.google/"
-    - "{{ page.title }}" is "About | Google"
+    - page.url is "https://about.google/"
+    - page.title is "About | Google"
 
 "top navigation elements are present":
   assertions:
