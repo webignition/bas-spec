@@ -23,6 +23,6 @@ model. Doing so scopes the selector to the given element.
 Examples
 --------
 
-.. literalinclude:: includes/examples/page-model/google.com.yml
-.. literalinclude:: includes/examples/page-model/google.com-selector-scoped.yml
-.. literalinclude:: includes/examples/page-model/google.com-element-scoped.yml
+.. literalinclude:: includes/examples/page/google.com.yml
+.. literalinclude:: includes/examples/page/google.com-selector-scoped.yml
+.. literalinclude:: includes/examples/page/google.com-element-scoped.yml

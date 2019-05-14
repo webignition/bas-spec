@@ -2,7 +2,7 @@
 Parameterise a Test
 ===================
 
-.. literalinclude:: includes/examples/page-model/google.com-element-scoped.yml
+.. literalinclude:: includes/examples/page/google.com-element-scoped.yml
 .. literalinclude:: includes/examples/step/open-url-parameterised.yml
 .. literalinclude:: includes/examples/step/google-query-parameterised.yml
 .. literalinclude:: includes/examples/test/google-search-parameterised.yml

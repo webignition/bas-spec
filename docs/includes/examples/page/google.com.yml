@@ -1,4 +1,4 @@
-# examples/page-model/google.com.yml
+# examples/page/google.com.yml
 url: "https://www.google.com"
 elements:
   search_input: ".gLFyf.gsfi"

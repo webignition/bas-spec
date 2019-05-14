@@ -72,7 +72,7 @@ for each data set.
 The act of opening https://www.google.com doesn't lend itself to being repeated many times with different sets of data.
 But querying Google does!
 
-.. literalinclude:: includes/examples/page-model/google.com-element-scoped.yml
+.. literalinclude:: includes/examples/page/google.com-element-scoped.yml
 .. literalinclude:: includes/examples/step/open-url-parameterised.yml
 .. literalinclude:: includes/examples/step/google-query-parameterised.yml
 .. literalinclude:: includes/examples/test/google-search-parameterised.yml

@@ -1,4 +1,4 @@
-# examples/page-model/google.com-element-scoped.yml
+# examples/page/google.com-element-scoped.yml
 url: "https://www.google.com"
 elements:
   search_form: "form[action=/search]"

@@ -2,7 +2,7 @@
 Define Data Externally In a Data Provider
 =========================================
 
-.. literalinclude:: includes/examples/page-model/google.com-element-scoped.yml
+.. literalinclude:: includes/examples/page/google.com-element-scoped.yml
 .. literalinclude:: includes/examples/step/open-url-parameterised.yml
 .. literalinclude:: includes/examples/step/google-query-parameterised.yml
 .. literalinclude:: includes/examples/data-provider/google-search-query.yml
