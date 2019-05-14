@@ -1,0 +1,4 @@
+# examples/step/google-homepage-assertions.yml
+assertions:
+  - "#hplogo" exists
+  - "a[href*='about']" exists

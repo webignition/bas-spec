@@ -4,7 +4,7 @@ Test Steps
 
 A step modifies the browser state and verifies the state using:
 
-- a sequence of :doc:`actions </actions>` to be performed to get the browser into a desired state
+- an optional sequence of :doc:`actions </actions>` to be performed to get the browser into a desired state
 - a set of :doc:`assertions </assertions>` to verify the browser state
 
 ------
@@ -18,6 +18,10 @@ Action arguments and assertion values can be represented by named parameters. Va
 test suites.
 
 .. include:: includes/syntax/step/step.rst
+
+Actions are optional. Assertions are non-optional. A step can omit actions.
+
+.. include:: includes/syntax/step/step-no-actions.rst
 
 --------
 Examples
@@ -40,3 +44,9 @@ Parameterised Elements and Parameterised Values
 ***********************************************
 
 .. literalinclude:: includes/examples/step/google-query-parameterised-elements.yml
+
+**********
+No Actions
+**********
+
+.. literalinclude:: includes/examples/step/google-homepage-assertions.yml
