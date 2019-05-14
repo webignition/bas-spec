@@ -28,9 +28,6 @@ We've replace absolute values (``https://www.google.com`` and ``Google``) with n
 Named parameters that are expected literal values must be prefixed with ``data.``. Named parameters can also be used as
 placeholders for page elements and we need a way of telling the two apart.
 
-You'll notice that the parameters within the step are written as ``{{ data.url }}`` and ``{{ data.expected_title }}``. Those
-brackets before and after the parameter name let us know that we're dealing with a parameter.
-
 Parameter names are user-defined. The names we choose are used within a test that imports our parameterised test step.
 Although parameter names can be whatever we like, picking something that makes sense outside of the context of the step
 is good practice.

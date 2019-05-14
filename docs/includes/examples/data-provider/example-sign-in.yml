@@ -1,8 +1,8 @@
 # examples/data-provider/example-sign-in.yml
 user1:
-  username: "{{ env.TEST_USER_1_USERNAME }}"
-  password: "{{ env.TEST_USER_1_PASSWORD }}"
+  username: env.TEST_USER_1_USERNAME
+  password: env.TEST_USER_1_PASSWORD
 
 user2:
-  username: "{{ env.TEST_USER_2_USERNAME }}"
-  password: "{{ env.TEST_USER_2_PASSWORD }}"
+  username: env.TEST_USER_2_USERNAME
+  password: env.TEST_USER_2_PASSWORD

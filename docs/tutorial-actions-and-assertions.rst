@@ -50,7 +50,7 @@ Assertions
 Actions get the browser into an expected state. Assertions then verify that the state is as expected.
 
 In plain English, we might say "Verify that the page title is "Google". A basil assertion for this reads as
-``"{{ page.title }}" is "Google"``.
+``page.title is "Google"``.
 
 If an assertion is found to be *incorrect* (if the page ``<title>`` is not the word "Google") your test will have failed.
 
