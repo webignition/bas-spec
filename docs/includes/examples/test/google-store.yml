@@ -9,10 +9,10 @@
 
 "top navigation elements are present":
   assertions:
-    - "div[new-product-nav]" exists
-    - "div[new-product-nav] button[data-category-id='phones']" exists
-    - "div[new-product-nav] button[data-category-id='connected_home']" exists
-    - "div[new-product-nav] button[data-category-id='tablets']" exists
-    - "div[new-product-nav] button[data-category-id='laptops']" exists
-    - "div[new-product-nav] button[data-category-id='accessories']" exists
-    - "div[new-product-nav] a[href='/collection/offers']" exists
+    - \"div[new-product-nav]\" exists
+    - \"div[new-product-nav] button[data-category-id='phones']\" exists
+    - \"div[new-product-nav] button[data-category-id='connected_home']\" exists
+    - \"div[new-product-nav] button[data-category-id='tablets']\" exists
+    - \"div[new-product-nav] button[data-category-id='laptops']\" exists
+    - \"div[new-product-nav] button[data-category-id='accessories']\" exists
+    - \"div[new-product-nav] a[href='/collection/offers']\" exists
