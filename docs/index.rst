@@ -48,6 +48,7 @@ Goals:
     examples-import-step
     examples-page-model
     examples-parameterised-test
+    examples-test-suite
     examples-data-provider
     examples-environment-variables
 
