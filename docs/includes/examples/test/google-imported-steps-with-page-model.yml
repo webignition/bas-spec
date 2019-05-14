@@ -1,9 +1,9 @@
 # examples/test/google-imported-steps-with-page-model.rst
 imports:
   pages:
-    google_com: ../page-model/google.com.yml
+    google_com: "../page-model/google.com.yml"
   steps:
-    google_query: ../step/google-query-parameterised.yml
+    google_query: "../step/google-query-parameterised.yml"
 
 "open Google":
   actions:

@@ -1,10 +1,10 @@
 # examples/test/google-search-parameterised.yml
 imports:
   pages:
-    google_com: ../page-model/google.com-element-scoped.yml
+    google_com: "../page-model/google.com-element-scoped.yml"
   steps:
-    open_url_step: ../step/open-url-parameterised.yml
-    query_step: ../step/google-search-query-parameterised.yml
+    open_url_step: "../step/open-url-parameterised.yml"
+    query_step: "../step/google-search-query-parameterised.yml"
 
 "open Google":
   use: open_url_step

@@ -2,7 +2,7 @@
 
     imports:
         pages:
-            {page-import-name}: {import-path}
+            {page-import-name}: "{import-path}"
 
     {step-name}:
       actions:

@@ -1,9 +1,9 @@
 # examples/test/example-sign-in-with-data-provider.yml
 import:
   steps:
-    sign_in_step: ../step/example-sign-in-as-user.yml
+    sign_in_step: "../step/example-sign-in-as-user.yml"
   data_providers:
-    users: ../data-provider/example-sign-in.yml
+    users: "../data-provider/example-sign-in.yml"
 
 "open https://www.example.com":
   actions:
