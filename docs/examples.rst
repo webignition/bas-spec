@@ -7,8 +7,8 @@ model and some data providers.
 
 .. admonition:: Topics
 
-    - :doc:`Simple Test Suite </examples-simple-test-suite>`
-    - :doc:`Import a Test Into a Test Suite </examples-import-test>`
+    - :doc:`Simple Test </examples-simple-test>`
+    - :doc:`Import a Test Step Into a Test </examples-import-step>`
     - :doc:`Define Page Properties in a Page Model </examples-page-model>`
     - :doc:`Parameterise a Test </examples-parameterised-test>`
     - :doc:`Define Data Externally In a Data Provider </examples-data-provider>`
