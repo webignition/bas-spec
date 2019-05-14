@@ -1,7 +1,4 @@
 # examples/test-suite/google-open-and-query.yml
 imports:
   tests:
-    open_google_and_query: ../test/google-search-query-literal.yml
-
-"query google":
-    use: open_google_and_query
+    - "../test/google-search-query-literal.yml"

@@ -8,8 +8,7 @@ A test suite is composed of a series of :doc:`tests </tests>`. Tests are defined
 Syntax
 ------
 
-A test suite is a YAML object. An ``import`` property defines the tests to include. Additional named properties
-name the tests themselves.
+A test suite is a YAML object. An ``import`` property defines the tests to include.
 
 .. include:: includes/syntax/test-suite/test-suite.rst
 
