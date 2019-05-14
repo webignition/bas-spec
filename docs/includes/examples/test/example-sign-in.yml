@@ -1,7 +1,7 @@
 # examples/test/example-sign-in.yml
 "open https://www.example.com":
   actions:
-    - open "https://www.example.com"
+    - open "https://www.example.com" in "chrome"
 
   assertions:
     - browser.url is "https://www.example.com"

@@ -1,6 +1,6 @@
 # examples/step/google-open-literal.yml
 actions:
-  - open "https://www.google.com"
+  - open "https://www.google.com" in "chrome"
 
 assertions:
   - browser.url is "https://www.google.com"

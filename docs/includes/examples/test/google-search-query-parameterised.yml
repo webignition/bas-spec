@@ -7,7 +7,7 @@ imports:
 
 "open https://www.google.com":
   actions:
-    - open "https://www.google.com"
+    - open "https://www.google.com" in "chrome"
 
   assertions:
     - browser.title is "Google"
