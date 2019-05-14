@@ -1,2 +1,3 @@
 - open "https://example.com" in "chrome"
+- open "https://example.com" in "chrome" if-not-open
 - open "https://example.com in chrome" in "firefox"

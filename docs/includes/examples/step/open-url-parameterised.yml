@@ -1,6 +1,6 @@
 # examples/step/open-url-parameterised.yml
 actions:
-  - open "{{ data.url }}"
+  - open "{{ data.url }}" in "chrome"
 
 assertions:
   - browser.url is "{{ data.url }}"
