@@ -1,0 +1,15 @@
+# examples/test/google-import-open.yml
+imports:
+  steps:
+    google_open: ../step/google-open-literal.yml
+
+"open Google":
+  use: google_open
+
+"query 'example'":
+  actions:
+    - set ".gLFyf.gsfi" to "example"
+    - click ".FPdoLc.VlcLAe input[name=btnK]"
+
+  assertions:
+    - browser.title is "example - Google Search"

@@ -1,7 +1,17 @@
 # examples/test/google-search-query-parameterised.yml
-actions:
-  - set ".gLFyf.gsfi" to "{{ search_term }}"
-  - click ".FPdoLc.VlcLAe input[name=btnK]"
+imports:
+  steps:
+    query_step: ../step/google-search-query-parameterised.yml
+  data_providers:
+    google_search_query_data: ../data-provider/google-search-query-parameterised.yml
 
-assertions:
-  - browser.title is "{{ expected_title }}"
+"open Google":
+  actions:
+    - open "https://www.google.com" in "chrome"
+
+  assertions:
+    - browser.title is "Google"
+
+"query":
+  use: query_step
+  data: google_search_query_data

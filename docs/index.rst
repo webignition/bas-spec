@@ -14,7 +14,7 @@ Basil defines:
 
 * ``actions`` to be performed to get a browser into a desired state
 * ``assertions`` to verify the browser state
-* ``tests`` and ``test suites`` to arrange collections of actions and assertions
+* ``steps``, ``tests`` and ``test suites`` to arrange collections of actions and assertions
 * ``page models`` to de-couple tests from the pages being tested
 * ``data providers`` to de-couple parameterised tests from the data driving them
 
@@ -30,11 +30,12 @@ Goals:
 
     tutorial
     tutorial-terminology
-    tutorial-test-suite
+    tutorial-test
     tutorial-actions-and-assertions
-    tutorial-import-test
+    tutorial-import-step
     tutorial-page-model
     tutorial-parameterised-tests
+    tutorial-test-suite
     tutorial-data-providers
     tutorial-environment-variables
 
@@ -43,10 +44,11 @@ Goals:
     :maxdepth: 1
 
     examples
-    examples-simple-test-suite
-    examples-import-test
+    examples-simple-test
+    examples-import-step
     examples-page-model
     examples-parameterised-test
+    examples-test-suite
     examples-data-provider
     examples-environment-variables
 
@@ -62,6 +64,7 @@ Goals:
     identifiers
     selectors
     page-model
+    steps
     tests
     test-suites
     data-providers

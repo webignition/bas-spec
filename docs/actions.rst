@@ -46,6 +46,17 @@ Arguments
       - :doc:`<string> </types>`
       - The browser to use, in double quotes.
 
+*****
+Flags
+*****
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    * - ``if-not-open``
+      - If present, the URL will not be reloaded if it is the current URL.
+
 ********
 Examples
 ********

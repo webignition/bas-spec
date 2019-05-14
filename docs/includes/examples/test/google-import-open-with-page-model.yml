@@ -1,0 +1,17 @@
+# examples/test/google-import-open-with-page-model.yml
+imports:
+  steps:
+    google_open: ../step/google-open-literal.yml
+  pages:
+    google_com: ../page-model/google.com.yml
+
+"open Google":
+  use: google_open
+
+"query 'example'":
+  actions:
+    - set google_com.elements.search_input to "example"
+    - click google_com.elements.search_button
+
+  assertions:
+    - browser.title is "example - Google Search"

@@ -1,0 +1,2 @@
+# examples/test-suite/google-open-and-query.yml
+- "../test/google-search-query-literal.yml"

@@ -1,0 +1,27 @@
+# examples/test/google-open-query-parameterised.yml
+imports:
+  pages:
+    google_com: ../page-model/google.com.yml
+  steps:
+    open_url_step: ../step/open-url-parameterised.yml
+    query_step: ../step/google-query-parameterised.yml
+
+"open Google":
+  use: open_url_step
+  data:
+    0:
+      url: google_com
+      expected_title: "Google"
+
+"query 'example'":
+  use: query_step
+  data:
+    foo:
+      search_term: "foo"
+      expected_title: "foo - Google Search"
+    bar:
+      search_term: "bar"
+      expected_title: "bar - Google Search"
+  elements:
+    search_input: google_com.elements.search_input
+    search_button: google_com.elements.search_button

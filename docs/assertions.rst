@@ -82,6 +82,64 @@ Examples
 
 .. literalinclude:: includes/examples/assertions/is-not.yml
 
+.. _comparisons-exists:
+
+------
+Exists
+------
+
+Checks if an element exists on the page.
+
+.. include:: includes/syntax/assertion/exists.rst
+
+*********
+Arguments
+*********
+
+.. rst-class:: typed
+.. list-table::
+    :widths: 10 10 90
+    :stub-columns: 1
+
+    * - ``identifier``
+      - :doc:`<identifier> </types>`
+      - An :doc:`identifier </identifiers>`.
+
+********
+Examples
+********
+
+.. literalinclude:: includes/examples/assertions/exists.yml
+
+.. _comparisons-not-exists:
+
+----------
+Not-Exists
+----------
+
+Checks if an element does not exist on the page.
+
+.. include:: includes/syntax/assertion/not-exists.rst
+
+*********
+Arguments
+*********
+
+.. rst-class:: typed
+.. list-table::
+    :widths: 10 10 90
+    :stub-columns: 1
+
+    * - ``identifier``
+      - :doc:`<identifier> </types>`
+      - An :doc:`identifier </identifiers>`.
+
+********
+Examples
+********
+
+.. literalinclude:: includes/examples/assertions/not-exists.yml
+
 .. _comparisons-includes:
 
 --------

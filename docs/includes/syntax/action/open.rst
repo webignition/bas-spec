@@ -1,6 +1,6 @@
 .. code-block:: text
 
-    open "{url}" in "{browser}"
+    open "{url}" in "{browser}" [if-not-open]
 
     ---------------------------
 

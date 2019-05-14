@@ -1,16 +1,26 @@
 .. code-block:: text
 
-    actions:
-      - {action-1}
-      ...
-      - {action-N}
+    {step-name-1}:
+        {step}
+    ...
+    {step-name-N}
+        {step}
 
-    assertions:
-      - {assertion-1}
-      ...
-      - {assertion-N}
+    --------
 
-    -----------------
+    step-name-*:
+        <string>
+
+    step:
+        actions:
+          - {action-1}
+          ...
+          - {action-N}
+
+        assertions:
+          - {assertion-1}
+          ...
+          - {assertion-N}
 
     action-*:
         <action>

@@ -1,7 +1,0 @@
-# examples/test/google-query-example-literal.yml
-actions:
-  - set ".gLFyf.gsfi" to "example"
-  - click ".FPdoLc.VlcLAe input[name=btnK]"
-
-assertions:
-  - browser.title is "example - Google Search"

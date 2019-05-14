@@ -20,7 +20,7 @@ variables within action arguments, assertion arguments and within data sets and 
 Creating a Test Requiring User Credentials
 ------------------------------------------
 
-.. literalinclude:: includes/examples/test-suite/example-sign-in.yml
+.. literalinclude:: includes/examples/test/example-sign-in.yml
 
 ------------------------------------------
 Defining and Using An Environment Variable
@@ -35,13 +35,13 @@ Let's pretend that some environment variables exist:
 
 Referencing an environment variable is very similar to referencing a parameter in a test.
 
-.. literalinclude:: includes/examples/test-suite/example-sign-in-with-environment-variables.yml
+.. literalinclude:: includes/examples/test/example-sign-in-with-environment-variables.yml
 
 An environment variable is just a special-case parameter, so we wrap the parameter reference as usual in pairs of
 curly braces ``{{ ... }}``.
 
-Prefixing the environment variable name with `env:` marks the parameter as an environment variable
-``{{ env::TEST_USER_EMAIL }}``.
+Prefixing the environment variable name with `env.` marks the parameter as an environment variable
+``{{ env.TEST_USER_EMAIL }}``.
 
 ---------------------------------------------------------------
 Using Environment Variables Within Data Sets and Data Providers
@@ -52,6 +52,6 @@ What if we have a set of test users that we want to run through the sign in test
 Here are two examples, one with the data sets defined within the test and a one with the data sets defined within
 a data provider.
 
-.. literalinclude:: includes/examples/test/example-sign-in-as-user.yml
+.. literalinclude:: includes/examples/step/example-sign-in-as-user.yml
 .. literalinclude:: includes/examples/data-provider/example-sign-in.yml
-.. literalinclude:: includes/examples/test-suite/example-sign-in-with-data-provider.yml
+.. literalinclude:: includes/examples/test/example-sign-in-with-data-provider.yml

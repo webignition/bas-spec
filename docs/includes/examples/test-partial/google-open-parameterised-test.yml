@@ -1,0 +1,6 @@
+"open Google":
+  use: open_url_test
+  data:
+    0:
+      url: "https://www.google.com"
+      expected_title: "Google"

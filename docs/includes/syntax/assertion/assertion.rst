@@ -12,6 +12,8 @@
         includes
         is
         is-not
+        exists
+        not-exists
         matches
 
     value:

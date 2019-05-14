@@ -1,0 +1,11 @@
+# examples/test/google-open-parameterised.yml
+imports:
+  steps:
+    open_url_step: ../step/open-url-parameterised.yml
+
+"open Google":
+  use: open_url_step
+  data:
+    0:
+      url: "https://www.google.com"
+      expected_title: "Google"

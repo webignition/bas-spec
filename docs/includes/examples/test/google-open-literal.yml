@@ -1,7 +1,0 @@
-# examples/test/google-open-literal.yml
-actions:
-  - open "https://www.google.com"
-
-assertions:
-  - browser.url is "https://www.google.com"
-  - browser.title is "Google"
