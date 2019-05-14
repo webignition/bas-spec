@@ -4,4 +4,4 @@ actions:
   - click ".FPdoLc.VlcLAe input[name=btnK]"
 
 assertions:
-  - browser.title is "example - Google Search"
+  - "{{ page.title }}" is "example - Google Search"

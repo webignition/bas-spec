@@ -14,4 +14,4 @@ imports:
     - click google_com.elements.search_button
 
   assertions:
-    - browser.title is "example - Google Search"
+    - "{{ page.title }}" is "example - Google Search"

@@ -3,5 +3,5 @@ actions:
   - open "https://www.google.com" in "chrome"
 
 assertions:
-  - browser.url is "https://www.google.com"
-  - browser.title is "Google"
+  - "{{ page.url }}" is "https://www.google.com"
+  - "{{ page.title }}" is "Google"

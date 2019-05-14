@@ -1,2 +1,2 @@
-- browser.title excludes "error"
+- "{{ page.title }}" excludes "error"
 - imported_page_model.elements.sign_in_button excludes "Log"
