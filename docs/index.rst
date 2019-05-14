@@ -56,11 +56,17 @@ Goals:
     :caption: Reference
     :maxdepth: 1
 
-    syntax-notation
     types
+    browser-properties
+    environment-variables
+
+.. toctree::
+    :caption: Syntax
+    :maxdepth: 1
+
+    syntax-notation
     actions
     assertions
-    browser-properties
     identifiers
     selectors
     page-model
@@ -68,4 +74,3 @@ Goals:
     tests
     test-suites
     data-providers
-    environment-variables
