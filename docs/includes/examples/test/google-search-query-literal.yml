@@ -5,8 +5,8 @@ config:
 
 "verify Google is open":
   assertions:
-    - $page.url is "https://www.google.com"
-    - $page.title is "Google"
+    - page.url is "https://www.google.com"
+    - page.title is "Google"
 
 "query 'example'":
   actions:
@@ -14,4 +14,4 @@ config:
     - click ".FPdoLc.VlcLAe input[name=btnK]"
 
   assertions:
-    - $page.title is "example - Google Search"
+    - page.title is "example - Google Search"
