@@ -1,12 +1,12 @@
 .. code-block:: text
 
-    imports:
-        pages:
-            {page-import-name}: "{import-path}"
-
     setup:
         browser: {browser}
         url: {url}
+
+    imports:
+        pages:
+            {page-import-name}: "{import-path}"
 
     {step-name}:
       actions:

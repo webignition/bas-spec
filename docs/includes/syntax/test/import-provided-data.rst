@@ -1,14 +1,14 @@
 .. code-block:: text
 
+    setup:
+        browser: {browser}
+        url: {url}
+
     imports:
         steps:
             {step-import-name}: "{import-path}"
         data_providers:
             {data-provider-import-name}: "{import-path}"
-
-    setup:
-        browser: {browser}
-        url: {url}
 
     {step-name}:
         use: {step-import-name}

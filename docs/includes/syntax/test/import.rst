@@ -1,12 +1,12 @@
 .. code-block:: text
 
-    imports:
-        steps:
-            {step-import-name}: "{import-path}"
-
     setup:
         browser: {browser}
         url: {url}
+
+    imports:
+        steps:
+            {step-import-name}: "{import-path}"
 
     {step-name}:
         use: {step-import-name}
