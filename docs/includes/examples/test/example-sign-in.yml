@@ -5,8 +5,8 @@ config:
 
 "open https://www.example.com":
   assertions:
-    - page.url is config.url
-    - page.title is "Example Domain"
+    - $page.url is $config.url
+    - $page.title is "Example Domain"
 
 "sign in as user":
   actions:
@@ -15,5 +15,5 @@ config:
     - click ".sign-in-form .submit"
 
   assertions:
-    - page.url is "https://www.example.com/account/"
-    - page.title is "Welcome user@example.com"
+    - $page.url is "https://www.example.com/account/"
+    - $page.title is "Welcome user@example.com"

@@ -1,7 +1,7 @@
 # examples/step/google-query-parameterised.yml
 actions:
-  - set elements.search_input to data.query_term
-  - click elements.search_button
+  - set $elements.search_input to $data.query_term
+  - click $elements.search_button
 
 assertions:
-  - page.title is data.expected_title
+  - $page.title is $data.expected_title

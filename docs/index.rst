@@ -60,6 +60,7 @@ Goals:
     browser-properties
     page-properties
     environment-variables
+    parameters
 
 .. toctree::
     :caption: Syntax

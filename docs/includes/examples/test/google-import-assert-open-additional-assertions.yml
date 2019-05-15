@@ -11,7 +11,7 @@ imports:
   use: google_assert_open
 
   assertions:
-    - page.title excludes "Error"
+    - $page.title excludes "Error"
 
 "query 'example'":
   actions:
@@ -19,4 +19,4 @@ imports:
     - click ".FPdoLc.VlcLAe input[name=btnK]"
 
   assertions:
-    - page.title is "example - Google Search"
+    - $page.title is "example - Google Search"

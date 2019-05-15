@@ -14,7 +14,7 @@ imports:
   use: assert_opened_page_step
   data:
     0:
-      expected_url: config.url
+      expected_url: $config.url
       expected_title: "Google"
 
 "query":

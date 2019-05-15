@@ -9,7 +9,7 @@ imports:
 
 "verify Google is open":
   assertions:
-    - page.title is "Google"
+    - $page.title is "Google"
 
 "query 'example'":
   actions:
@@ -17,4 +17,4 @@ imports:
     - click google_com.elements.search_button
 
   assertions:
-    - page.title is "example - Google Search"
+    - $page.title is "example - Google Search"

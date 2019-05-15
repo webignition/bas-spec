@@ -5,8 +5,8 @@ config:
 
 "verify about.google is open":
   assertions:
-    - page.url is config.url
-    - page.title is "About | Google"
+    - $page.url is $config.url
+    - $page.title is "About | Google"
 
 "top navigation elements are present":
   assertions:

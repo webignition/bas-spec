@@ -179,3 +179,5 @@ html_extra_path = ['robots.txt']
 
 def setup(app):
     app.add_stylesheet('css/custom.css')
+
+highlight_language = 'yaml'

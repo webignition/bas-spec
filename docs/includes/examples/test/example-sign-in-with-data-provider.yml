@@ -11,19 +11,19 @@ import:
 
 "open https://www.example.com":
   assertions:
-    - page.url is config.url
-    - page.title is "Example Domain"
+    - $page.url is $config.url
+    - $page.title is "Example Domain"
 
 "sign in as user (literal data)":
   use: sign_in_step
   data:
     user1:
-      username: env.TEST_USER_1_USERNAME
-      password: env.TEST_USER_1_PASSWORD
+      username: $env.TEST_USER_1_USERNAME
+      password: $env.TEST_USER_1_PASSWORD
 
     user2:
-      username: env.TEST_USER_2_USERNAME
-      password: env.TEST_USER_2_PASSWORD
+      username: $env.TEST_USER_2_USERNAME
+      password: $env.TEST_USER_2_PASSWORD
 
 "sign in as user (imported data)":
   use: sign_in_step

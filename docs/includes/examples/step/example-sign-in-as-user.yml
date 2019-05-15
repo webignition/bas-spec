@@ -1,9 +1,9 @@
 # examples/step/example-sign-in-as-user.yml
 actions:
-  - set ".sign-in-form .user" to data.username
-  - set ".sign-in-form .password" to data.password
+  - set ".sign-in-form .user" to $data.username
+  - set ".sign-in-form .password" to $data.password
   - click ".sign-in-form .submit"
 
 assertions:
-  - page.url is "https://www.example.com/account/"
-  - page.title is "Welcome data.username"
+  - $page.url is "https://www.example.com/account/"
+  - $page.title is "Welcome $data.username"

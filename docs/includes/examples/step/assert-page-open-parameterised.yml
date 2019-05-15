@@ -1,4 +1,4 @@
 # examples/step/assert-page-open-parameterised.yml
 assertions:
-  - page.url is data.expected_url
-  - page.title is data.expected_title
+  - $page.url is $data.expected_url
+  - $page.title is $data.expected_title

@@ -12,5 +12,5 @@ imports:
   data:
     # Just a single data set needed here
     0:
-      expected_url: config.url
+      expected_url: $config.url
       expected_title: "Google"

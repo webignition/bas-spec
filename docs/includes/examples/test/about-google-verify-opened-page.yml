@@ -1,0 +1,9 @@
+# examples/test/about-google-verify-opened-page.yml
+config:
+  browser: chrome
+  url: https://about.google/
+
+"verify about.google is open":
+  assertions:
+    - $page.url is $config.url
+    - $page.title is "About | Google"

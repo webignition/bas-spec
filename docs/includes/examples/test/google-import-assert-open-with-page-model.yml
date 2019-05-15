@@ -18,4 +18,4 @@ imports:
     - click google_com.elements.search_button
 
   assertions:
-    - page.title is "example - Google Search"
+    - $page.title is "example - Google Search"
