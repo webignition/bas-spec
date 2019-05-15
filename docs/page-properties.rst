@@ -2,8 +2,8 @@
 Page Properties
 ===============
 
-Properties for the current page can be accessed through the ``page`` object and can be used directly in
-:doc:`assertions </assertions>`.
+Properties for the current page can be accessed through the :ref:`built-in page object <parameters-built-in>` and can be
+referenced in :doc:`actions </actions>` and :doc:`assertions </assertions>`.
 
 ---
 url

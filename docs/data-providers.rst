@@ -21,3 +21,4 @@ Examples
 --------
 
 .. literalinclude:: includes/examples/data-provider/google-search-query.yml
+.. literalinclude:: includes/examples/data-provider/example-sign-in.yml

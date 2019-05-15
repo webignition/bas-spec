@@ -7,12 +7,15 @@ Parameters may be used within :doc:`actions </actions>`, :doc:`assertions </asse
 
 A parameter is prefixed with ``$``. This denotes that something is a parameter and not a literal value.
 
-There are four types of parameter:
+There are five types of parameter:
 
 - built-in objects
 - test configuration
 - data parameters
 - element parameters
+- environment variables
+
+.. _parameters-built-in:
 
 ----------------
 Built-in Objects
@@ -59,3 +62,14 @@ Elements are passed to a test step from a test. Elements passed to a test step a
 .. literalinclude:: includes/examples/step/google-query-parameterised.yml
 .. literalinclude:: includes/examples/page/google.com.yml
 .. literalinclude:: includes/examples/test/google-imported-steps-with-page-model.yml
+
+.. _parameters-environment-variables:
+
+---------------------
+Environment Variables
+---------------------
+
+Environment variables can be treated as parameters within :doc:`actions </actions>`, :doc:`assertions </assertions>` and
+:doc:`data providers </data-providers>`. Values can be referenced using ``$env.{name}``.
+
+.. literalinclude:: includes/examples/data-provider/example-sign-in.yml

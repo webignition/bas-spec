@@ -6,15 +6,10 @@
 Environment Variables
 =====================
 
-Environment variables can be used in any place where a variable value can be used:
+Environment variable values can be accessed through the :ref:`environment variables object <parameters-environment-variables>`
+and can be referenced :doc:`actions </actions>`, :doc:`assertions </assertions>` and :doc:`data providers </data-providers>`.
 
-- as action arguments
-- as assertion values
-- within data providers and data collections
-
-Use the ``env`` object to reference environment variables.
-
-A default can be provided if the environment variable does not exist: ``env.APP_SECRET|"secret"``.
+A default can be provided if the environment variable does not exist: ``$env.APP_SECRET|"secret"``.
 
 --------
 Examples
