@@ -20,46 +20,6 @@ Verbs
 
 .. include:: includes/action-verb-list.rst
 
-.. _actions-open:
-
-----
-Open
-----
-
-Visit a URL in the browser.
-
-.. include:: includes/syntax/action/open.rst
-
-*********
-Arguments
-*********
-
-.. rst-class:: typed
-.. list-table::
-    :widths: 10 10 80
-    :stub-columns: 1
-
-    * - ``url``
-      - :doc:`<url> </types>`
-      - The URL to visit, in double quotes.
-
-*****
-Flags
-*****
-
-.. list-table::
-    :widths: 10 90
-    :stub-columns: 1
-
-    * - ``if-not-open``
-      - If present, the URL will not be reloaded if it is the current URL.
-
-********
-Examples
-********
-
-.. literalinclude:: includes/examples/actions/open.yml
-
 .. _actions-click:
 
 -----

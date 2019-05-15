@@ -1,4 +1,3 @@
-.. literalinclude:: /includes/examples/actions/open.yml
 .. literalinclude:: /includes/examples/actions/click.yml
 .. literalinclude:: /includes/examples/actions/set.yml
 .. literalinclude:: /includes/examples/actions/submit.yml

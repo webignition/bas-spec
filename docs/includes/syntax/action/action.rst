@@ -8,7 +8,6 @@
         back
         click
         forward
-        open
         reload
         set
         submit
