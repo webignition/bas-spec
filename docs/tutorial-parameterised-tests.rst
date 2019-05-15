@@ -8,7 +8,7 @@ where needed.
 In that instance, the commonly-used step opened https://www.google.com/ and verified that the page URL and page title
 were as expected.
 
-.. literalinclude:: includes/examples/step/google-open-literal.yml
+.. literalinclude:: includes/examples/step/google-assert-open-literal.yml
 
 Needing to open a page and to then verify that the correct page is open is a common starting point for many tests.
 
@@ -21,7 +21,7 @@ Let's do that.
 Adding Parameters to a Step
 ---------------------------
 
-.. literalinclude:: includes/examples/step/open-url-parameterised.yml
+.. literalinclude:: includes/examples/step/assert-page-open-parameterised.yml
 
 We've replace absolute values (``https://www.google.com`` and ``Google``) with named parameters (``data.url`` and ``data.expected_title``).
 
@@ -43,7 +43,7 @@ Let's see how.
 Importing and Using a Parameterised Test
 ----------------------------------------
 
-.. literalinclude:: includes/examples/step/open-url-parameterised.yml
+.. literalinclude:: includes/examples/step/assert-page-open-parameterised.yml
 .. literalinclude:: includes/examples/test/google-open-parameterised.yml
 
 At the start of the test suite, under the ``imports`` and ``steps`` objects, we provide an import name and import path
@@ -70,7 +70,7 @@ The act of opening https://www.google.com doesn't lend itself to being repeated 
 But querying Google does!
 
 .. literalinclude:: includes/examples/page/google.com-element-scoped.yml
-.. literalinclude:: includes/examples/step/open-url-parameterised.yml
+.. literalinclude:: includes/examples/step/assert-page-open-parameterised.yml
 .. literalinclude:: includes/examples/step/google-query-parameterised.yml
 .. literalinclude:: includes/examples/test/google-search-parameterised.yml
 

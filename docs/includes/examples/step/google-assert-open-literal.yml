@@ -1,0 +1,4 @@
+# examples/step/google-assert-open-literal.yml
+assertions:
+  - page.url is "https://www.google.com"
+  - page.title is "Google"

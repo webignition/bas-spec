@@ -19,26 +19,26 @@ repeatedly redefine the *visit the homepage* step.
 Defining and Importing a Step
 -----------------------------
 
-.. literalinclude:: includes/examples/step/google-open-literal.yml
+.. literalinclude:: includes/examples/step/google-assert-open-literal.yml
 
 A step is a YAML object with ``actions`` and ``assertions`` properties. This is the same as the :ref:`first step from
 the test tutorial <tutorial-test-test>` placed into its own file.
 
-.. literalinclude:: includes/examples/test/google-import-open.yml
+.. literalinclude:: includes/examples/test/google-import-assert-open.yml
 
 Here we import and use the step within our test.
 
 Imports are defined at the start of the test under the ``imports`` property within the ``steps`` property. We
 will see later that you can import more than just steps.
 
-A step import has an import name (``google_open``) and an import path (``step/google-open-literal.yml``).
+A step import has an import name (``google_open``) and an import path (``step/google-assert-open-literal.yml``).
 
 The import name is something you choose. It can be anything you like. We use the import name to refer to the step
 later within the test  An import name that is concise and which makes sense later in the context of the test is a good
 idea.
 
 The import path tells us where to look, relative to the current test, to find the step to be imported. Here
-we defined the step in a file at ``step/google-open-literal.yml`` relative to our test.
+we defined the step in a file at ``step/google-assert-open-literal.yml`` relative to our test.
 
 ----------------------------
 Referencing an Imported Step
@@ -61,7 +61,7 @@ Extending an Imported Step
 An imported step can have additional assertions applied. As actions always come before assertions and as an imported
 step will have performed actions, an imported step cannot have additional actions.
 
-.. literalinclude:: includes/examples/test/google-import-open-additional-assertions.yml
+.. literalinclude:: includes/examples/test/google-import-assert-open-additional-assertions.yml
 
 That's starting to look quite nice, except I feel that those identifiers (such as ``.gLFyf.gsfi``) are going to get messy
 if we keep having to write them out in the middle of each test that needs them.

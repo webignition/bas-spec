@@ -31,13 +31,13 @@ Examples
 Literal Values
 **************
 
-.. literalinclude:: includes/examples/step/google-open-literal.yml
+.. literalinclude:: includes/examples/step/google-assert-open-literal.yml
 
 ********************
 Parameterised Values
 ********************
 
-.. literalinclude:: includes/examples/step/open-url-parameterised.yml
+.. literalinclude:: includes/examples/step/assert-page-open-parameterised.yml
 
 ***********************************************
 Parameterised Elements and Parameterised Values

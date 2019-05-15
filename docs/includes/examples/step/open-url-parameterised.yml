@@ -1,7 +1,0 @@
-# examples/step/open-url-parameterised.yml
-actions:
-  - open data.url
-
-assertions:
-  - page.url is data.url
-  - page.title is data.expected_title

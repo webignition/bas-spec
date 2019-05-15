@@ -53,7 +53,7 @@ Steps With Literal Values
 Parameterised Steps With Inline Data
 ************************************
 
-.. literalinclude:: includes/examples/step/open-url-parameterised.yml
+.. literalinclude:: includes/examples/step/assert-page-open-parameterised.yml
 .. literalinclude:: includes/examples/test/google-open-parameterised.yml
 
 **************************************
@@ -68,9 +68,9 @@ Parameterised Steps With Provided Data
 Steps Imported Into the Test With Additional Assertions
 *******************************************************
 
-.. literalinclude:: includes/examples/step/google-open-literal.yml
+.. literalinclude:: includes/examples/step/google-assert-open-literal.yml
 .. literalinclude:: includes/examples/step/google-query-example-literal.yml
-.. literalinclude:: includes/examples/test/google-import-open-import-query-additional-assertions.yml
+.. literalinclude:: includes/examples/test/google-import-assert-open-import-query-additional-assertions.yml
 
 *********************************************
 Imported Page Model Used Directly Within Test

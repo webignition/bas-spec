@@ -60,7 +60,7 @@ here to give meaning to the step within the context of the test.
 
 The step itself comprises the ``actions`` and ``assertions`` that follow the name:
 
-.. literalinclude:: includes/examples/step/google-open-literal.yml
+.. literalinclude:: includes/examples/step/google-assert-open-literal.yml
 
 You can see that the ``actions`` section lists a single action. The next section in the tutorial covers the actions
 you can perform. For now, it is enough to see that actions are the interactions with the browser that are needed to get

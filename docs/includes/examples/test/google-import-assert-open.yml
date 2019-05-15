@@ -1,12 +1,14 @@
-# examples/test/google-search-query-literal.yml
+# examples/test/google-import-assert-open.yml
 config:
   browser: chrome
   url: https://www.google.com
 
+imports:
+  steps:
+    google_assert_open: "../step/google-assert-open-literal.yml"
+
 "verify Google is open":
-  assertions:
-    - page.url is "https://www.google.com"
-    - page.title is "Google"
+  use: google_assert_open
 
 "query 'example'":
   actions:
