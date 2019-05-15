@@ -2,11 +2,11 @@
 Using Test Suites
 =================
 
-We have so far created a test to open https://www.google.com and to search for given terms. We could keep adding
-to this one test but doing so will eventually be impractical to maintain.
+We have so far created a test to open https://www.google.com and to search for given terms. We could keep adding steps
+to this one test but doing so will eventually be impractical.
 
-One test per user journey is more manageable and easier to maintain. This will lead to many tests covering a range of
-pages, functionality and user journeys of varying critical importance.
+One test per user journey is more manageable and easier to maintain. This will lead to a collection of tests covering a
+range of pages, functionality and user journeys. Tests will vary in their level of critical importance.
 
 A test suite brings together a collection of tests grouped in a manner that fits your needs. A given test can be
 present in any number of test suites.
@@ -30,10 +30,10 @@ the company. Let's create some tests for those.
 Creating Test Suites
 --------------------
 
-A :doc:`test suite is a YAML list </test-suites>`. It doesn't get much easier than this. Create a YAML document for
-your test suite and within define a list of imports.
+A :doc:`test suite is a YAML list </test-suites>`. It doesn't get much easier than this.
 
-The first test imported is the first to be run and so on.
+Create a YAML document for your test suite and within define a list of imports. The first test imported is the first to
+be run and so on.
 
 .. literalinclude:: includes/examples/test-suite/google-high-priority.yml
 .. literalinclude:: includes/examples/test-suite/google-low-priority.yml

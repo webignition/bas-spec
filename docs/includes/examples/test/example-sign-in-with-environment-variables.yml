@@ -1,10 +1,11 @@
 # examples/test/example-sign-in-with-environment-variables.yml
-"open https://www.example.com":
-  actions:
-    - open "https://www.example.com"
+config:
+  browser: chrome
+  url: https://www.example.com
 
+"open https://www.example.com":
   assertions:
-    - page.url is "https://www.example.com"
+    - page.url is config.url
     - page.title is "Example Domain"
 
 "sign in as user":

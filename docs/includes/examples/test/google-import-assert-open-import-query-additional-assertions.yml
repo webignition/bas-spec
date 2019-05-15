@@ -1,0 +1,18 @@
+# examples/test/google-import-assert-open-import-query-additional-assertions.yml
+config:
+  browser: chrome
+  url: https://www.google.com
+
+imports:
+  steps:
+    google_assert_open: "../step/google-assert-open-literal.yml"
+    google_query_example: "../step/google-query-example-literal.yml"
+
+"verify Google is open":
+  use: google_assert_open
+
+  assertions:
+    - page.title excludes "error"
+
+"query 'example'":
+  use: google_query_example

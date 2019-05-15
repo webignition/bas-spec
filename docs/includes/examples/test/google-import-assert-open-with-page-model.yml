@@ -1,15 +1,16 @@
-# examples/test/google-inline-tests-with-page-model.rst
+# examples/test/google-import-assert-open-with-page-model.yml
 config:
   browser: chrome
   url: google_com.url
 
 imports:
+  steps:
+    google_assert_open: "../step/google-assert-open-literal.yml"
   pages:
     google_com: "../page/google.com.yml"
 
 "verify Google is open":
-  assertions:
-    - page.title is "Google"
+  use: google_assert_open
 
 "query 'example'":
   actions:

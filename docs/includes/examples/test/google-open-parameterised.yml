@@ -1,11 +1,16 @@
 # examples/test/google-open-parameterised.yml
+config:
+  browser: chrome
+  url: https://www.google.com
+
 imports:
   steps:
-    open_url_step: "../step/open-url-parameterised.yml"
+    assert_opened_page_step: "../step/assert-page-open-parameterised.yml"
 
-"open Google":
-  use: open_url_step
+"verify Google is open":
+  use: assert_opened_page_step
   data:
+    # Just a single data set needed here
     0:
-      url: "https://www.google.com"
+      expected_url: config.url
       expected_title: "Google"

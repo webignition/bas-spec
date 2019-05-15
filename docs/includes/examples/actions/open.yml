@@ -1,2 +1,0 @@
-- open "https://example.com"
-- open "https://example.com" if-not-open

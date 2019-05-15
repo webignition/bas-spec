@@ -1,16 +1,20 @@
 # examples/test/google-open-query-parameterised.yml
+config:
+  browser: chrome
+  url: google_com.url
+
 imports:
   pages:
-    google_com: "../page-model/google.com.yml"
+    google_com: "../page/google.com.yml"
   steps:
-    open_url_step: "../step/open-url-parameterised.yml"
+    assert_opened_page_step: "../step/assert-page-open-parameterised.yml"
     query_step: "../step/google-query-parameterised.yml"
 
-"open Google":
-  use: open_url_step
+"verify Google is open":
+  use: assert_opened_page_step
   data:
     0:
-      url: google_com
+      expected_url: config.url
       expected_title: "Google"
 
 "query 'example'":

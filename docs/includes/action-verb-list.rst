@@ -1,4 +1,3 @@
-- :ref:`open <actions-open>`
 - :ref:`click <actions-click>`
 - :ref:`set <actions-set>`
 - :ref:`submit <actions-submit>`

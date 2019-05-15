@@ -1,5 +1,9 @@
 .. code-block:: text
 
+    config:
+        browser: {browser}
+        url: {url}
+
     imports:
         pages:
             {page-import-name}: "{import-path}"
@@ -11,13 +15,19 @@
       assertions:
         - {page-import-name}.elements.{element-name} {comparison} [{value}]
 
-    --------
+    -----------------------------------------------------------------------
 
     page-import-name:
         <string>
 
     import-path:
         <string>, a path to the file to import, relative to the location of the test
+
+    browser:
+        <string>
+
+    url:
+        <url>
 
     step-name:
         <string>

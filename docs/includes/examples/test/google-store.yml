@@ -1,8 +1,9 @@
 # examples/test/google-store.yml
-"open Google Store":
-  actions:
-    - open "https://store.google.com"
+config:
+  browser: chrome
+  url: https://store.google.com
 
+"verify Google Store is open":
   assertions:
     - page.url is "https://store.google.com"
     - page.title matches "/^Google Store/"

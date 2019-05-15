@@ -21,4 +21,4 @@ The page title (content of the ``<title>`` element).
 Example
 -------
 
-.. literalinclude:: includes/examples/step/google-open-literal.yml
+.. literalinclude:: includes/examples/step/google-assert-open-literal.yml

@@ -1,4 +1,8 @@
 # examples/test/example-sign-in-with-data-provider.yml
+config:
+  browser: chrome
+  url: https://www.example.com
+
 import:
   steps:
     sign_in_step: "../step/example-sign-in-as-user.yml"
@@ -6,11 +10,8 @@ import:
     users: "../data-provider/example-sign-in.yml"
 
 "open https://www.example.com":
-  actions:
-    - open "https://www.example.com"
-
   assertions:
-    - page.url is "https://www.example.com"
+    - page.url is config.url
     - page.title is "Example Domain"
 
 "sign in as user (literal data)":

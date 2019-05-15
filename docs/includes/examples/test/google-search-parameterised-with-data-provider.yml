@@ -1,16 +1,20 @@
 # examples/test/google-search-parameterised-with-data-provider.yml
+config:
+  browser: chrome
+  url: google_com.url
+
 imports:
   steps:
-    open_url_step: "../step/open-url-parameterised.yml"
+    assert_opened_page_step: "../step/assert-page-open-parameterised.yml"
     query_step: "../step/google-search-query-parameterised.yml"
   data_providers:
     imported_query_data: "../data-provider/google-search-query.yml"
 
-"open Google":
-  use: open_url_step
+"verify Google is open":
+  use: assert_opened_page_step
   data:
     0:
-      url: "https://www.google.com"
+      expected_url: config.url
       expected_title: "Google"
 
 "query":
