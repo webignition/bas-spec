@@ -1,2 +1,2 @@
-"open Google":
-  use: google_open
+"verify Google is open":
+  use: google_assert_open

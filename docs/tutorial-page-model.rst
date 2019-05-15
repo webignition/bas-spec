@@ -9,7 +9,7 @@ For the querying part, we need to identify the search input field and the button
 
 The test step works for now so that's fine, right?
 
-Well, those selectors are a bit messy and that's not so fine. The selectors are hard to read (``.gLFyf.gsfi``,
+Well, those selectors are a bit messy and that's not so fine. The selectors are hard to read (``.gLFyf.gsfi``
 doesn't really shout "search input") and may well need to be updated in many places when the page being tested changes.
 
 Let's create a page model to store all of these page properties. We can refer to the page model in our tests, making
@@ -19,20 +19,20 @@ the tests clearer to read. And we can make sure that if something needs updating
 Creating and Using a Page Model
 -------------------------------
 
-.. literalinclude:: includes/examples/page/google.com.yml
-
 A page model is a YAML object with ``url`` and ``elements`` properties. The ``url`` property holds the page URL. The
-``elements`` property maps convenience names to ways of identifying elements.
+``elements`` section maps convenience names to ways of identifying elements.
+
+.. literalinclude:: includes/examples/page/google.com.yml
 
 For the time being those selectors are a little hard on the eyes but at least we need to only update them in one place.
 
 .. literalinclude:: includes/examples/step/google-assert-open-literal.yml
 .. literalinclude:: includes/examples/test/google-import-assert-open-with-page-model.yml
 
-We've added a ``pages`` property to the ``imports`` object to import the page model we created. We've chosen an import
-name (``google_com``) and provided an import path (``page-model/google.com.yml``).
+We've added a ``pages`` section to the ``imports`` section to reference the page model we created. We've chosen an import
+name (``google_com``) and provided an import path (``page/google.com.yml``).
 
-We can now access the elements defined in the page model within our actions and assertions.
+Within our assertions, we use the name of the page import to reference the elements that the page model defines.
 
 See how ``click google_com.elements.search_button`` is a lot easier on the brain than ``click ".FPdoLc.VlcLAe input[name=btnK]"``?
 

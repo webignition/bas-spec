@@ -37,7 +37,7 @@ Referencing an environment variable is very similar to referencing a parameter i
 
 .. literalinclude:: includes/examples/test/example-sign-in-with-environment-variables.yml
 
-Prefixing the environment variable name with `env.` marks the parameter as an environment variable
+Prefixing the environment variable name with `env.` marks the parameter as an environment variable:
 ``env.TEST_USER_EMAIL``.
 
 ---------------------------------------------------------------

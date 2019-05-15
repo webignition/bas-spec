@@ -5,7 +5,7 @@ config:
 
 imports:
   pages:
-    google_com: "../page-model/google.com-element-scoped.yml"
+    google_com: "../page/google.com-element-scoped.yml"
   steps:
     assert_opened_page_step: "../step/assert-page-open-parameterised.yml"
     query_step: "../step/google-search-query-parameterised.yml"
@@ -13,13 +13,15 @@ imports:
 "verify Google is open":
   use: assert_opened_page_step
   data:
+    # Just one data set needed to verify the opened page
     0:
       expected_url: config.url
       expected_title: "Google"
 
 "query":
-  user: query_step
+  use: query_step
   data:
+    # Two data sets for querying
     foo:
       search_term: "foo"
       expected_title: "foo - Google Search"

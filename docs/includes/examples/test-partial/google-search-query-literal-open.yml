@@ -1,7 +1,4 @@
-"open Google":
-  actions:
-    - open "https://www.google.com"
-
+"verify Google is open":
   assertions:
     - page.url is "https://www.google.com"
     - page.title is "Google"

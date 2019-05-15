@@ -5,7 +5,7 @@ config:
 
 imports:
   pages:
-    google_com: "../page-model/google.com.yml"
+    google_com: "../page/google.com.yml"
   steps:
     google_query: "../step/google-query-parameterised.yml"
 

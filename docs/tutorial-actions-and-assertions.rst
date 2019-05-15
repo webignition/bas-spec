@@ -17,7 +17,7 @@ In this tutorial section, we'll look at how ``actions`` and ``assertions`` are f
 Actions
 -------
 
-An action is something that an end user can do in a browser, such as visit a URL, click on link, enter text into a
+An action is something that an end user can do in a browser, such as click on link, enter text into a
 field or submit a form. Each specific thing you can do within a browser when using a web page is an action.
 
 We can click elements, set element values or submit elements, as well as take a few more types of action.

@@ -7,7 +7,7 @@ imports:
   steps:
     google_assert_open: "../step/google-assert-open-literal.yml"
   pages:
-    google_com: "../page-model/google.com.yml"
+    google_com: "../page/google.com.yml"
 
 "verify Google is open":
   use: google_assert_open
