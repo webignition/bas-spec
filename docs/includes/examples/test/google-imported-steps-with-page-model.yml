@@ -1,4 +1,4 @@
-# examples/test/google-imported-steps-with-page-model.rst
+# examples/test/google-imported-steps-with-page-model.yml
 config:
   browser: chrome
   url: google_com.url
