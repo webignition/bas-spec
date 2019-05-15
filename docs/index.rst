@@ -57,6 +57,7 @@ Goals:
     :maxdepth: 1
 
     types
+    browser-properties
     page-properties
     environment-variables
 
