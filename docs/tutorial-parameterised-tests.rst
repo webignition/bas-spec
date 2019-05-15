@@ -16,26 +16,28 @@ leave those details aside for the time being and to provide the appropriate deta
 
 Let's do that.
 
----------------------------
-Adding Parameters to a Step
----------------------------
+-----------------------------
+Defining Parameters in a Step
+-----------------------------
 
 .. literalinclude:: includes/examples/step/assert-page-open-parameterised.yml
 
-We've replace absolute values (``https://www.google.com`` and ``Google``) with named parameters (``data.url`` and ``data.expected_title``).
+We've replace literal values (``https://www.google.com`` and ``Google``) with data parameters
+(``data.expected_url`` and ``data.expected_title``).
 
-Named parameters that expect literal values must be prefixed with ``data.``. Named parameters can also be used as
-placeholders for page elements and we need a way of telling the two apart.
+.. admonition:: Parameters Crash Course
 
-Parameter names are user-defined. The names we choose are used within a test that imports our parameterised test step.
-Picking something that makes sense outside of the context of the step is good practice.
+    Parameters are prefixed with ``$``. The prefix denotes that something is a parameter and not a literal value.
+    Data parameters (defined by you that expect values at some point) must be prefixed with ``data.``.
+    The :doc:`parameters reference </parameters>` does into detail about the different parameter types.
+
+The parameter names we choose are used within a test that imports our parameterised test step.
+Pick something that makes sense outside of the context of the step.
 
 We now have a general-purpose step for verifying that the correct page has been opened.
 
 Given that pretty much every test must start with the opening of a page, this parameterised step can be re-used
-in pretty much every test.
-
-Let's see how.
+in pretty much every test. Let's see how.
 
 ----------------------------------------
 Importing and Using a Parameterised Test

@@ -82,8 +82,13 @@ The ``assertions`` section covers the factors that we need to examine to be sure
 state that we expect. A test step must include assertions. If a test step is not checking that things are correct,
 the test step isn't really doing any meaningful testing.
 
-In this case there are two assertions: one to verify the content of the address bar and one to verify the content
-of the page ``<title>`` element. These assertions reference :doc:`page properties </page-properties>`.
+In this case there are two assertions: one to verify the page URL and one to verify the content
+of the page ``<title>`` element.
+
+.. admonition:: ?What
+
+    The above assertions refer to ``$page.url`` and ``$page.title``. These are :ref:`built-in parameters <parameters-built-in>`
+    referencing :doc:`page properties </page-properties>`.
 
 -------------------------------
 Querying For the Word "example"
@@ -97,9 +102,9 @@ This step has an ``actions`` section. This lists the steps needed: setting the i
 clicking the form submission button. Actions are optional but necessary if you want to interact with the browser in
 any way.
 
-The input field (``.gLFyf.gsfi``) and submit button (``.FPdoLc.VlcLAe input[name=btnK]``) are identified here
-with CSS selectors. Page elements can also be identified with XPath and, more robustly, with page model element
-references. The :doc:`tutorial on page models </tutorial-page-model>` goes into more depth.
+The input field and submit button are identified here with CSS selectors. Page elements can also be identified with
+XPath and, more robustly, with page model element references. The :doc:`tutorial on page models </tutorial-page-model>`
+goes into more depth.
 
 The ``assertions`` section lists one assertion to verify that the page ``<title>`` is as expected. We could also
 verify that ``page.url`` is correct but in this case the page title suffices. The fewer assertions needed to verify
