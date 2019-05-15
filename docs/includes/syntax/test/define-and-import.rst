@@ -1,6 +1,6 @@
 .. code-block:: text
 
-    setup:
+    config:
         browser: {browser}
         url: {url}
 
