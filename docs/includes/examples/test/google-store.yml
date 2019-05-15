@@ -5,8 +5,8 @@ config:
 
 "verify Google Store is open":
   assertions:
-    - page.url is "https://store.google.com"
-    - page.title matches "/^Google Store/"
+    - $page.url is "https://store.google.com"
+    - $page.title matches "/^Google Store/"
 
 "top navigation elements are present":
   assertions:

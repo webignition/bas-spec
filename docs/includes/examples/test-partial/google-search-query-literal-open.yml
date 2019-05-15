@@ -1,4 +1,4 @@
 "verify Google is open":
   assertions:
-    - page.url is "https://www.google.com"
-    - page.title is "Google"
+    - $page.url is "https://www.google.com"
+    - $page.title is "Google"

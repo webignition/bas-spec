@@ -1,3 +1,3 @@
 # examples/step/browser-size.yml
 actions:
-  - set browser.size to 1024,768
+  - set $browser.size to 1024,768

@@ -11,7 +11,7 @@ imports:
 
 "verify Google is open":
   assertions:
-    - page.title is "Google"
+    - $page.title is "Google"
 
 "query 'example'":
   use: google_query

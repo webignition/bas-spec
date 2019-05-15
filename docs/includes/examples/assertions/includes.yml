@@ -1,2 +1,2 @@
-- page.title includes "page"
+- $page.title includes "page"
 - imported_page_model.elements.sign_in_button includes "Sign"

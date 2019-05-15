@@ -12,7 +12,7 @@ imports:
   use: google_assert_open
 
   assertions:
-    - page.title excludes "error"
+    - $page.title excludes "error"
 
 "query 'example'":
   use: google_query_example
