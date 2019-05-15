@@ -37,11 +37,8 @@ Referencing an environment variable is very similar to referencing a parameter i
 
 .. literalinclude:: includes/examples/test/example-sign-in-with-environment-variables.yml
 
-An environment variable is just a special-case parameter, so we wrap the parameter reference as usual in pairs of
-curly braces ``{{ ... }}``.
-
 Prefixing the environment variable name with `env.` marks the parameter as an environment variable
-``{{ env.TEST_USER_EMAIL }}``.
+``env.TEST_USER_EMAIL``.
 
 ---------------------------------------------------------------
 Using Environment Variables Within Data Sets and Data Providers

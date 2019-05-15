@@ -4,8 +4,8 @@
     - open "https://store.google.com" in "chrome"
 
   assertions:
-    - browser.url is "https://store.google.com"
-    - browser.title matches "/^Google Store/"
+    - page.url is "https://store.google.com"
+    - page.title matches "/^Google Store/"
 
 "top navigation elements are present":
   assertions:
