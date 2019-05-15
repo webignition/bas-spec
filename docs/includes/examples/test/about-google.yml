@@ -1,7 +1,7 @@
 # examples/test/about-google.yml
 "open about.google":
   actions:
-    - open "https://about.google/" in "chrome"
+    - open "https://about.google/"
 
   assertions:
     - page.url is "https://about.google/"

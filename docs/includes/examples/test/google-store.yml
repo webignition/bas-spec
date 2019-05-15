@@ -1,7 +1,7 @@
 # examples/test/google-store.yml
 "open Google Store":
   actions:
-    - open "https://store.google.com" in "chrome"
+    - open "https://store.google.com"
 
   assertions:
     - page.url is "https://store.google.com"

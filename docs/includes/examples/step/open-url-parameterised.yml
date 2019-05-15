@@ -1,6 +1,6 @@
 # examples/step/open-url-parameterised.yml
 actions:
-  - open data.url in "chrome"
+  - open data.url
 
 assertions:
   - page.url is data.url

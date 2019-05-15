@@ -42,9 +42,6 @@ Arguments
     * - ``url``
       - :doc:`<url> </types>`
       - The URL to visit, in double quotes.
-    * - ``browser``
-      - :doc:`<string> </types>`
-      - The browser to use, in double quotes.
 
 *****
 Flags
