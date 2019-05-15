@@ -1,5 +1,9 @@
 .. code-block:: text
 
+    setup:
+        browser: {browser}
+        url: {url}
+
     imports:
         pages:
             {page-import-name}: "{import-path}"
@@ -11,7 +15,13 @@
       assertions:
         - {page-import-name}.elements.{element-name} {comparison} [{value}]
 
-    --------
+    -----------------------------------------------------------------------
+
+    browser:
+        <string>
+
+    url:
+        <url>
 
     page-import-name:
         <string>

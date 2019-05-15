@@ -1,5 +1,9 @@
 .. code-block:: text
 
+    setup:
+        browser: {browser}
+        url: {url}
+
     imports:
         steps:
             {step-import-name}: "{import-path}"
@@ -17,7 +21,13 @@
                 ...
                 {parameter-name-N}: {parameter-value-N}
 
-    -----------------------------------------------
+    ---------------------------------------------------
+
+    browser:
+        <string>
+
+    url:
+        <url>
 
     step-import-name:
         <string>

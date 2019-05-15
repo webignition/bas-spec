@@ -1,12 +1,22 @@
 .. code-block:: text
 
+    setup:
+        browser: {browser}
+        url: {url}
+
     {step-name-1}:
         {step}
     ...
     {step-name-N}
         {step}
 
-    --------
+    ----------------------
+
+    browser:
+        <string>
+
+    url:
+        <url>
 
     step-name-*:
         <string>
