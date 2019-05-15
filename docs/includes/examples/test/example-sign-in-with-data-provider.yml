@@ -11,7 +11,7 @@ import:
 
 "open https://www.example.com":
   assertions:
-    - $page.url is config.url
+    - $page.url is $config.url
     - $page.title is "Example Domain"
 
 "sign in as user (literal data)":
