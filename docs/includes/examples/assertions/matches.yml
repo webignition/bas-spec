@@ -1,2 +1,4 @@
 - $page.title matches "/homepage$/i"
 - imported_page_model.elements.sign_in_button matches "/^Sign/"
+- $elements.element_name matches $data.regex
+- $elements.element_name matches $env.REGEX # odd way to go about it but valid

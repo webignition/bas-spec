@@ -1,3 +1,6 @@
 - $page.title is-not "Homepage"
 - $page.title is-not "\"Homepage\"" (literal double quotes)
 - imported_page_model.elements.sign_in_button is-not "Sign in"
+- $elements.element_name is-not $page.url # odd but valid
+- $elements.element_name is-not $data.expected_element_value
+- $elements.element_name is-not $env.KEY
