@@ -1,2 +1,3 @@
 - \"#logo\" not-exists
 - imported_page_model.elements.sign_in_button not-exists
+- $element_name not-exists

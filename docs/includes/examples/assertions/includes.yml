@@ -1,2 +1,5 @@
 - $page.title includes "page"
 - imported_page_model.elements.sign_in_button includes "Sign"
+- $elements.element_name includes $page.url # odd but valid
+- $elements.element_name includes $data.key
+- $elements.element_name includes $env.KEY

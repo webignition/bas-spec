@@ -1,3 +1,6 @@
 - $page.title is "Homepage"
-- $page.title is "\"Homepage\"" (literal double quotes)
+- $page.title is "\"Homepage\"" # (literal double quotes)
 - imported_page_model.elements.sign_in_button is "Sign in"
+- $elements.element_name is $page.url # odd but valid
+- $elements.element_name is $data.expected_element_value
+- $elements.element_name is $env.KEY
