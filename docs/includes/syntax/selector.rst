@@ -1,6 +1,6 @@
 .. code-block:: text
 
-    "{selector-string}"[:{position}]
+    "{selector-string}"[:{position}][.{attribute-name}]
 
     --------------------------------
 
@@ -10,3 +10,6 @@
 
     position:
         <integer>
+
+    attribute_name:
+        <string>
