@@ -25,7 +25,7 @@ Examples
       - CSS selector matching against the element ``id`` attribute.
 
     * - ``"//*[@id='element-id']"``
-      - XPath query matching against the element ``id`` attribute.
+      - XPath expression matching against the element ``id`` attribute.
 
     * - ``".listed-item":1``
       - CSS selector matching all elements with the ``listed-item`` |br| class name, fetching the first item in the list.

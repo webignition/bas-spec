@@ -6,7 +6,7 @@
 Selectors
 =========
 
-A ``selector`` uniquely identifies an element within a page with the use of a CSS selector or XPath.
+A ``selector`` uniquely identifies an element within a page with the use of a CSS selector or XPath expression.
 A selector is one form of :doc:`identifier </identifiers>`.
 
 ------
@@ -26,7 +26,7 @@ Examples
       - CSS selector matching against the element ``id`` attribute.
 
     * - ``"//*[@id='element-id']"``
-      - XPath query matching against the element ``id`` attribute.
+      - XPath expression matching against the element ``id`` attribute.
 
     * - ``".listed-item":1``
       - Finding the first matched item from the start of the list.
