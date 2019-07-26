@@ -1,3 +1,4 @@
 - click ".sign-in-form .submit-button"
 - click ".listed-item":1
 - click imported_page_model.elements.element_name
+- click $elements.element_name

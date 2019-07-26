@@ -1,3 +1,7 @@
 - set "#sign-in-form .username" to "user@example.com"
-- set "#sign-in-form .username" to "\"user@example.com\"" (literal double quotes)
+- set "#sign-in-form .username" to "\"user@example.com\"" # (literal double quotes)
 - set imported_page_model.elements.username to "user@example.com"
+- set $elements.element_name to "user@example.com"
+- set $elements.element_name to $data.field_name
+- set ".selector" to $page.title # odd but valid
+- set "//foo" to $page.url # also odd but valid
