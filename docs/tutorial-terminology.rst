@@ -48,7 +48,7 @@ A test brings a collection of steps together to examine a full user journey.
 Parameterised Test
 ------------------
 
-A regular test combined that being tested with the data with which it is tested. Do so often enough and you notice that
+A regular test combines that being tested with the data with which it is tested. Do so often enough and you notice that
 you're repeating yourself for common test needs such as "visit this page and verify that the title is correct".
 
 A parameterised plain English test may read as "visit ``url`` and verify that the title is
