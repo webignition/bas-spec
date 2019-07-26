@@ -4,8 +4,8 @@
 Identifiers
 ===========
 
-An ``identifier`` uniquely identifies an element within a page. It is either a :doc:`selector </selectors>` or a page
-model reference.
+An ``identifier`` uniquely identifies an element within a page. It is either a :doc:`selector </selectors>`, a page
+model reference or a reference to an element passed to an imported step.
 
 ------
 Syntax
@@ -25,7 +25,7 @@ Examples
       - CSS selector matching against the element ``id`` attribute.
 
     * - ``"//*[@id='element-id']"``
-      - XPath query matching against the element ``id`` attribute.
+      - XPath expression matching against the element ``id`` attribute.
 
     * - ``".listed-item":1``
       - CSS selector matching all elements with the ``listed-item`` |br| class name, fetching the first item in the list.
@@ -41,3 +41,6 @@ Examples
 
     * - ``google_com.elements.search_button``
       - Page model element reference.
+
+    * - ``$elements.element_name``
+      - Passed element reference.

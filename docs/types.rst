@@ -35,7 +35,7 @@ Variable Types
       - A `CSS selector <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors>`_.
 
     * - ``<xpath>``
-      - A `XPath <https://developer.mozilla.org/en-US/docs/Web/XPath>`_.
+      - A `XPath expression <https://developer.mozilla.org/en-US/docs/Web/XPath>`_.
 
     * - ``<action>``
       - An :doc:`action </actions>`.
