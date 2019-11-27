@@ -34,7 +34,7 @@ name (``google_com``) and provided an import path (``page/google.com.yml``).
 
 Within our assertions, we use the name of the page import to reference the elements that the page model defines.
 
-See how ``click google_com.elements.search_button`` is a lot easier on the brain than ``click ".FPdoLc.VlcLAe input[name=btnK]"``?
+See how ``click $google_com.elements.search_button`` is a lot easier on the brain than ``click $".FPdoLc.VlcLAe input[name=btnK]"``?
 
 ------------------------------------
 Scoping Elements Within a Page Model

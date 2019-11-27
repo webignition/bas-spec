@@ -10,9 +10,9 @@ config:
 
 "sign in as user":
   actions:
-    - set ".sign-in-form .user" to "user@example.com"
-    - set ".sign-in-form .password" to "password123"
-    - click ".sign-in-form .submit"
+    - set $".sign-in-form .user" to "user@example.com"
+    - set $".sign-in-form .password" to "password123"
+    - click $".sign-in-form .submit"
 
   assertions:
     - $page.url is "https://www.example.com/account/"

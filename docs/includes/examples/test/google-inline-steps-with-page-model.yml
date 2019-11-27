@@ -13,8 +13,8 @@ imports:
 
 "query 'example'":
   actions:
-    - set google_com.elements.search_input to "example"
-    - click google_com.elements.search_button
+    - set $google_com.elements.search_input to "example"
+    - click $google_com.elements.search_button
 
   assertions:
     - $page.title is "example - Google Search"

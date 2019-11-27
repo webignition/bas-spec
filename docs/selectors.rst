@@ -22,35 +22,35 @@ Examples
 .. list-table::
     :stub-columns: 1
 
-    * - ``"#element-id"``
+    * - ``$"#element-id"``
       - CSS selector matching against the element ``id`` attribute.
 
-    * - ``"#element-id".title``
+    * - ``$"#element-id".title``
       - CSS selector referencing the ``title`` attribute of the |br| matched element.
 
-    * - ``"//*[@id='element-id']"``
+    * - ``$"//*[@id='element-id']"``
       - XPath expression matching against the element ``id`` attribute.
 
-    * - ``"//*[@id='element-id']".title``
+    * - ``$"//*[@id='element-id']".title``
       - XPath expression referencing the ``title`` attribute of |br| the matched element.
 
-    * - ``".listed-item":1``
+    * - ``$".listed-item":1``
       - Finding the first matched item from the start of the list.
 
-    * - ``".listed-item":1.title``
+    * - ``$".listed-item":1.title``
       - Finding the ``title`` attribute of the first matched item |br| from the start of the list.
 
-    * - ``".listed-item":3``
+    * - ``$".listed-item":3``
       - Finding the third matched item from the start of the list.
 
-    * - ``".listed-item":-1``
+    * - ``$".listed-item":-1``
       - Finding the first matched item from the end of the list.
 
-    * - ``".listed-item":-3``
+    * - ``$".listed-item":-3``
       - Finding the third matched item from the end of the list.
 
-    * - ``".listed-item":first``
+    * - ``$".listed-item":first``
       - Special position keyword ``first`` is equivalent to ``:1``.
 
-    * - ``".listed-item":last``
+    * - ``$".listed-item":last``
       - Special position keyword ``last`` is equivalent to ``:-1``.

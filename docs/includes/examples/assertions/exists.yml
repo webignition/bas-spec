@@ -1,5 +1,5 @@
-- '".selector" exists'
-- '".profile":data-image exists'
-- '"#logo" exists'
-- imported_page_model.elements.sign_in_button exists
+- $".selector" exists
+- $".profile":data-image exists
+- $"#logo" exists
+- $imported_page_model.elements.sign_in_button exists
 - $element_name exists
