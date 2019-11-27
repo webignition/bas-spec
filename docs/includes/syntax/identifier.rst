@@ -8,7 +8,7 @@
         <selector>
 
     page-model-reference:
-        {import-name}.elements.{element-name}
+        ${import-name}.elements.{element-name}
 
     passed-element-reference:
         $elements.{element-name}
