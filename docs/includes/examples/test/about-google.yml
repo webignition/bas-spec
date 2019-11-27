@@ -10,9 +10,9 @@ config:
 
 "top navigation elements are present":
   assertions:
-    - \"nav .top-nav\" exists
-    - \"nav .top-nav a[href='./']\" exists
-    - \"nav .top-nav a[href='./google-in-uk/']\" exists
-    - \"nav .top-nav a[href='./products/']\" exists
-    - \"nav .top-nav a[href='./commitments/']\" exists
-    - \"nav .top-nav a[href='./stories/']\" exists
+    - $"nav .top-nav" exists
+    - $"nav .top-nav a[href='./']" exists
+    - $"nav .top-nav a[href='./google-in-uk/']" exists
+    - $"nav .top-nav a[href='./products/']" exists
+    - $"nav .top-nav a[href='./commitments/']" exists
+    - $"nav .top-nav a[href='./stories/']" exists

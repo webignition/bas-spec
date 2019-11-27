@@ -1,7 +1,7 @@
 # examples/step/google-query-example-literal.yml
 actions:
-  - set ".gLFyf.gsfi" to "example"
-  - click ".FPdoLc.VlcLAe input[name=btnK]"
+  - set $".gLFyf.gsfi" to "example"
+  - click $".FPdoLc.VlcLAe input[name=btnK]"
 
 assertions:
   - $page.title is "example - Google Search"
