@@ -1,7 +1,7 @@
-- '".heading" includes "error"'
-- '".heading".title includes "error"'
+- $".heading" includes "error"
+- $".heading".title includes "error"
 - $page.title excludes "error"
-- imported_page_model.elements.sign_in_button excludes "Log"
+- $imported_page_model.elements.sign_in_button excludes "Log"
 - $elements.element_name excludes $page.url # odd but valid
 - $elements.element_name excludes $data.key
 - $elements.element_name excludes $env.KEY
