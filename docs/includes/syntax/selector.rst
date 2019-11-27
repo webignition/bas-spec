@@ -1,6 +1,6 @@
 .. code-block:: text
 
-    "{selector-string}"[:{position}][.{attribute-name}]
+    $"{selector-string}"[:{position}][.{attribute-name}]
 
     --------------------------------
 
