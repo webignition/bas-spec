@@ -2,7 +2,7 @@
 url: "https://www.google.com"
 elements:
   # finds "[name=q]" within the context of "form[action='/search']"
-  search_input: "form[action='/search'] input[name=q]"
+  search_input: $"form[action='/search'] input[name=q]"
 
   # finds "[type=submit]" within the context of "form[action='/search']"
-  search_button: "form[action='/search'] input[type=submit]"
+  search_button: $"form[action='/search'] input[type=submit]"
