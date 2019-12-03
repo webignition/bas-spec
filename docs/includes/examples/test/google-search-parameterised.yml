@@ -30,5 +30,5 @@ imports:
       search_term: "bar"
       expected_title: "bar - Google Search"
   elements:
-    search_input: google_com.elements.search_input
-    search_button: google_com.elements.search_button
+    search_input: $google_com.elements.search_input
+    search_button: $google_com.elements.search_button
