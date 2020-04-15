@@ -2,9 +2,9 @@
 
     url: {url}
     elements:
-        {element-name-1}: [${predefined-element-name} >> ] {selector}
+        {element-name-1}: [${predefined-element-name}|{selector} >> ] {selector}
         ...
-        {element-name-N}: [${predefined-element-name} >> ] {selector}
+        {element-name-N}: [${predefined-element-name}|{selector} >> ] {selector}
 
     ----------------------------------------------------------------
 

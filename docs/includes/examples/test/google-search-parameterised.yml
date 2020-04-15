@@ -5,7 +5,7 @@ config:
 
 imports:
   pages:
-    google_com: "../page/google.com-element-scoped.yml"
+    google_com: "../page/google.com-element-scoped-reference.yml"
   steps:
     assert_opened_page_step: "../step/assert-page-open-parameterised.yml"
     query_step: "../step/google-search-query-parameterised.yml"

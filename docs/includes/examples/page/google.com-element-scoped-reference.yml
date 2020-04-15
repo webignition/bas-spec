@@ -1,10 +1,12 @@
-# examples/page/google.com-element-scoped.yml
+# examples/page/google.com-element-scoped-reference.yml
 url: "https://www.google.com"
 elements:
   search_form: $"form[action=/search]"
 
   # finds "[name=q]" within the context of search_form
+  # using basil parent-child syntax
   search_input: $search_form >> $"[name=q]"
 
   # finds "[type=submit]" within the context of search_form
+  # using basil parent-child syntax
   search_button: $search_form >> $"[type=submit]"
