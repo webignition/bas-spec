@@ -1,0 +1,12 @@
+# examples/page/google.com-element-scoped-literal.yml
+url: "https://www.google.com"
+elements:
+  search_form: $"form[action=/search]"
+
+  # finds "[name=q]" within the context of $"form[action=/search]"
+  # using basil parent-child syntax
+  search_input: $"form[action=/search]" >> $"[name=q]"
+
+  # finds "[type=submit]" within the context of $"form[action=/search]"
+  # using basil parent-child syntax
+  search_button: $"form[action=/search]" >> $"[type=submit]"

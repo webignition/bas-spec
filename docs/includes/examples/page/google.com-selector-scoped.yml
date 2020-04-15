@@ -2,7 +2,9 @@
 url: "https://www.google.com"
 elements:
   # finds "[name=q]" within the context of "form[action='/search']"
+  # using CSS syntax
   search_input: $"form[action='/search'] input[name=q]"
 
   # finds "[type=submit]" within the context of "form[action='/search']"
+  # using CSS syntax
   search_button: $"form[action='/search'] input[type=submit]"

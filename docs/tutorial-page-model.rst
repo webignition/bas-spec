@@ -48,10 +48,12 @@ We can make our page model more robust.
 .. literalinclude:: includes/examples/page/google.com-selector-scoped.yml
 
 That makes my brain hurt just a little bit less. But we're still repeating the ``form[action='/search']`` part of each
-of the selectors.
+of the selectors. We can do better!
 
-Thankfully we can refer to any element that we have already named within any subsequent element identifier.
+We have given the ``$"form[action=/search]"`` identifier the name ``search_form``. We can reference this element via the
+name we chose by prefixing the name with a dollar sign. Within our page model, ``$search_form`` is the same as saying
+``$"form[action=/search]"``.
 
-.. literalinclude:: includes/examples/page/google.com-element-scoped.yml
+Combine this with the ``>>`` operator for a parent-child relationship and everything is much easier to read.
 
-That is much easier to read.
+.. literalinclude:: includes/examples/page/google.com-element-scoped-reference.yml
