@@ -71,6 +71,7 @@ Goals:
     assertions
     identifiers
     selectors
+    descendant-selectors
     page-model
     steps
     tests
