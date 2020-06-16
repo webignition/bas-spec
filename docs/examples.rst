@@ -8,6 +8,7 @@ model and some data providers.
 .. admonition:: Topics
 
     - :doc:`Simple Test </examples-simple-test>`
+    - :doc:`Simple Test With Descendant Selectors </examples-simple-test-with-descendant-selectors>`
     - :doc:`Import a Test Step Into a Test </examples-import-step>`
     - :doc:`Define Page Properties in a Page Model </examples-page-model>`
     - :doc:`Parameterise a Test </examples-parameterised-test>`

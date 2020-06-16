@@ -45,6 +45,7 @@ Goals:
 
     examples
     examples-simple-test
+    examples-simple-test-with-descendant-selectors
     examples-import-step
     examples-page-model
     examples-parameterised-test
@@ -71,6 +72,7 @@ Goals:
     assertions
     identifiers
     selectors
+    descendant-selectors
     page-model
     steps
     tests
