@@ -1,13 +1,13 @@
 .. code-block:: text
 
-    {identifier} {comparison} [{value}]
+    {identifier} {operator} [{value}]
 
     -----------------------------------
 
     identifier:
         <identifier>
 
-    comparison:
+    operator:
         excludes
         includes
         is

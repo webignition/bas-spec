@@ -8,17 +8,17 @@ Assertions are used to verify that the browser is in the desired state.
 Syntax
 ------
 
-An assertion takes the form of an ``identifier`` followed by a ``comparison`` and an optional ``value``.
+An assertion takes the form of an ``identifier`` followed by an ``operator`` and an optional ``value``.
 
 .. include:: includes/syntax/assertion/assertion.rst
 
------------
-Comparisons
------------
+---------
+Operators
+---------
 
-.. include:: includes/assertion-comparison-list.rst
+.. include:: includes/assertion-operator-list.rst
 
-.. _comparisons-is:
+.. _operators-is:
 
 --
 Is
@@ -50,7 +50,7 @@ Examples
 
 .. literalinclude:: includes/examples/assertions/is.yml
 
-.. _comparisons-is-not:
+.. _operators-is-not:
 
 ------
 Is-not
@@ -82,7 +82,7 @@ Examples
 
 .. literalinclude:: includes/examples/assertions/is-not.yml
 
-.. _comparisons-exists:
+.. _operators-exists:
 
 ------
 Exists
@@ -111,7 +111,7 @@ Examples
 
 .. literalinclude:: includes/examples/assertions/exists.yml
 
-.. _comparisons-not-exists:
+.. _operators-not-exists:
 
 ----------
 Not-Exists
@@ -140,7 +140,7 @@ Examples
 
 .. literalinclude:: includes/examples/assertions/not-exists.yml
 
-.. _comparisons-includes:
+.. _operators-includes:
 
 --------
 Includes
@@ -174,7 +174,7 @@ Examples
 
 .. literalinclude:: includes/examples/assertions/includes.yml
 
-.. _comparisons-excludes:
+.. _operators-excludes:
 
 --------
 Excludes
@@ -208,7 +208,7 @@ Examples
 
 .. literalinclude:: includes/examples/assertions/excludes.yml
 
-.. _comparisons-matches:
+.. _operators-matches:
 
 -------
 Matches

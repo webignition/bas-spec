@@ -1,7 +1,0 @@
-- :ref:`is <comparisons-is>`
-- :ref:`is-not <comparisons-is-not>`
-- :ref:`exists <comparisons-exists>`
-- :ref:`not-exists <comparisons-not-exists>`
-- :ref:`includes <comparisons-includes>`
-- :ref:`excludes <comparisons-excludes>`
-- :ref:`matches <comparisons-matches>`
