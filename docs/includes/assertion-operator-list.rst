@@ -1,0 +1,7 @@
+- :ref:`is <operators-is>`
+- :ref:`is-not <operators-is-not>`
+- :ref:`exists <operators-exists>`
+- :ref:`not-exists <operators-not-exists>`
+- :ref:`includes <operators-includes>`
+- :ref:`excludes <operators-excludes>`
+- :ref:`matches <operators-matches>`

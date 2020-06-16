@@ -60,10 +60,10 @@ Assertion Examples
 
 .. include:: includes/examples/assertion-examples.rst
 
-*************************
-Assertion Comparison List
-*************************
+***********************
+Assertion Operator List
+***********************
 
-.. admonition:: Technical Reference: Assertion Comparisons
+.. admonition:: Technical Reference: Assertion Operations
 
-    .. include:: includes/assertion-comparison-list.rst
+    .. include:: includes/assertion-operator-list.rst

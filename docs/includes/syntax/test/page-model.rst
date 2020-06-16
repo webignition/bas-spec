@@ -13,7 +13,7 @@
         - open {import_name}
 
       assertions:
-        - {page-import-name}.elements.{element-name} {comparison} [{value}]
+        - {page-import-name}.elements.{element-name} {operator} [{value}]
 
     -----------------------------------------------------------------------
 
@@ -35,8 +35,8 @@
     element-name:
         <string>, defined within the imported page model
 
-    comparison:
-        <string>, comparison for assertion
+    operator:
+        <string>, operator for assertion
 
     value:
         <string>, value for assertion
