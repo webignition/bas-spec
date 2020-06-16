@@ -45,6 +45,7 @@ Goals:
 
     examples
     examples-simple-test
+    examples-simple-test-with-descendant-selectors
     examples-import-step
     examples-page-model
     examples-parameterised-test
