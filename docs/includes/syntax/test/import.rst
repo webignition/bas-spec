@@ -1,7 +1,10 @@
 .. code-block:: text
 
     config:
-        browser: {browser}
+        browsers:
+            - {browser-1}
+            ...
+            - {browser-N}
         url: {url}
 
     imports:
@@ -19,7 +22,7 @@
     import-path:
         <string>, a path to the file to import, relative to the location of the test
 
-    browser:
+    browser-*:
         <string>
 
     url:

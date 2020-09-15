@@ -1,6 +1,7 @@
 # examples/test/about-google.yml
 config:
-  browser: chrome
+  browsers:
+    - chrome
   url: https://about.google/
 
 "verify about.google is open":

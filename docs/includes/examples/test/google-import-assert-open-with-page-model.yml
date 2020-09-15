@@ -1,6 +1,7 @@
 # examples/test/google-import-assert-open-with-page-model.yml
 config:
-  browser: chrome
+  browsers:
+    - chrome
   url: google_com.url
 
 imports:

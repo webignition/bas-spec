@@ -1,6 +1,7 @@
 # examples/test/google-imported-steps-with-page-model.yml
 config:
-  browser: chrome
+  browsers:
+    - chrome
   url: google_com.url
 
 imports:

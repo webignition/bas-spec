@@ -1,6 +1,7 @@
 # examples/test/google-import-assert-open-import-query-additional-assertions.yml
 config:
-  browser: chrome
+  browsers:
+    - chrome
   url: https://www.google.com
 
 imports:

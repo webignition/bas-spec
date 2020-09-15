@@ -1,6 +1,7 @@
 # examples/test/google-search-query-literal.yml
 config:
-  browser: chrome
+  browsers:
+    - chrome
   url: https://www.google.com
 
 "verify Google is open":
