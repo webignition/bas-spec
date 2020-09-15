@@ -1,6 +1,7 @@
 # examples/test/example-sign-in-with-data-provider.yml
 config:
-  browser: chrome
+  browsers:
+    - chrome
   url: https://www.example.com
 
 import:

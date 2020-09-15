@@ -1,6 +1,7 @@
 # examples/test/example-sign-in-with-environment-variables.yml
 config:
-  browser: chrome
+  browsers:
+    - chrome
   url: https://www.example.com
 
 "open https://www.example.com":

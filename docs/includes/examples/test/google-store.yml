@@ -1,6 +1,7 @@
 # examples/test/google-store.yml
 config:
-  browser: chrome
+  browsers:
+    - chrome
   url: https://store.google.com
 
 "verify Google Store is open":

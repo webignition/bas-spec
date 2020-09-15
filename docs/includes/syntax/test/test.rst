@@ -1,7 +1,10 @@
 .. code-block:: text
 
     config:
-        browser: {browser}
+        browsers:
+            - {browser-1}
+            ...
+            - {browser-N}
         url: {url}
 
     {step-name-1}:
@@ -12,7 +15,7 @@
 
     ----------------------
 
-    browser:
+    browser-*:
         <string>
 
     url:

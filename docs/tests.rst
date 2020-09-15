@@ -10,7 +10,7 @@ import steps, may import page models and may import data providers.
 Syntax
 ------
 
-A test is a YAML object. The most basic test specifies the ``browser`` and starting ``url`` and defines steps directly.
+A test is a YAML object. The most basic test specifies a ``browsers`` collection and starting ``url`` and defines steps directly.
 
 .. include:: includes/syntax/test/test.rst
 

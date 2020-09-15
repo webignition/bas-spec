@@ -1,6 +1,7 @@
 # examples/test/google-open-query-parameterised.yml
 config:
-  browser: chrome
+  browsers:
+    - chrome
   url: google_com.url
 
 imports:
